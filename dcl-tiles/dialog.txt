@@ -1,0 +1,29 @@
+DCL Tiles
+
+   : dialog
+     __________________________________________________________________
+
+   The dialog tile defines the dialog box.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+Valid Attributes
+   : dialog {
+      [link]label;
+      [link]value;
+      [link]initial_focus;
+   }
+
+EXAMPLE
+   my_dlg : dialog {
+      initial_focus = "my_edit";
+      label = "my Dialog"
+   }
+
+Related DCL Tiles
+   all Tiles
+
+More about...
+   [link]register
+   [link]tab

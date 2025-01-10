@@ -1,0 +1,37 @@
+DCL Tiles
+
+   ok_cancel_help_info;
+     __________________________________________________________________
+
+   Present the OK, Cancel, Help, and Info buttons.
+
+   DCL Error Handler Tile
+     __________________________________________________________________
+
+   This error handler tile presents the OK, Cancel, Help, and Info buttons. The Info button can be utilized to open a dialog box that provides the user with additional information. It is advantageous for the Help button to invoke the [link]LISP [link]help function.
+
+   It is important to note that the format of this tile is distinct from that of most other tiles: it does not include a : (colon) prefix or a { ... } (brace) suffix.
+
+   The program automatically assigns a key to each button, as follows:
+
+   Button   key
+   OK     "accept"
+   Cancel "cancel"
+   Help   "help"
+   Info   "info"
+
+Valid Attributes
+   none
+
+EXAMPLE
+   ok_cancel_help_info;
+
+Related DCL Tiles
+   [link]errtile
+   [link]ok_only
+   [link]ok_cancel
+   [link]ok_cancel_help
+   [link]ok_cancel_help_errtile
+
+More about...
+   [link]ok_only

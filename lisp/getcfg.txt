@@ -1,0 +1,25 @@
+LISP Functions
+
+   (getcfg parameter)
+     __________________________________________________________________
+
+   Establish the value of the parameter.
+     __________________________________________________________________
+
+   This function retrieves information from the PSOFT/User section of the system registry. The parameter is a string formatted as follows:
+
+   "AppData/appname/sname/parameter" where:
+   Cfg Name             Means
+   AppData   The [AppData] section.
+   appname   The name of the application.
+   sname     The section name.
+   parameter The parameter name.
+
+EXAMPLE
+   Code                                       Returns
+   (getcfg "appdata/appname/sname/parameter") 56
+
+More about...
+   [link](getenv variable)
+   [link](setcfg parameter value)
+   [link](setenv variable value)

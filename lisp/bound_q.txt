@@ -1,0 +1,21 @@
+LISP Functions
+
+   (bound? item)
+     __________________________________________________________________
+
+   Assess whether an item possesses an associated value.
+     __________________________________________________________________
+
+   The boundp function ascertains if an item has a value linked to it. If the item indeed has a value associated with it, LISP returns true. Conversely, if the item lacks a value or is bound to false, a false is returned.
+
+EXAMPLES
+   Code             Returns
+   (bound? 'x)      false
+   (bound? 'y)      true
+   (bound? 'z)      false
+
+NOTE
+
+More about...
+   [link](number? item)
+

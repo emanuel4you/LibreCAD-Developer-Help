@@ -1,0 +1,15 @@
+LISP Functions
+
+   (set_tile key value)
+     __________________________________________________________________
+
+   Set the value of the dialog box tile.
+     __________________________________________________________________
+
+   The primary argument is a case-sensitive string that designates the tile. The value attribute is a string that provides the new value for the tile.
+
+EXAMPLE
+   (set_tile tile1 val1)
+
+More about...
+   [link](get_tile key)

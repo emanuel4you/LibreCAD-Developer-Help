@@ -1,0 +1,21 @@
+LISP Functions
+
+   (close file-descriptor)
+     __________________________________________________________________
+
+   Close an open file.
+     __________________________________________________________________
+
+   This function terminates access to a file that was previously opened. While LibreCAD automatically closes files upon exiting, it is advisable to utilize the close function for proper file management.
+
+   The file-descriptor argument refers to the file descriptor that was allocated when the file was opened with the open function. Although the file descriptor persists after the file is closed, it is no longer valid.
+
+EXAMPLE
+   Code        Returns
+   (close fil) nil
+
+NOTE
+   The file-descriptor must be assigned to a symbol using [link]setq, and this symbol should be employed with the close function as the file-descriptor.
+
+More about...
+   [link](print [expression [file-descriptor]])

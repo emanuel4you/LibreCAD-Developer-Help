@@ -1,0 +1,21 @@
+LISP Functions
+
+   (angle point1 point2)
+     __________________________________________________________________
+
+   Determine the angle between these points.
+     __________________________________________________________________
+
+   This function calculates the angle formed between point1 and point2 within the current User Coordinate System (UCS). The first point establishes a line that is parallel to the x-axis. When point2 is plotted and linked to point1, the angle produced is returned in radians.
+
+NOTES
+       prompts the user to choose two points that define an angle.
+     * LISP consistently measures all angles in radians. To convert degrees to radians, utilize the following LISP function:
+
+     (defun dtor (d))
+
+More about...
+   [link](angtof string [mode])
+   [link](angtos angle [mode [precision]])
+   [link](polar point angle distance)
+   [link](rtos number [mode [precision]])

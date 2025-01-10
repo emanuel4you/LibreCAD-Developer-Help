@@ -1,0 +1,62 @@
+LISP Functions
+
+   (ssget [mode] [point1 [point2]] [point-list] [filter-list])
+     __________________________________________________________________
+
+   Prompt the user to select entities.
+     __________________________________________________________________
+
+   This function requests the user to select entities. When no arguments are provided, the ssget function displays the prompt "Select entities:". This is the sole instance in which ssget highlights the selected entities. The ssget function returns a Selection set: vertices.
+
+   The mode argument determines the method of entity selection:
+
+   Mode         Meaning             Points               Example
+        (none) Single pick point point1        (ssget '(10 15)) or (ssget)
+   "C"  Crossing                 point1 point2 (ssget "C" '(1 1) '(2 2))
+   "CC" Crossing Circle          point1 point2 (ssget "CC" '(1 1) '(2 2))
+   "CP" Crossing Polygon         points-list   (ssget "CP" ptlist)
+   "F"  Fence                    points-list   (ssget "F" ptlist)
+   "I"  Implied                  none          (ssget "I")
+   "L"  Last                     none          (ssget "L")
+   "O"  Outside                  points-list   (ssget "O" ptlist)
+   "OC" Outside Circle           point1 point2 (ssget "OC" '(1 1) '(2 2))
+   "OP" Outside Polygon          points-list   (ssget "OP" ptlist)
+   "P"  Previous                 none          (ssget "P")
+   "PO" POint                    point1        (ssget "PO" '(1 1))
+   "W"  Window                   point1 point2 (ssget "W" '(1 1) '(2 2))
+   "WP" Window Polygon           points-list   (ssget "WP" ptlist)
+   "X"  All                      none          (ssget "X")
+
+   The "I" mode generates an "implied" selection set of entities that are selected while the system variable PICKFIRST is enabled. The "PO" mode selects all closed entities that encompass the specified point.
+
+   The point1 (and often point2) argument indicates the pick point for the selection mode, as detailed in the table above.
+
+   The filter-list argument consists of a list that defines entity properties in dotted-pair format, such as:
+
+   (ssget "X" '((0 . "CIRCLE") (62 . 1)))
+
+   which selects all circles colored red (color 1).
+   which selects all red circles with a radius of less than 15 units. For this function, the operators recognized by LibreCAD include:
+
+   Operator Meaning
+   "&"      Bitwise AND (integers only).
+   "&="     Bitwise masked equals (integers only).
+   "*"      All.
+   "="      Equals.
+   "!="     Not equal to.
+   "/="     Not equal to.
+   "<>"     Not equal to.
+   "<"      Less than.
+   "<="     Less than or equal to.
+   ">"      Greater than.
+   ">="     Greater than or equal to.
+
+   These operators are applicable to integers; bitwise operators cannot be utilized with real numbers, and the "*" operator is the only one permitted for use with strings.
+
+NOTES
+     * The current entity snap setting is disregarded by the ssget function.
+     * When the selection set is employed in model space, entities from paper space are not selected, and vice versa: entities from the inactive space are filtered out. However, this restriction does not apply when utilizing the "X" selection mode.
+
+More about...
+   [link](ssdel entity-name selection-set)
+   [link](ssgetfirst)

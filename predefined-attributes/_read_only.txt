@@ -1,0 +1,24 @@
+DCL Attributes
+
+   read_only = flag;
+     __________________________________________________________________
+
+   Prevent the user from editing the text.
+     __________________________________________________________________
+
+   When flag = true, this attribute prevents the user from modifying text displayed in a dialog box. This lets you display text in an otherwise editable edit box.
+
+   Possible values are true or false (default: false).
+
+NOTE
+   The read_only attribute is unique to the implementation of DCL included with LibreCAD.
+
+EXAMPLE
+   read_only = true;
+
+Valid Tiles
+   [link]edit_box
+   [link]multi_edit_box
+
+More about...
+   [link]small_increment

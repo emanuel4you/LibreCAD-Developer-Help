@@ -1,0 +1,21 @@
+LISP Functions
+
+   (zero? number)
+     __________________________________________________________________
+
+   Assess whether this number is equal to zero.
+     __________________________________________________________________
+
+   In the case that the value is zero, the zero? function yields a T. If not, it returns a false.
+
+EXAMPLES
+   Code           Returns
+   (zero? 0)      true
+   (zero? 0.5)    false
+   (zero? 0.0000) true
+
+More about...
+   [link](atom? item)
+   [link](bound? item)
+   [link](list? item)
+   [link](number? item)

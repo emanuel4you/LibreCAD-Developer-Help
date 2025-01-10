@@ -1,0 +1,36 @@
+LISP Functions
+
+   (tblobjname table-name symbol)
+     __________________________________________________________________
+
+   Identify the name of the entity linked to the specified symbol.
+     __________________________________________________________________
+
+   This function retrieves the entity name corresponding to a particular entry in the symbol table. The tblobjname function conducts a search within the symbol table identified by table-name for the given symbol. It provides the entity name associated with that specific symbol table entry. Acceptable table-names include:
+
+   Table-name           Meaning
+   "appid"    Application identification.
+   "block"    Block names.
+   "dimstyle" Dimension style names.
+   "layer"    Layer names.
+   "ltype"    Linetype names.
+   "style"    Text style names.
+   "view"     View names.
+   "ucs"      UCS names.
+   "vport"    Viewport names.
+
+   Default symbol names are:
+
+  Symbol        Meaning
+   "CONTINUOUS" Default linetype.
+   "0"          Default layer.
+   "STANDARD"   Default text style.
+   "STANDARD"   Default dimension style.
+
+NOTE
+   The entity name returned by tblobjname is beneficial for the.
+
+More about...
+   [link](tblnext table-name [flag])
+   [link](tblsearch table-name symbol [flag])
+   [link](vports)

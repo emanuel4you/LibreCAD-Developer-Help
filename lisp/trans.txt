@@ -1,0 +1,33 @@
+LISP Functions
+
+   (trans point from to [flag])
+     __________________________________________________________________
+
+   Translate that point from one coordinate system to another.
+     __________________________________________________________________
+
+   This function facilitates the translation of a point from one coordinate system to another.
+
+   The point parameter represents a three-dimensional point in list format, with its interpretation contingent upon the flag setting.
+
+     * The from parameter specifies the existing coordinate system:
+
+   Code Coordinate system
+   0 World coordinate system (WCS).
+
+   1 Current user-defined coordinate system (UCS).
+
+   2 Display coordinate system ( DCS) of current viewport-with code 0 or 1
+     DCS of current model space viewport-with code 3.
+
+   3 Paper space DCS.
+
+     * The to parameter indicates the target coordinate system, employing the same codes as the from parameter.
+     * The flag parameter defines the interpretation of the point.
+
+   Flag Meaning
+   T    3D displacement.
+   nil  3D point.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

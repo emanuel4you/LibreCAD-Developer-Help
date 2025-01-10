@@ -1,0 +1,41 @@
+LISP Functions
+
+   (boole function integer1 integer2 ...)
+     __________________________________________________________________
+
+   Apply the bitwise Boolean function.
+     __________________________________________________________________
+
+   This function implements the bitwise Boolean operation. It encompasses all potential Boolean functions involving two variables. Each bit of integer1 is matched with the corresponding bit of integer2.
+
+   The Boolean truth table is presented as follows:
+   integer1 integer2 function
+   1        1        1
+   1        0        2
+
+   The function values correspond to the AND, XOR, OR, and NOR Boolean operators:
+
+   Function Operation Resulting bit is 1 when
+   1        AND       Both input bits are 1.
+   6        XOR       Only one of the two input bits is 1.
+
+EXAMPLES
+
+   Code Returns
+   Logical AND:
+   (boole 1 10 9)
+
+   Logical XOR:
+   (boole 6 10 9)
+   3
+
+   Logical OR
+   11
+
+   Logical NOR:
+   -12
+
+More about...
+   [link](~ number)
+   [link](and expression ...)
+   [link](or statement ...)

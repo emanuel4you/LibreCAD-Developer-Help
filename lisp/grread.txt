@@ -1,0 +1,45 @@
+LISP Functions
+
+   (grread [flag] [bits [cursor]])
+     __________________________________________________________________
+
+   Read the information received from the input devices.
+     __________________________________________________________________
+
+   This function serves as an alternative method for acquiring user input. It processes continuous input through the specified input method. The flag option allows for the retrieval of the user's coordinates. When the flag is set to a non-nil value, it tracks the movements of the mouse or pointer, dynamically recording the coordinates, which can result in a substantial volume of data.
+
+   The optional bits argument defines the following:
+
+   Bits Meaning
+   1 Provides the coordinates in real-time as a list, which includes the value and the 3-D coordinates.
+   2 Captures keystrokes without altering the cursor position, returning all key values, including those for cursor and function keys.
+
+   You may combine the bits mentioned above as needed.
+
+   The cursor argument is an integer that indicates the type of cursor:
+
+   Cursor Meaning
+   0      Normal cursor-crosshairs.
+   1      No cursor.
+   2      Selection cursor-box.
+
+   The subsequent chart illustrates how the information is presented.
+
+   Type of Input         Returned Value (Definition)
+   Keyboard              2 (Character code)
+   Selected Point        3 (3-dimensional point)
+   Mouse (other pointer) 5 (3-dimensional point)
+
+EXAMPLE
+   (defun c:b ()
+   (while (print (grread 1 5 2)))
+   )
+
+Explanation
+   In the aforementioned example, as you move the mouse, a list appears that reflects the mouse's position, with the coordinates representing the precise location of the mouse. This information updates in real-time as the mouse is moved. The number 3 indicates the type of input (selected point). If you were to enter a letter, such as 'p', the output would be (2 112), where 2 signifies keyboard input, and 112 corresponds to the character code.
+
+More about...
+   [link](getint [prompt])
+   [link](getpoint [point] [prompt])
+   [link](getreal [prompt])
+   [link](getstring [flag] [prompt])

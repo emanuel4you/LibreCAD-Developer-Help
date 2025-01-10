@@ -1,0 +1,14 @@
+LISP Functions
+
+   (gcd integer1 integer2)
+     __________________________________________________________________
+
+   Calculate the greatest common denominator.
+     __________________________________________________________________
+
+   This function calculates the greatest common divisor between integer1 and a function designed to convert real numbers into integers.
+
+More about...
+   [link](max number1 number2 )
+   [link](min number1 number2 )
+   [link](rem number1 number2 [number3 ...])

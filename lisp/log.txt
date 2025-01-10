@@ -1,0 +1,21 @@
+LISP Functions
+
+   (log number)
+     __________________________________________________________________
+
+   Calculate the natural logarithm.
+     __________________________________________________________________
+
+   This function provides the natural logarithm, although "ln" is typically recognized as the natural logarithm in mathematical contexts. This function is unable to perform that task.
+
+EXAMPLES
+   Code          Returns
+   (log 0)       1.000000
+   (log 10)      2.30239
+
+NOTE
+   The [link]exp function is the opposite of the log function.
+
+More about...
+   [link](expt base power)
+   [link](log10 number)

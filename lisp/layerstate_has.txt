@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-has layerstatename)
+     __________________________________________________________________
+
+   This function verifies the existence of a specified layer state.
+     __________________________________________________________________
+
+   The argument layerstatename is a string that indicates the name of the layer state to be checked. It returns T if the specified name is found; otherwise, it returns nil.
+
+EXAMPLE
+   Code                          Returns
+   (layerstate-has myLayerState) T
+
+More about...

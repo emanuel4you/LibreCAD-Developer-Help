@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-getnames [includehidden] [includexref])
+     __________________________________________________________________
+
+   Returns a list of the layer state names.
+     __________________________________________________________________
+
+   If the parameter includehidden is set to true, the list will encompass the names of hidden layer states. If this parameter is omitted or set to nil, hidden layer states will not be included. Additionally, if includexref is set to nil, the list will not contain the names of xref layer states. Conversely, if this parameter is omitted or set to true, xref layer states will be included. The function ultimately returns a list of the names of the layer states.
+
+EXAMPLE
+   Code                  Returns
+   (layerstate-getnames) "First Floor" "Second Floor" "Foundation"
+
+More about...

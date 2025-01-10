@@ -1,0 +1,41 @@
+LISP Functions
+
+   (getdist [point] [prompt])
+     __________________________________________________________________
+
+   Request the user to identify two points.
+     __________________________________________________________________
+
+   This function requests the user to input a distance or to select one or more numbers, irrespective of the distance format currently set by the Units command. A prompt string can be defined to guide the user in providing input. It is not permissible to enter another LISP expression in response to the getdist function.
+
+EXAMPLES
+   The examples in this section illustrate the two methods for utilizing the getdist function.
+
+    1. Two-point method: omit the point argument. The getpoint function will prompt the user for two points. The prompt for the initial point is defined by the prompt; LibreCAD will display "Second point:" for the selection of the second point. A guiding line extends from the first point to the target, assisting visually in selecting the second point.
+
+   Code              Returns
+   (getdist)
+   [pick first point]
+   [pick second point] no prompt
+   Second point:
+   (getdist "Length of street: ")
+   [pick first point]
+   [pick second point] Length of street:
+   Second point:
+   10.5
+
+   2. One-point method: include the point argument. The getpoint function will prompt the user for a single point. The prompt for the subsequent point is defined by the prompt. A guiding line extends from the first point to the target, assisting visually in selecting the second point.
+
+                          Code                   Returns
+   [pick point] no prompt
+   5.3
+   (getdist '(3.0 2.0) "Length of pipe: "))
+   [pick point] Length of pipe:
+
+NOTE
+   For additional information, refer to the initget function.
+
+More about...
+   [link](getangle [point] [prompt])
+   [link](getcorner point [prompt])
+   [link](getpoint [point] [prompt])

@@ -1,0 +1,23 @@
+LISP Functions
+
+   (nth integer list)
+     __________________________________________________________________
+
+   Determine the nth item in the list.
+     __________________________________________________________________
+
+   Identify the nth element within a list. This function proves to be particularly useful for extracting a specific element from lengthy lists.
+
+   The integer argument signifies the position of the element to be extracted. It is important to note that the initial element in the list is indexed as 0; therefore, to access the third element, one should use the index 2. If the integer exceeds the total count of elements in the list (which is effectively the count minus one), the nth function will return nil.
+
+EXAMPLES
+   Code                                   Returns
+   (setq c '("one" "two" "three" "four")) (one two three four)
+   (nth 2 c)                              three
+   (nth 5 c)                              nil
+
+More about...
+   [link](last list)
+   [link](length list)
+   [link](reverse list)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

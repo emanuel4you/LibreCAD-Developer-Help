@@ -1,0 +1,23 @@
+DCL Attributes
+
+   lower_only = flag;
+     __________________________________________________________________
+
+   Force all input text to be lower-case.
+     __________________________________________________________________
+
+   When flag = true, this attribute converts the text that a user types to lowercase. When flag = false (the default), the text is not converted.
+
+   Possible values are true or false (default: false).
+
+   The lower_only attribute is unique to the implementation of DCL included with LibreCAD.
+
+EXAMPLE
+   lower_only = true;
+
+Valid Tiles
+   [link]edit_box
+   [link]multi_edit_box
+
+More about...
+   [link]max_value

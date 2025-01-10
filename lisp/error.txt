@@ -1,0 +1,67 @@
+LISP Functions
+
+   (*error* string)
+     __________________________________________________________________
+
+   Display an error message.
+     __________________________________________________________________
+
+   This function enables the definition of an error within your LISP routine. Errors may arise from either the programmer's actions or user input. It is essential to have the capability to test for these errors or to "trap" them when they occur.
+
+Trapping Errors
+   Error trapping involves examining the error message and providing the user with feedback regarding the cause and significance of the error. The *error* function facilitates the trapping of errors that have occurred, allowing for their management and enabling the program to exit gracefully.
+
+   You are permitted to have only one *error* function in your program. However, you can incorporate as many error handling functions as you wish. To activate the desired error function, you must set the *error* function to your error trap routine. Given that only one *error* function can be active at a time, it is important to consider other programs or global settings. Prior to modifying the *error* function, it is advisable to save the current error trap function in a temporary variable, allowing for reassignment once processing is complete.
+
+Defining the *error* Function
+   The definition of the *error* function is quite specific. It must be named *error* (or assigned to *error* using setq), and it should accept one argument. You may choose any name for this argument.
+
+
+EXAMPLES
+   Below is an example of a straightforward error handling function:
+
+   (defun *error* (msg)
+   (princ (strcat "\nAn error has occurred in the program: " msg)
+   )
+
+   In this example, when an error occurs, the error message is passed to the *error* function via the msg variable. The function then outputs, "An error has occurred in the program:" followed by the error message.
+
+   Here is a more comprehensive example of an error handling function in a practical context. Initially, we save the current *error* function in temperror before redirecting it to our error handler routine. Subsequently, at the conclusion of the myslope procedure...
+
+   Code Comments
+   (defun c:myslope ( ) Defining the program "myslope".
+   (setq temperror *error*) Saving current error function to variable.
+   (setq *error* myerror) Setting *error* to the error handling routine.
+   (setq p1 (getpoint "Select 1st point: ")) Setting p1 to the user
+   specified point.
+   (setq p2 (getpoint p1 "Select 2nd point: ")) Setting p2 to the user
+   specified point.
+   (setq slope (/ (-(cadr p2) (cadr p1)) Setting slope to the slope
+   formula using p1 and p2.
+   (-(car p2) (car p1))))
+   (princ (strcat "Slope equals " Printing what slope equals to two
+   decimal places onto the screen.
+   (rtos slope 2 2)))
+   (setq *error* temperror) Returning the error function to the variable.
+   )
+
+   The error handler:
+
+   Code Comments
+   (defun myerror (msg) Define the error handler "myerror".
+   (if (= msg "divide by zero") If the passing variable msg is the same as
+   "divide by zero",
+   (prompt "\n The line is vertical.") then show this prompt,
+   (prompt (strcat "\n" msg) else show this prompt
+   )
+   (setq *error* temperror) Return the error function to the variable.
+   )
+
+More about...
+   [link](alert string)
+   [link](command cmd [arguments] ...)
+   [link](exit)
+   [link](quit)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](trace function . . .)
+   [link](untrace function ...)

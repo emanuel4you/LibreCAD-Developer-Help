@@ -1,0 +1,22 @@
+LISP Functions
+
+   (empty? coll)
+     __________________________________________________________________
+
+   Returns true if coll has no items.
+     __________________________________________________________________
+
+   This function Returns true if coll has no items - same as (not (seq coll)).
+
+NOTE
+    Please use the idiom (seq x) rather than (not (empty? x))
+
+EXAMPLES
+   Code          Returns
+   (empty? '())   true
+   (empty? '(1)) false
+
+More about...
+   [link](list expression )
+   [link](number? item)
+   [link](reverse list)

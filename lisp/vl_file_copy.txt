@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-file-copy source-file destination-file [append])
+     __________________________________________________________________
+
+   One may either duplicate or add the contents of one file to another file.
+     __________________________________________________________________
+
+   This function yields an integer, or returns nil if the operation fails.
+
+EXAMPLE
+    Code                                          Returns
+   (vl-file-copy "d:\file.txt" "c:\newfile.txt" ) Integer
+
+More about...

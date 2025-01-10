@@ -1,0 +1,27 @@
+DCL Tiles
+
+   spacer_0;
+     __________________________________________________________________
+
+   Insert a dynamic blank tile that adjusts its size.
+
+   DCL Decorator Tile
+     __________________________________________________________________
+
+   This decorator tile generates a blank tile that modifies its dimensions. The spacer_0 tile serves the purpose of intentionally establishing additional space between two tiles, such as a set of buttons. This function instructs the program on where to allocate extra spacing.
+
+NOTE
+   It is important to observe that the structure of this tile is distinct from that of most other tiles: it lacks a : (colon) prefix and a { ... } (brace) suffix.
+
+Valid Attributes
+   none
+
+EXAMPLE
+   spacer_0;
+
+Related DCL Tiles
+   [link]spacer
+   [link]spacer_1
+
+More about...
+   [link]spacer_1

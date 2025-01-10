@@ -1,0 +1,18 @@
+LISP Functions
+
+   (debug-eval cmd [arguments] ...)
+     __________________________________________________________________
+
+   Exec this LibreCAD debug-eval.
+     __________________________________________________________________
+
+   This function switches debug-eval. All evaluations will be thoroughly examined for errors.
+
+EXAMPLES
+   Code               Returns
+   (debug-eval T)     enable debug.
+   (debug-eval nil")  unenable debug
+
+More about...
+   [link](trace function)
+

@@ -1,0 +1,18 @@
+PYTHON Functions
+
+   bool setTile(string key, string val)
+     __________________________________________________________________
+
+   Set the value of the dialog box tile.
+     __________________________________________________________________
+
+   This function sets the value of a dialog box tile.
+
+   The key argument is a case-sensitive string that specifies the tile.
+
+   The val attribute is the value to assign to the tile.
+
+   This function returns True if successful otherwise, False.
+
+More about...
+   [link]getTile

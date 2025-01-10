@@ -1,0 +1,19 @@
+LISP Functions
+
+   (write-line string [file-descriptor])
+     __________________________________________________________________
+
+   Write that string to a file.
+     __________________________________________________________________
+
+   This method is more effective and convenient compared to using a formatted string. The file is identified by the file descriptor, which is allocated by the open function. If the file descriptor is omitted, the string will be output to the command line and the Prompt History window.
+
+EXAMPLES
+   Code                                Returns   Prints to File
+   (setq fil (open "sample.lsp" "w"))
+   (write-line "Name:" fil)           "Name:"    Name:
+   (write-line "Address:" fil)        "Address:" Address:
+
+More about...
+   [link](read-line [file-descriptor])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

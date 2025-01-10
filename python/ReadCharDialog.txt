@@ -1,0 +1,13 @@
+PYTHON Functions
+
+   single string char ReadCharDialog()
+     __________________________________________________________________
+
+   Function wait for key press.
+     __________________________________________________________________
+
+
+   This function returns the pressed key as a string.
+
+More about...
+   [link]getString

@@ -1,0 +1,20 @@
+DCL Attributes
+
+   fixed_height = true/false;
+     __________________________________________________________________
+
+   Define a fixed height for a tile.
+     __________________________________________________________________
+
+   This attribute specifies whether the height of a tile can occupy the  available space. When the flag is set to true, the size of the tile remains constant; conversely, when the flag is set to false, the tile adjusts its size to accommodate the available height.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   fixed_height = true;
+
+Valid Tiles
+   all tiles
+
+More about...
+   [link]fixed_width

@@ -1,0 +1,23 @@
+LISP Functions
+
+   (cdr list)
+     __________________________________________________________________
+
+   Get everything in a list except the first item.
+     __________________________________________________________________
+
+   This function serves as a secondary operation for deconstructing a list. It retrieves the second element of the list along with all subsequent elements. For instance, if the list comprises the values (5.0, 3.0, 1.0), employing the cdr function would yield 3.0, 1.0.
+
+EXAMPLES
+   Code                                  Returns
+   (setq a '("one" "two" "three" "four") ("one" "two" "three" "four")
+   (setq b (cdr a))                      ("TWO" "THREE" "FOUR")
+
+More about...
+   [link](append list1 list2 ...)
+   [link](cons item list)
+   [link](last list)
+   [link](length list)
+   [link](list expression )
+   [link](reverse list)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

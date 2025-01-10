@@ -1,0 +1,21 @@
+LISP Functions
+
+   (reverse list)
+     __________________________________________________________________
+
+   Reverse a list.
+     __________________________________________________________________
+
+   This function alters the sequence of the elements within a list, placing them in reverse order.
+
+EXAMPLES
+   Code                                 Returns
+   (setq v '("first" "second" "third")) (first second third)
+   (reverse v)                          (third second first)
+
+More about...
+   [link](acad_strlsort list)
+   [link](last list)
+   [link](length list)
+   [link](listp item)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,56 @@
+DCL Tiles
+
+   : slider
+     __________________________________________________________________
+
+   Display a horizontal or vertical slider.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This interactive tile features a slider bar that can be oriented either horizontally or vertically. The speed of the slider's movement varies based on the user's click location.
+
+Valid Attributes
+   : slider {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]big_increment = int;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]key = "string";
+       [link]label = "string";
+       [link]layout = position'
+       [link]max_value = int;
+       [link]min_value = int;
+       [link]mnemonic = "char";
+       [link]small_increment = int;
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : slider {
+       action = "(slider)";
+       big_increment = 32;
+       key = "S1";
+       max_value = 512;
+       min_value = 0;
+       small_increment = "1";
+       value = "16";
+   }
+
+NOTE
+   It is important to note that the [link]value attribute specifies the default setting of the slider bar, with the standard being [link]min_value.
+
+Related DCL Tiles
+   [link]button
+   [link]edit_box
+   [link]image_button
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]toggle
+
+More about...
+   [link]spacer

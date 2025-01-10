@@ -1,0 +1,34 @@
+LISP Functions
+
+   (open filename mode)
+     __________________________________________________________________
+
+   Open a file.
+     __________________________________________________________________
+
+   This function allows for the filename of a file to be utilized in input and output operations. The filename parameter indicates the path and name of the file intended for opening.
+
+   The opened file is assigned a file descriptor, which should be stored as a variable. It is important to reference the file using this file descriptor rather than the filename itself.
+
+   The mode parameter offers three options, all of which must be specified in lowercase:
+
+   Mode Description
+   "r" Opens the file in read-only mode; returns nil if the file is not found.
+   "w" Opens the file for writing; this mode overwrites any existing data and creates a new file if it does not already exist.
+   "a" Opens the file for writing; this mode appends new data to the existing content and creates a new file if it does not exist.
+
+EXAMPLES
+   Code                                       Returns
+   (setq n (open "existing.txt" "w"))         <File: #2190dec2>
+   (setq n (open "noexist.lsp" "r"))          nil
+   (setq n (open "\\sample\\exiting.txt" "a") <File: #2190c2c3>
+
+NOTES
+     * In append mode, new information is added to the end of the current file.
+     * LISP is capable of reading only ASCII files (binary files are not supported) through sequential access (random access is not available).
+     * To denote subdirectory names, one may use either two backslashes (\\) or a single forward slash (/).
+
+More about...
+   [link](close file-descriptor)
+   [link](read-line [file-descriptor])
+   [link](write-line string [file-descriptor])

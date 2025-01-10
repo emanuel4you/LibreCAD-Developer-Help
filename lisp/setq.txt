@@ -1,0 +1,43 @@
+LISP Functions
+
+   (setq symbol1 statement1 [symbol2 statement2] ...)
+     __________________________________________________________________
+
+   Assign the symbol to the statement.
+     __________________________________________________________________
+
+   This function is the most frequently utilized assignment function in LISP. It assigns statement1 to symbol1. For instance:
+
+   (setq x 42)
+
+   This command assigns the value of 42 to the symbol x.
+
+NOTE
+   It does not perform an assignment. Symbol1 is the variable that receives the value, while statement1 represents the value being assigned to symbol1. Statement1 may be a variable that denotes a value, a numeric value, or a string.
+
+EXAMPLES
+   Code        Returns
+   (setq y 10) 10
+   (setq x y) 10
+   Sets the variable x to the value of y-previously we set y to 10.
+   (setq myvar "Mom") "Mom"
+   (setq pt1 '(5 3)) (5 3)
+
+NOTE
+   The setq function allows for the assignment of multiple variables simultaneously. The [symbol2 stmt2]... portion is optional. When multiple variables are assigned, the value returned is that of the last variable assigned.
+
+   Code                    Returns
+   (setq a 5 b 6)          6
+   (setq x 1.0y 2.0 z 3.0) 3.0
+
+   To view the value of any variable, prefix the variable name with an exclamation mark (!).
+
+   Code Returns
+   !a   5
+   !b   6
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](lambda arguments expression ...)
+   [link](quote statement)

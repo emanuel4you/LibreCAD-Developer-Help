@@ -1,0 +1,24 @@
+LISP Functions
+
+   (append list1 list2 ...)
+     __________________________________________________________________
+
+   Add everything in this list to an existing list.
+     __________________________________________________________________
+
+   This function incorporates list2 into list1. The element of list2 consists of a single item. It is possible to append several lists.
+
+EXAMPLES
+   Code                                    Returns
+   (setq m '(A B C D E ))                  (A B C D E )
+   (append m '(G))                         (A B C D E G)
+   (setq m (append m '(G H I) (LIST 1 2))) (A B C D E F G H I 1 2)
+   (append)                                nil
+
+More about...
+   [link](acad_strlsort list)
+   [link](length list)
+   [link](listp item)
+   [link](nth integer list)
+   [link](reverse list)
+   [link](substr string start [length])

@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-file-delete filename)
+     __________________________________________________________________
+
+   Delete a file.
+     __________________________________________________________________
+
+   This function returns T upon a successful deletion, or nil in the event of failure.
+
+EXAMPLE
+   Code                           Returns
+   (vl-file-delete "d:\file.txt") T
+
+More about...

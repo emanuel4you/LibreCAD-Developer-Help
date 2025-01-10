@@ -1,0 +1,16 @@
+LISP Functions
+
+   (textscr)
+     __________________________________________________________________
+
+   Switch to the Text window.
+     __________________________________________________________________
+
+   already in the textscr, the function has no effect.
+
+EXAMPLE
+   Code    Returns
+   (textscr) nil
+
+More about...
+   [link](textpage)

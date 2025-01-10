@@ -1,0 +1,25 @@
+LISP Functions
+
+   (foreach variable list expression ...)
+     __________________________________________________________________
+
+   Apply the expression to every item in a list.
+     __________________________________________________________________
+
+   This function executes an expression on each element within the list. The initial argument for the foreach function is a variable, which serves as a temporary placeholder for the modified elements. The subsequent argument is the list itself, comprising the elements that will be modified. After the list, one or more expressions are provided, specifying the operations to be carried out on the list elements. The foreach function ultimately returns the outcome of the final evaluation.
+
+EXAMPLE
+   Code
+   (setq sample '(1.0 1.5 2.0 2.5))
+   (foreach var sample (progn
+   (setq var (* 2.0 var))
+   (princ (strcat "\nTwice the value is " (rtos var)))))
+   (princ)
+
+   Result
+     Twice the value is 2.0000
+     Twice the value is 3.0000
+     Twice the value is 5.0000
+
+More about...
+   [link](mapcar function list1 [list2 ...])

@@ -1,0 +1,42 @@
+LISP Functions
+
+   (dictrename ename oldsym newsym)
+     __________________________________________________________________
+
+   Rename a dictionary entry.
+     __________________________________________________________________
+
+   The dictrename function renames an item (oldsym) to a new name (newsym)
+   in a dictionary (ename). If either oldsym is not present in the
+   dictionary, or ename is invalid, or newname is invalid, or newsym is
+   already present in the dictionary, dictrename returns nil.
+
+   ; Create an entity list
+   (setq dictionary (list '(0 . "DICTIONARY") '(100 . "AcDbDictionary")))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex dictionary))
+
+   ; Get the named object dictionary
+   (setq nmdict (namedobjdict))
+
+   ; Add a record to dictionary table and returns the entity name of the object added
+   (setq newdict (dictadd nmdict "MY_DICTIONARY" xname))
+
+   ; Create an entity list
+   (setq datalist (append (list '(0 . "XRECORD") '(100 . "AcDbXrecord"))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex datalist))
+
+   ; Add a record and returns the entity name of the object added to the dictionary.
+   (dictadd newdict "DATA_RECORD" xname)
+
+   ; Renames the record and returns the new name set in the record.
+   (dictrename nmdict "MY_DICTIONARY" "MY_NEW_DICTIONARY")
+
+More about...
+   [link](dictadd)
+   [link](dictnext)
+   [link](dictremove)
+   [link](dictsearch)

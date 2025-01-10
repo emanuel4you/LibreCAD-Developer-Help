@@ -1,0 +1,20 @@
+LISP Functions
+
+   (strcat string1 [string2] ...)
+     __________________________________________________________________
+
+   Combine all of these smaller strings into a single, cohesive string.
+     __________________________________________________________________
+
+   This function performs the operation of joining strings, commonly referred to as concatenation.
+
+EXAMPLES
+   Code                          Returns
+   (setq a "Jack and Jill")      "Jack and Jill"
+   (setq b " went up the hill")  "went up the hill"
+   (strcat a b )                 "Jack and Jill went up the hill"
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](strlen [string1] [string2] )
+   [link](substr string start [length])

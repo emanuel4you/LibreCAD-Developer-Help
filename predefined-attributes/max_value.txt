@@ -1,0 +1,30 @@
+DCL Attributes
+
+   max_value = integer;
+     __________________________________________________________________
+
+   Specify the maximum value of a slider.
+     __________________________________________________________________
+
+   This attribute specifies the maximum value that a [link]slider tile returns.
+
+   integer: a 32-bit integer; default = 10000 and maximum = 2,147,483,647.
+
+EXAMPLE
+   min_value = -10;
+   max_value = 10;
+   small_increment = 1;
+   big_increment = 100;
+
+NOTE
+   Horizontal sliders exhibit an increase in value from the left side to the right side, while vertical sliders show an increase in value from the top to the bottom.
+
+   The attributes [link]big_increment and [link]small_increment determine the amount by which the slider's value increases when the user clicks on it.
+
+Valid Tile
+   [link]dail
+   [link]scroll
+   [link]slider
+
+More about...
+   [link]min_value

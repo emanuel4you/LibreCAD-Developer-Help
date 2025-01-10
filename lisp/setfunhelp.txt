@@ -1,0 +1,19 @@
+LISP Functions
+
+   (setfunhelp "c:filename" [helpfile [topic [command-name]]]])
+     __________________________________________________________________
+
+   Register the command with the corresponding Help file.
+     __________________________________________________________________
+
+   This function associates your user-defined command name with the Help facility. This association guarantees that the appropriate help file and topic are presented when a user seeks assistance regarding that command name. The setfunhelp function returns the string provided as "c:filename" upon success; if unsuccessful, it returns nil.
+    1. The c:filename parameter represents your user-defined command; it must include the C: prefix and be formatted as a quoted string.
+    2. The helpfile parameter denotes the name of the HLP file, which you are expected to have created specifically for your application.
+    3. The topic parameter refers to a specific topic name within the HLP file.
+
+EXAMPLE
+   Code                                                 Returns
+   (setfunhelp "c:stair" "stair.hlp" "raisers" "stair") "c:stair"
+
+More about...
+   [link](help [filename [topic [flag]]])

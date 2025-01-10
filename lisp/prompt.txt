@@ -1,0 +1,25 @@
+LISP Functions
+
+   (prompt string)
+     __________________________________________________________________
+
+   Print a message to the command line.
+     __________________________________________________________________
+
+   This function outputs the string to both the command line and the Prompt History window. The prompt function responds to control characters.
+
+EXAMPLES
+   Code                       Returns
+   (prompt "42")              42
+   nil
+   (prompt "This is text.\n") This is text.
+   nil
+
+NOTE
+   The difference between the prompt function and LISP's other
+   [link]prin1) is that prompt only prints to the Prompt History window and
+   not to a file.
+
+More about...
+   [link](terpri)
+   [link](write-line string [file-descriptor])

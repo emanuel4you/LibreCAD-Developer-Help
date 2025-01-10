@@ -1,0 +1,36 @@
+LISP Functions
+
+   (cond (statement1 result1 ...) ...)
+     __________________________________________________________________
+
+   If the condition is verified as true, proceed accordingly.
+     __________________________________________________________________
+
+   This function serves as a frequently utilized conditional statement in LISP. When statement1 evaluates to true, all subsequent functions within that block are executed, and the outcome of the final function is returned.
+
+     * Should statement1 evaluate to nil, LISP advances to statement2. If this statement is true, the same execution process is followed.
+     * If the evaluation is false (or nil), LISP continues to seek a true statement.
+     * In the absence of any true statements, a nil value is returned.
+     * If there are no functions yielding results within the block, the outcome of the condition itself is returned.
+
+EXAMPLES
+   Code Returns
+   (cond ((zerop x) 0) (T nil))
+
+   The evaluation determines if it is not nil. If it is not, the function returns zero (0). If it is nil, the process moves to the second test, (T nil), which is inherently true (T) and would yield a nil result. Refer to the following set of actual examples illustrating the aforementioned condition.
+
+   Code       Returns
+   (setq x 0) 0
+
+   In the subsequent example, if the variable d is assigned a value of 5, LISP will return the string "Equal to." Conversely, if d is set to 6, it will return "Greater than."
+
+   Code
+   (cond ((< d 5) "Less than")
+   ((= d 5) "Equal to")
+   ((> d 5) "Greater than")
+   )
+
+More about...
+   [link](if test statement1 [statement2])
+   [link](repeat number statement1 [statement2 ...])
+   [link](while text statement )

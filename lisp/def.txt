@@ -1,0 +1,35 @@
+LISP Functions
+
+   (def! symbol1 statement1)
+     __________________________________________________________________
+
+   Assign one symbol to the statement.
+     __________________________________________________________________
+
+   This function is the most frequently utilized assignment function in LISP. def! calls the set method of the current environment second parameter of EVAL called env using the unevaluated first parameter second list element as the symbol key and the evaluated second parameter as the value.
+
+   It assigns statement1 to symbol1. For instance:
+
+   (def! x 42)
+
+   This command assigns the value of 42 to the symbol x.
+
+NOTE
+   It does not perform an assignment. Symbol1 is the variable that receives the value, while statement1 represents the value being assigned to symbol1. Statement1 may be a variable that denotes a value, a numeric value, or a string.
+
+EXAMPLES
+   Code        Returns
+   (def! y 10) 10
+   (def! x y) 10
+   Sets the variable x to the value of y-previously we set y to 10.
+   (def! myvar "Mom") "Mom"
+   (def! pt1 '(5 3)) (5 3)
+
+NOTE
+   The def! function do not allow for the assignment of multiple variables simultaneously.
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](lambda arguments expression ...)
+   [link](quote statement)

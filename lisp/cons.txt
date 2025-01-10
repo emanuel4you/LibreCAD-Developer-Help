@@ -1,0 +1,22 @@
+LISP Functions
+
+   (cons item list)
+     __________________________________________________________________
+
+   Add this item to the beginning of the list.
+     __________________________________________________________________
+
+   This function generates a new list by utilizing distinct elements. It serves to access entity data. A dotted-pair is formed exclusively when the function is employed to combine two individual items in the format (cons item item).
+
+   The initial argument, item, represents the element that will be appended to the start of the list. Although the item can be a list in its own right, it will still be regarded as a singular item within the list.
+
+EXAMPLES
+   Code                 Returns
+   (cons 'a '(b c d))   (A B C D)
+   (cons 'a 'b)         (A . B) (Dotted pair)
+   (cons '(a b) '(c d)) ((A B) C D)
+
+More about...
+   [link](append list1 list2 ...)
+   [link](length list)
+   [link](member item list)

@@ -1,0 +1,20 @@
+LISP Functions
+
+   (ads)
+     __________________________________________________________________
+
+   Check what SDS applications are loaded into LibreCAD.
+     __________________________________________________________________
+
+   loaded into LibreCAD. The name includes the complete path. The names of
+   all SDS applications are strings, forming a list.
+
+EXAMPLES
+   Code Returns
+   (ads) nil
+   (When no SDS apps are loaded.)
+   (ads) ("tower" "c:\\LibreCAD\\endpoint")
+
+More about...
+   [link](xload appname [flag])
+   [link](xunload appname [flag])

@@ -1,0 +1,56 @@
+DCL Tiles
+
+   : tab
+     __________________________________________________________________
+
+   Display a widgets in tab.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This tile fits to the [link]register tile
+
+NOTE
+   The tab tile is specifically designed for the DCL implementation included with LibreCAD.
+
+Valid Attributes
+   : tab {
+       [link]alignment = position;
+       [link]children_alignment = position;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : tab {
+       : button {
+            action = "(zoomcmd)";
+            key = "BZ";
+            label = "Zoom";
+       }
+
+       : button {
+            action = "(pancmd)";
+            key = "BP";
+            label = "Pan";
+       }
+   }
+
+Related DCL Tiles
+   [link]dialog
+   [link]column
+   [link]tab
+   [link]boxed_column
+   [link]boxed_tab
+   [link]boxed_radio_column
+   [link]boxed_radio_tab
+   [link]radio_column
+   [link]radio_tab
+
+More about...
+   [link]slider

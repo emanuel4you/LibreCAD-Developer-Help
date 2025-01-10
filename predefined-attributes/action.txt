@@ -1,0 +1,35 @@
+DCL Attributes
+
+   action = "(function)";
+     __________________________________________________________________
+
+   Execute this LISP function.
+     __________________________________________________________________
+
+   This attribute serves as a callback that triggers a LISP function when the user interacts with a specific tile.
+
+   For string input, indicate the name of the LISP function.
+
+EXAMPLE
+   action = "(function)";
+
+NOTE
+     * It is important to recognize that the tile action, referred to as a callback function, is typically defined by the controlling program through the action_tile function. If an action is established by the calling program, the action specified in DCL will be disregarded.
+     * The action attribute is also capable of invoking a Python function.
+     * A tile can only have one action assigned to it, and if action_tile is assigned by the program, it takes precedence over any other action.
+
+Valid Tiles:
+   [link]button
+   [link]popup_list
+   [link]edit_box
+   [link]multi_edit_box
+   [link]radio_button
+   [link]image_button
+   [link]dail
+   [link]scroll
+   [link]slider
+   [link]list_box
+   [link]toggle
+
+More about...
+   [link]alignment

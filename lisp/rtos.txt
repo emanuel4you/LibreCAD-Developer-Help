@@ -1,0 +1,28 @@
+LISP Functions
+
+   (rtos number [mode [precision]])
+     __________________________________________________________________
+
+   Convert that real number to a string.
+     __________________________________________________________________
+
+   The variable "number" represents the real number intended for conversion.
+
+   The mode and precision parameters are optional. The mode, which can range from 1 to 5, determines the string format as follows:
+   Mode Description
+   1    Scientific
+   2    Decimal
+   3    Engineering
+   5    Fractional
+
+   The precision parameter enables you to specify the number of decimal places.
+
+EXAMPLES
+    Code Returns Format
+
+NOTE
+   Please note that if you do not specify the mode and precision, the system will default to the settings defined by the LUNITS variable (which defaults to decimal units) and the current system configurations. Therefore, you may omit both mode and precision.
+
+More about...
+   [link](atof string)
+   [link](atoi string)

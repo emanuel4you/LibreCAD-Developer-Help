@@ -1,0 +1,12 @@
+PYTHON Functions
+
+   None command(string cmd)
+     __________________________________________________________________
+
+   exec a LibreCAD command, like from Commandline.
+     __________________________________________________________________
+
+   This function returns None.
+
+More about...
+   [link]RunSimpleString

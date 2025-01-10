@@ -1,0 +1,25 @@
+LISP Functions
+
+   (repeat number statement1 [statement2 ...])
+     __________________________________________________________________
+
+   Repeat it.
+     __________________________________________________________________
+
+   This function reiterates the statements a specified number of times, as indicated by the number.
+
+EXAMPLE
+   Code             Returns
+   (setq x 2)
+   (setq y 12)
+
+   (repeat 3        1500
+   (setq x (* x 5)) x is now set to 250.
+   (setq y (* y 5)) y is now set to 1500.
+   )
+
+More about...
+   [link](cond (statement1 result1 ...) ...)
+   [link](if test statement1 [statement2])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](while text statement )

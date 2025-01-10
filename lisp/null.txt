@@ -1,0 +1,22 @@
+LISP Functions
+
+   (null item)
+     __________________________________________________________________
+
+   Assess whether the item is associated with nil.
+     __________________________________________________________________
+
+   The null function verifies that your item is linked to nil. If it is indeed nil, a T is returned. Conversely, if it is not nil, nil is returned.
+
+EXAMPLES
+
+   Code           Returns
+   (null "Yes!")  nil
+   (null (> 5 6)) T
+
+NOTES
+     The [link]not function and the null function exhibit significant similarities. However, the distinction lies in the fact that not verifies if the item is nil, whereas null is specifically designed to test for empty lists.
+
+More about...
+   [link](numberp item)
+   [link](type item)

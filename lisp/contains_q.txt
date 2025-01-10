@@ -1,0 +1,17 @@
+LISP Functions
+
+   (contains? coll key)
+     __________________________________________________________________
+
+   Returns true if key is present in the given collection, otherwise returns false
+     __________________________________________________________________
+
+   This function takes a hash-map and a key and returns true if the key exists in the hash-map and false otherwise.
+
+EXAMPLES
+   Code                               Returns
+   (def! point {"x" 1 "y" 1.2 "z" 0}) {"x" 1 "y" 1.200000 "z" 0}
+   (contains? point "x")              true
+
+More about...
+   [link](integer? 42)

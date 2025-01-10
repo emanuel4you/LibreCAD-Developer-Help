@@ -1,0 +1,24 @@
+LISP Functions
+
+   (vector_image x1 y1 x2 y2 color)
+     __________________________________________________________________
+
+   Draw a vector in the dialog box.
+     __________________________________________________________________
+
+   A vector is illustrated within the dialog box using this function. The vector extends from the coordinates x1,y1 to x2,y2, with the origin (0,0) located at the upper-left corner of the dialog box.
+
+   The color parameter may assume one of the following specific interpretations:
+
+   Color  Mnemonic                        Meaning
+   -2    BGLCOLOR   Current background of the LibreCAD graphics screen.
+   -15   DBGLCOLOR  Current dialog box background color.
+   -16   DFGLCOLOR  Current dialog box foreground color of text.
+
+EXAMPLE
+
+      Code            Returns
+
+More about...
+   [link](dimx_tile key)
+   [link](dimy_tile key)

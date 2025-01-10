@@ -1,0 +1,19 @@
+LISP Functions
+
+   (grdraw point1 point2 color [highlight])
+     __________________________________________________________________
+
+   Draw a line.
+     __________________________________________________________________
+
+   This function creates a vector between two specified points within the current viewport. The initial two parameters, point1 and point2, denote the 2-D or 3-D endpoints of the vector relative to the current User Coordinate System (UCS). If these points fall outside the screen boundaries, LibreCAD will automatically clip the vector.
+
+   The vector is rendered in the designated color, as indicated by the integer color parameter. An integer value of -1 represents the XOR color, which alters its appearance to the complement of whatever it overlaps, effectively erasing itself when drawn over.
+
+   The highlight parameter is optional. When included, the vector will be displayed using the current highlighting technique. If the highlight parameter is omitted or set to zero, the vector will be shown in the standard display mode. The value must be an integer.
+
+NOTE
+   Use [link]grvecs to draw multiple vectors.
+
+More about...
+   [link](grvecs vector-lists [trans])

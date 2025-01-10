@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-position charactercode string [startpos [fromendpos]])
+     __________________________________________________________________
+
+   Search for a character in a string given an ASCII code.
+     __________________________________________________________________
+
+   This function identifies the location of a character within a string based on a specified ASCII code. It returns the index of the matched ASCII code in the string, or nil if no match is found. The indexing begins at zero for the first character.
+
+EXAMPLE
+   Code                                     Returns
+   (vl-string-position (ascii "t" "MyText") 2
+
+More about...

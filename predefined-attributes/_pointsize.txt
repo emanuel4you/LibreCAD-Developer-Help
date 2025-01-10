@@ -1,0 +1,16 @@
+DCL Attributes
+
+   pointsize = ;
+     __________________________________________________________________
+
+   Specifies the .
+     __________________________________________________________________
+
+EXAMPLE
+   pointsize = ;
+
+Valid Tiles
+   [link]
+
+More about...
+   [link]read_only

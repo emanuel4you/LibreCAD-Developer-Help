@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   string EvalSimpleString(string cmd)
+     __________________________________________________________________
+
+   Function executes a Lisp Command.
+     __________________________________________________________________
+
+   Argument is string (Lips Command).
+
+   This function returns the Lisp result as a string.
+
+More about...
+   [link]EvalSimpleFile

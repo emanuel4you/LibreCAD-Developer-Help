@@ -1,0 +1,25 @@
+PYTHON Functions
+
+   string textImage(int x1, int y1, int x2, int y2, string text, int color)
+     __________________________________________________________________
+
+   Draw a text in the dialog box.
+     __________________________________________________________________
+
+   This function draws a text of a specified color in a dialog box.
+
+   The text is drawn from x1,y1 to x2,y2. The origin (0,0) of the dialog box tile is at the upper-left corner. This function must be used between the [link]startImage and [link]endImage functions.
+
+   The color argument is one of the standard 255 LibreCAD colors number or a logical color number:
+
+   Color number       Description
+   7           "graphics_foreground" (current foreground of graphics screen)
+   0           "graphics_background" (current background of graphics screen)
+   -1000       "dialog_foreground"   (current dialog box foreground color)
+   -1001       "dialog_background"   (current dialog box background color)
+   -1002       "dialog_line"         (current dialog box line color)
+
+   This function returns Color number as integer
+
+More about...
+   [link]fillImage

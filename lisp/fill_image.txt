@@ -1,0 +1,28 @@
+LISP Functions
+
+   (fill_image x y width height color)
+     __________________________________________________________________
+
+   Fill a dialog box's rectangle with color.
+     __________________________________________________________________
+
+   This function creates a rectangle (or square) and subsequently fills it using the [link]end_image functions.
+
+   The x and y parameters define the coordinates of the upper-left corner of the rectangle. The width and height parameters represent the distance to the lower-right corner; both of these parameters must be positive values.
+
+   If the lower-right coordinates were derived from the dimx_tile and dimy_tile functions, it is important to note that the origin (0,0) corresponds to the upper-left corner.
+
+   The color parameter can be specified as either a LibreCAD color number or a logical color number:
+
+   Color number                     Description
+   -2           Current background of the LibreCAD graphics screen.
+   -15          Current dialog box background color.
+   -16          Current dialog box foreground color.
+
+EXAMPLE
+   Code Returns
+   nil
+
+More about...
+   [link](slide_image x y width height slide)
+   [link](vector_image x1 y1 x2 y2 color)

@@ -1,0 +1,21 @@
+LISP Functions
+
+   (listp item)
+     __________________________________________________________________
+
+   Determine whether an item is a list.
+     __________________________________________________________________
+
+   This function evaluates whether the specified item qualifies as a list. If the item referenced by listp is indeed a list, the function will return T. Conversely, if it is not a list, the function will return nil.
+
+EXAMPLES
+
+   Code                           Returns
+   (listp '("one" "two" "three")) T
+   (listp "one")                  nil
+   (listp 1.00)                   nil
+
+More about...
+   [link](list expression )
+   [link](numberp item)
+   [link](reverse list)

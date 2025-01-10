@@ -1,0 +1,25 @@
+LISP Functions
+
+   (slide_image x y width height slide)
+     __________________________________________________________________
+
+   Display a slide in the dialog box.
+     __________________________________________________________________
+
+   This function presents an image within a dialog box.
+
+   The image is placed at specified x,y coordinates, which correspond to the upper-left corner of the image. The width parameter defines the image's width extending in the positive x-direction, while the height parameter indicates the image's height extending in the negative y-direction.
+
+   The slide parameter refers to the name of the snapshot file SLD (slide) format. LibreCAD looks for slides in the lib.slb file found within the designated search path.
+
+EXAMPLE
+   Code                     Returns
+   (slide_image 10 10 15 20 "LibreCad(ANSI36)") nil
+
+NOTE
+   Use the MSlide command to create an image. For good reproduction,
+   that you plan to display the image in the dialog box.
+
+More about...
+   [link](dimx_tile key)
+   [link](dimy_tile key)

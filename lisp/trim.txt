@@ -1,0 +1,33 @@
+LISP Functions
+
+   (trim string [flag])
+     __________________________________________________________________
+
+   Erase blank spaces in a string.
+     __________________________________________________________________
+
+   This function removes empty spaces from the designated string.
+
+   The optional flag parameter indicates the settings for eliminating spaces:
+
+   Flag                      Meaning
+   none Strip all spaces from beginning and end.
+   "B"  Strip spaces from beginning of string.
+   "M"  Strip spaces from middle of string.
+   "E"  Strip spaces from end of string.
+   "BE" Strip spaces from beginning and end of string.
+   "ME" Strip spaces from middle and end of string.
+   "BM" Strip spaces from beginning and middle of string.
+
+EXAMPLES
+   Code                      Returns
+   (setq a " Green Beans " )
+   (trim a "B" )             "Green Beans "
+   (trim a "M" )             " GreenBeans "
+   (trim a "be")             "Green Beans"
+   (trim a)                  "Green Beans"
+
+More about...
+   [link](lpad string integer)
+   [link](rpad string integer)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

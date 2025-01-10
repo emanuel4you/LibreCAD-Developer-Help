@@ -1,0 +1,55 @@
+DCL Tiles
+
+   : column
+     __________________________________________________________________
+
+   Position a column of tiles, which may include an optional title
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile organizes a sequence of tiles in a vertical alignment without any borders. The column cluster is capable of accommodating any tile type, with the exception of a standalone [link]radio_button. To enclose the column of tiles within a border, utilize the [link]boxed_column cluster.
+
+NOTE
+   Columns will not feature titles unless they are enclosed in a box.
+
+Valid Attributes
+   : column {
+       [link]alignment = position;
+       [link]children_alignment = position;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : column {
+       : button {
+            action = "(linecmd)";
+            key = "BL";
+            label = "Line";
+       }
+
+       : button {
+            action = "(arccmd)";
+            key = "BA";
+            label = "Arc";
+       }
+   }
+
+Related DCL Tiles
+   [link]dialog
+   [link]row
+   [link]boxed_column
+   [link]boxed_row
+   [link]boxed_radio_column
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]concatenation

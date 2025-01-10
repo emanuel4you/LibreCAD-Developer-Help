@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-directory-files [directory pattern directories])
+     __________________________________________________________________
+
+   List all files in a directory.
+     __________________________________________________________________
+
+   This function provides a string that includes the names of all files within the directory that correspond to the specified pattern.
+
+EXAMPLE
+   Code                              Returns
+   (vl-directory-files "d:\myfiles") "C:\MYFILES\SAMPLE.TXT"
+
+More about...

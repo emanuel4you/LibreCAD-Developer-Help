@@ -1,0 +1,18 @@
+LISP Functions
+
+   (ver)
+     __________________________________________________________________
+
+   Determine the version number of this LISP.
+     __________________________________________________________________
+
+   This function returns the version number of the LISP programming
+   language included in LibreCAD.
+
+EXAMPLE
+   Code  Returns
+   (ver) "LibreLisp Release 1.0"
+
+More about...
+   [link](getenv variable)
+   [link](getvar sysvar)

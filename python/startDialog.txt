@@ -1,0 +1,13 @@
+PYTHON Functions
+
+   int startDialog()
+     __________________________________________________________________
+
+   Start that dialog box.
+     __________________________________________________________________
+
+   This function displays a dialog box.
+
+   The startDialog function provides the optional status that is sent to done_dialog. By default, this status is set to 1 when the user selects OK, 0 when Cancel is chosen, or -1 if all dialog boxes are closed using term_dialog. If doneDialog receives an integer status that exceeds 1, startDialog will return this value, with its interpretation defined by the application.
+
+More about...

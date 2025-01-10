@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   tuble(2 integer) doneDialog(int res=-1);
+     __________________________________________________________________
+
+   Dismiss this dialog box.
+     __________________________________________________________________
+
+   This function terminates a dialog box.
+
+   This function returns tuple of two integer (xpos, ypos)
+
+More about...
+   [link]startDialog

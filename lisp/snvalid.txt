@@ -1,0 +1,24 @@
+LISP Functions
+
+   (snvalid symbol [flag])
+     __________________________________________________________________
+
+   Assess the validity of characters within the symbol table.
+     __________________________________________________________________
+
+   This function assesses whether the symbol table comprises valid characters. The symbol parameter represents the name of a table, which may include "LAYER", "LTYPE", "VIEW", "STYLE", "BLOCK", "UCS", "VPORT", "DIMSTYLE",
+   and "APPID".
+
+   The flag argument toggles whether the vertical bar ( | ) character is
+   valid:
+
+   Flag Meaning
+   0    Vertical bar is not permitted.
+   1    Vertical bar is permitted.
+
+EXAMPLE
+   Code          Returns
+   (snvalid "A") T
+
+More about...
+   [link](tblsearch table-name symbol [flag])

@@ -1,0 +1,18 @@
+LISP Functions
+
+   (defmacro! "funktion-name" coll)
+     __________________________________________________________________
+
+   Define a macro.
+     __________________________________________________________________
+
+   This function is like def!, but the resulting function name is declared as a macro.
+
+EXAMPLES
+
+   Code                                    Returns
+   (defmacro! 2+ (fn* (num)(+ num 2))) =>  (2+ 1) 3
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])

@@ -1,0 +1,60 @@
+DCL Tiles
+
+   : multi_edit_box
+     __________________________________________________________________
+
+   Present a vertical list of text, featuring an optional scrollbar and a title.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This active tile showcases a list box. When an item is selected by the user, it becomes highlighted. A scrollbar will automatically appear if the number of items exceeds the display capacity of the list_box tile.
+
+   The multi_edit_box tile is specifically designed for the DCL implementation included with LibreCAD.
+
+Valid Attributes
+   : multi_edit_box {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]allow_accept = flag;
+       [link]edit_limit = int;
+       [link]edit_width = number;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]lower_only = flag;
+       [link]mnemonic = "char";
+       [link]password_char = "char";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : multi_edit_box {
+       action = "(texted)";
+       edit_limit = 40;
+       key = "EB";
+       label = "Type text: ";
+       mnemonic = "T";
+   }
+
+NOTE
+     * The [link]label attribute is the multiline edit box's title; it is left-justified.
+     * The [link]value attribute holds the initial text displayed by the multiline edit box; is left-justified.
+     * The following attributes are unique to the implementation of DCL included with progeCAD: [link]lower_only, [link]read_only, and [link]upper_only.
+
+Related DCL Tiles
+   [link]button
+   [link]image_button
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]slider
+   [link]toggle
+
+More about...
+   [link]name

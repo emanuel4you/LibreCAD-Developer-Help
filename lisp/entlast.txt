@@ -1,0 +1,21 @@
+LISP Functions
+
+   (entlast)
+     __________________________________________________________________
+
+   Get the last entity of the drawing.
+     __________________________________________________________________
+
+   This function obtains the name of the last non-deleted entity within your database. It is particularly beneficial when you wish to utilize the most recently drawn entity.
+
+NOTES
+     * The entity does not have to be visible on the screen, unthawed, or unlocked to be selected. This functionality is distinct from the Last selection set option.
+
+More about...
+   [link](entdel entity-name)
+   [link](entget entity-name [application-list])
+   [link](entmake [entity-list])
+   [link](entmod entity-list)
+   [link](entsel [prompt])
+   [link](nentsel [prompt])
+   [link](nentselp [prompt] [point])

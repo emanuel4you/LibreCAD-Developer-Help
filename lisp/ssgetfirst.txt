@@ -1,0 +1,19 @@
+LISP Functions
+
+   (ssgetfirst)
+     __________________________________________________________________
+
+   Request the user to choose entities. Identify which entities are highlighted and/or gripped.
+     __________________________________________________________________
+
+   This function provides a count of the entities within the drawing that are highlighted (selected) and gripped. Grips refer to the small squares encircling a selected entity, which can be utilized for manipulation or modification of that entity.
+
+   The ssgetfirst function yields a list comprising two elements: the first element represents a selection set of entities that are gripped but not selected, while the second element denotes a selection set of entities that are both gripped and selected.
+
+EXAMPLE
+   Code         Comments
+   (ssgetfirst) Displays a list of highlighted and gripped entities.
+
+More about...
+   [link](ssdel entity-name selection-set)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])

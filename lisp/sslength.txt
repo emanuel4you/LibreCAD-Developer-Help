@@ -1,0 +1,21 @@
+LISP Functions
+
+   (sslength selection-set)
+     __________________________________________________________________
+
+   Ascertain the total number of entities present in the selection set.
+     __________________________________________________________________
+
+   This function provides the count of entities within the selection set.
+
+EXAMPLE
+   Code Comments
+   (setq sset1 (ssadd)) Creates a new selection set called sset1.
+   (setq ent1 (car (entsel))) Prompts user to select entity to set to
+   ent1.
+   (ssadd ent1 sset1) Adds ent1 to sset1.
+   (sslength sset1) Returns 1.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](ssdel entity-name selection-set)

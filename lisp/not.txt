@@ -1,0 +1,21 @@
+LISP Functions
+
+   (not item)
+     __________________________________________________________________
+
+   Determine whether an item is nil.
+     __________________________________________________________________
+
+   This function assesses whether the item is nil. If the item is indeed nil, it returns a T. Conversely, if the item is not nil, it returns nil.
+
+EXAMPLES
+   Code          Returns
+   (not "Yes!")  nil
+   (not (> 5 6)) T
+
+NOTE
+   The distinction lies in the fact that null verifies whether the item is associated with nil. Null is intended for assessing the presence of empty lists.
+
+More about...
+   [link](numberp item)
+   [link](type item)

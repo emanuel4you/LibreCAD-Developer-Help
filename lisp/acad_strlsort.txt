@@ -1,0 +1,26 @@
+LISP Functions
+
+   (acad_strlsort list)
+     __________________________________________________________________
+
+   Sort strings in alphabetical order.
+     __________________________________________________________________
+
+   This function sorts the list of strings in alphabetical order. The list
+   contains one or more strings, which have been previously defined or
+
+EXAMPLES
+   Code Returns
+   (acad_strlsort '("ssg" "hlg" "kng")) ("hlg" "kng" "ssg")
+   (setq holiday '("Sun" "Mon" "Sat"))
+   (acad_strlsort holiday)
+   ("Mon" "Sat" "Sun")
+
+NOTE
+   The ' (quote) prefix is actually a LISP function that prevents
+   another LISP function from evaluating the list.
+
+More about...
+   [link](list expression )
+   [link](listp item)
+   [link](reverse list)

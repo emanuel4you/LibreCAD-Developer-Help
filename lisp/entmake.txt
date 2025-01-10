@@ -1,0 +1,32 @@
+LISP Functions
+
+   (entmake [entity-list])
+     __________________________________________________________________
+
+   Add an entity to the drawing.
+     __________________________________________________________________
+
+   To incorporate an entity into the drawing, this function enables the writing of the entity-list to the database. The entget function is utilized for this purpose. If a valid entity-list is not provided, the entmake function will not create the entity and will return nil.
+
+EXAMPLE
+   Code             Meaning:
+   (entmake
+   '((0 . "CIRCLE") Entity = circle
+   (62 . 5)         Color = blue
+   )
+   )
+
+NOTES
+   * This function is akin to entmod; however, the distinction lies in that entmake permits the creation of a new list that was not previously present in the database, whereas entmod generates a new entity by altering an existing one.
+   * It is not necessary to supply complete information regarding the entity when using entmake. Specifically, data pertaining to the entity's properties that do not deviate from default values—such as color, linetype, thickness, attributes-follow flag, and the entity handle—are not required.
+   * Although the data provided by entmake closely resembles the DXF format, a significant difference exists: the x, y, z coordinates are indicated by entmake as a single value, in contrast to the separate values used in DXF. Consequently, group code 10 is specified with entmake, rather than the DXF group codes 10 (x-coordinate), 20 (y-coordinate), and 30 (z-coordinate).
+
+More about...
+   [link](entdel entity-name)
+   [link](entget entity-name [application-list])
+   [link](entlast)
+   [link](entmod entity-list)
+   [link](entsel [prompt])
+   [link](entupd entity-name)
+   [link](nentsel [prompt])
+   [link](nentselp [prompt] [point])

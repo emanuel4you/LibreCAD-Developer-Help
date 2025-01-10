@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-file-rename oldfilename newfilename)
+     __________________________________________________________________
+
+   Rename a file.
+     __________________________________________________________________
+
+   This function yields T upon a successful rename, or nil in the event of failure.
+
+EXAMPLE
+   Code                                            Returns
+   (vl-file-rename "d:\file.txt" "c:\newfile.txt") T
+
+More about...

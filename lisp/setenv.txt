@@ -1,0 +1,22 @@
+LISP Functions
+
+   (setenv variable value)
+     __________________________________________________________________
+
+   Adjust the operating system variable to the specified value.
+     __________________________________________________________________
+
+   This function assigns a value to a designated operating system environment variable, such as the one maintained by the DOS PATH variable.
+
+NOTES
+     * If a non-existent variable name is provided to setenv, it will create and assign that variable. The newly created variable can be viewed within LibreCAD's "shell" DOS window (accessible via the Shell command), but it will not be visible in the Windows DOS window. Setenv establishes the variable within the application space of LibreCAD.
+     * When you specify LibreCad or ACAD as the environment variable to be set, the setenv function will convert that to the SEARCHPATH variable and utilize it accordingly.
+
+EXAMPLE
+   Code                                       Returns
+   (setenv "PATH" "C:\\;C:\\WIN95;C:\\LibreCad") "C:\\;C:\\WIN95;C:\\LibreCad"
+
+More about...
+   [link](getenv variable)
+   [link](setcfg parameter value)
+   [link](setvar sysvar value)

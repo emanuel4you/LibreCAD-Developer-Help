@@ -1,0 +1,17 @@
+LISP Functions
+
+   (boolean? x)
+     __________________________________________________________________
+
+   Return true if x is a Boolean
+     __________________________________________________________________
+
+
+EXAMPLES
+   Code            Returns
+   (boolean? 5)    false
+   (boolean? true) true
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])

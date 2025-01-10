@@ -1,0 +1,21 @@
+LISP Functions
+
+   (pix_image x y width height path)
+     __________________________________________________________________
+
+   Display a image in the dialog box.
+     __________________________________________________________________
+
+   This function presents an image within a dialog box.
+
+   The image is placed at specified x,y coordinates, which correspond to the upper-left corner of the image. The width parameter defines the image's width extending in the positive x-direction, while the height parameter indicates the image's height extending in the negative y-direction.
+
+   The name argument is the name of the file, which can be a SVG, PNG, JPG, ... format.
+
+EXAMPLE
+   Code                             Returns
+   (pix_image 10 10 15 20 "my.png") "my.png"
+
+More about...
+   [link](dimx_tile key)
+   [link](dimy_tile key)

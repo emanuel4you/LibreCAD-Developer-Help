@@ -1,0 +1,16 @@
+PYTHON Functions
+
+   int getInt(string msg = "Enter an integer: ")
+     __________________________________________________________________
+
+   Function prompt a message in commandline. Input in commandline.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a integer.
+
+   NOTE If no Commandline, fallback to dialog box for input.
+
+More about...
+   [link]getDist

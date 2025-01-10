@@ -1,0 +1,16 @@
+LISP Functions
+
+   (start_image key)
+     __________________________________________________________________
+
+   Start creating a dialog box image.
+     __________________________________________________________________
+
+   This function indicates the initiation of the image key within a dialog box. It serves as a precursor to the functions responsible for rendering the dialog box:
+
+   To conclude the drawing process, the [link]end_image function should be utilized.
+
+EXAMPLE
+   (start_image kng)
+
+More about...

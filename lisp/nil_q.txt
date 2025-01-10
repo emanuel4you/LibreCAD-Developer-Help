@@ -1,0 +1,17 @@
+LISP Functions
+
+   (nil? x)
+     __________________________________________________________________
+
+   Returns true if x is nil
+     __________________________________________________________________
+
+   This takes a single argument and returns true if the argument is nil.
+
+EXAMPLES
+   Code       Returns
+   (nil? nil) true
+   (nil? 0)   false
+
+More about...
+   [link](number?)

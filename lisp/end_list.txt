@@ -1,0 +1,19 @@
+LISP Functions
+
+   (end_list)
+     __________________________________________________________________
+
+   End the handling of a dialog box list.
+     __________________________________________________________________
+
+   This function indicates the completion of processing a list in the current context.
+
+EXAMPLE
+   Code       Returns
+   (end_list) nil
+
+NOTE
+   This function is also applicable when developing list boxes and drop-down list boxes in [link]DCL. For examples demonstrating the use of this function alongside DCL, refer to [link]list_box and [link]popup_list (drop-down list box).
+
+More about...
+   [link](add_list string)

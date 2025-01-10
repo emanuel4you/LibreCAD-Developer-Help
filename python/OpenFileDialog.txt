@@ -1,0 +1,12 @@
+PYTHON Functions
+
+   string OpenFileDialog(string title, string fileName, string fileExt)
+     __________________________________________________________________
+
+   displays a dialogbox for opening a file.
+     __________________________________________________________________
+
+   This function returns the filename as a string.
+
+More about...
+   [link]GetIntDialog

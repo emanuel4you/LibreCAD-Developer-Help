@@ -1,0 +1,16 @@
+PYTHON Functions
+
+   string getAttr(string key, string attr)
+     __________________________________________________________________
+
+   Determine the DCL value of this tile's attribute.
+     __________________________________________________________________
+
+   This function returns the value of the dialog box attribute. The key argument specifies the dialog box tile; key is a string and is case-sensitive.
+
+   The attribute argument is the name of the attribute. See the [link]DCL Programming Reference for valid attribute names.
+
+   This function returns the attribute as a string
+
+More about...
+   [link]getTile

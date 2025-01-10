@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   double GetDoubleDialog(string prompt)
+     __________________________________________________________________
+
+   Function displays a dialog box for input.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a double.
+
+More about...
+   [link]getReal

@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-getlastrestored)
+     __________________________________________________________________
+
+   Returns the name of the last restored layer state.
+     __________________________________________________________________
+
+   The function provides the name of the most recently restored layer state within the current drawing.
+
+EXAMPLE
+   Code                          Returns
+   (layerstate-getlastrestored) "Foundation"
+
+More about...

@@ -1,0 +1,30 @@
+DCL Attributes
+
+   is_enabled = true/false;
+     __________________________________________________________________
+
+   Enable or disable a tile.
+     __________________________________________________________________
+
+   This attribute indicates the initial availability of a button to the user, typically represented by a grayed-out appearance. When the flag is set to true, the button is accessible; conversely, when the flag is set to false, the button is rendered inaccessible to the user.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   is_enabled = false;
+
+Valid Tiles
+   [link]button
+   [link]popup_list
+   [link]edit_box
+   [link]multi_edit_box
+   [link]radio_button
+   [link]image_button
+   [link]dail
+   [link]scroll
+   [link]slider
+   [link]list_box
+   [link]toggle
+
+More about...
+   [link]is_tab_stop

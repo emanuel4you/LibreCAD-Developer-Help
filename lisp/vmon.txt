@@ -1,0 +1,16 @@
+LISP Functions
+
+   (vmon)
+     __________________________________________________________________
+
+   Turn on virtual memory.
+     __________________________________________________________________
+
+   This outdated function activates the virtual memory manager. It is no longer necessary, as it is incorporated within LISP for the sake of compatibility.
+
+EXAMPLE
+   Code   Returns
+   (vmon) nil
+
+More about...
+   [link](mem)

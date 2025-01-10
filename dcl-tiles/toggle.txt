@@ -1,0 +1,51 @@
+DCL Tiles
+
+   : toggle
+     __________________________________________________________________
+
+   Display a check box.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This interactive tile features a check box. When activated, the check box displays a check mark, and the value attribute returns 1. The text corresponding to the label attribute is positioned to the right of the box.
+
+Valid Attributes
+   : toggle {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]mnemonic = "char";
+       [link]value = "string";
+       [link]width = "string";
+   }
+
+EXAMPLE
+   : toggle {
+       action = "(osnap)";
+       label = "Object Snap Mode";
+       value = "1"
+   }
+
+NOTE
+   The [link]value attribute indicates whether the check box is currently selected (indicated by a check mark), via the value of "1":
+
+   value = "1"
+
+Related DCL Tiles
+   [link]button
+   [link]edit_box
+   [link]image_button
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]slider
+
+More about...
+   [link]text_part

@@ -1,0 +1,12 @@
+PYTHON Functions
+
+   None MessageBox(string msg)
+     __________________________________________________________________
+
+   displays a info dialog box.
+     __________________________________________________________________
+
+   This function returns None.
+
+More about...
+   [link]GetIntDialog

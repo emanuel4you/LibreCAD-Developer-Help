@@ -1,0 +1,18 @@
+DCL Attributes
+
+   initial_focus = "string";
+     __________________________________________________________________
+
+   Specifies the key of the tile that is assigned the initial keyboard focus.
+     __________________________________________________________________
+
+   Possible value is a quoted string (no default).
+
+EXAMPLE
+   initial_focus = "my_edit";
+
+Valid Tiles
+   [link]dialog
+
+More about...
+   [link]is_bold

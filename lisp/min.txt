@@ -1,0 +1,19 @@
+LISP Functions
+
+   (min number1 number2 ...)
+     __________________________________________________________________
+
+   Identify the smallest number.
+     __________________________________________________________________
+
+   This function selects the minimum or smallest number. It operates under the condition that all combinations yield a real number.
+
+EXAMPLES
+   Code      Returns
+   (min 3)       3
+   (min)         0
+
+More about...
+   [link](fix number)
+   [link](max number1 number2 )
+   [link](rem number1 number2 [number3 ...])

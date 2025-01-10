@@ -1,0 +1,16 @@
+LISP Functions
+
+   (py-eval-integer cmd)
+     __________________________________________________________________
+
+   Run a Python Command.
+     __________________________________________________________________
+
+   This function runs a Python Command and returns the integer.
+
+EXAMPLE
+   Code                      Result
+   (py-eval-integer "1 + 2") 3
+
+More about...
+   [link](py-simple-file "myModule.py")

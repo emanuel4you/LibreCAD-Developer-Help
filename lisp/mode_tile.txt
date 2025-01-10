@@ -1,0 +1,22 @@
+LISP Functions
+
+   (mode_tile key mode)
+     __________________________________________________________________
+
+   Adjust the mode of the dialog box's title.
+     __________________________________________________________________
+
+   The argument accepts one of the following [link]integer values:
+
+   Mode                    Meaning
+   0    Enable tile.
+   1    Disable tile.
+   2    Set the focus to the tile.
+   3    Select the contents of an edit box.
+
+EXAMPLE
+   (mode_tile pt1 2)
+
+More about...
+   [link](get_attr key attribute)
+   [link](get_tile key)

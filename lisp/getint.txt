@@ -1,0 +1,19 @@
+LISP Functions
+
+   (getint [prompt])
+     __________________________________________________________________
+
+   Request the user to provide a specific integer.
+     __________________________________________________________________
+
+   You may incorporate a prompt argument to request the integer.
+
+EXAMPLES
+   Code Returns
+   (getint)
+   (getint "Enter a number: ")
+
+More about...
+   [link](getkword [prompt])
+   [link](getreal [prompt])
+   [link](getstring [flag] [prompt])

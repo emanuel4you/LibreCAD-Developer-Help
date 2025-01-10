@@ -1,0 +1,18 @@
+DCL Attributes
+
+   is_cancel = true/false;
+     __________________________________________________________________
+
+   Specifies whether the button is selected when the user presses the Esc key.
+     __________________________________________________________________
+
+   Possible values are true or false (default: false).
+
+Valid Tiles
+   [link]button
+
+EXAMPLE
+   is_cancel = true;
+
+More about...
+   [link]is_default

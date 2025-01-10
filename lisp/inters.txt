@@ -1,0 +1,18 @@
+LISP Functions
+
+     __________________________________________________________________
+
+   Determine the intersection.
+     __________________________________________________________________
+
+   This function calculates the intersection point of two lines. Point1 and Point2 represent the endpoints of the second line. If the two lines intersect, the function returns the coordinates of the intersection point. Conversely, if there is no intersection, it returns nil.
+
+   The flag parameter is optional: when the flag is not nil (with T commonly used), the intersection function operates as described above. If the flag is nil, the lines defined by the four points are treated as infinite. In this case, the function returns the point where they would intersect, unless the lines are parallel, in which case nil is returned.
+
+EXAMPLES
+   Code                                      Returns
+   (inters '(1 1) '(3 1) '(1 0) '(3 0) nil)  nil
+
+More about...
+   [link](getpoint [point] [prompt])
+   [link](osnap point mode)

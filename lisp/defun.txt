@@ -1,0 +1,49 @@
+LISP Functions
+
+   (defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+     __________________________________________________________________
+
+   Create a LISP function.
+     __________________________________________________________________
+
+   When composing a LISP file, it is important to understand that the file itself does not represent a function. Instead, a single LISP file may encompass multiple functions or programs, all of which become accessible upon loading the file.
+
+   The initial statement must define the name of a function using the defun construct. This command serves as the first directive within the program and commences with an opening parenthesis, which is subsequently closed at the conclusion of the program.
+
+   Following the defun function, the name of the function or program is specified. After selecting a name, there are several options
+   available:
+     * One option is to leave the parentheses empty, denoted as ( ). This signifies that any variables utilized within the program are global, retaining their values even after the program concludes. For instance, if the variable A is assigned the value of 12, it will remain 12 for any other program within the LISP file:
+       (defun newfunc ( )
+            ...
+       )
+
+     * Alternatively, you may choose to restrict all variables to the local scope of the program. For example, if you assign the value of 15 to the variable N, it will only hold that value during the execution of this specific program. To indicate that a variable is local, place a forward slash (/) before the variable name following the program name:
+       (defun newfunc ( / N)
+            ...
+       )
+
+     * In certain cases, you might wish to pass an argument to the program, allowing a variable to receive a value from outside the currently executing program. Such variables should be positioned before the forward slash:
+       (defun newfunc (A / N)
+            ...
+       )
+
+   Once the function is established along with its variables, you have the option to utilize the c: prefix. By adding c: to the function name, you can invoke the command at the LibreCAD command prompt without the need for parentheses. This allows it to function similarly to other LibreCAD commands, such as Line, Arc, and Circle.
+
+   (defun C:newfunc ( A / N)
+        ...
+   )
+
+NOTE
+   It is important to note that the C: prefix is unrelated to the C: drive on your computer; in the context of LISP, it is an abbreviation for "command."
+
+EXAMPLES
+   Code                               Returns:
+   (defun newfunc ( ) . . .)          May use global variables.
+   (defun newfunc (var1 var2). . . )  Newfunc receives two outside values.
+   (defun newfunc (/ var1 var2). . .) Newfunc has two local variables.
+
+More about...
+   [link](ads)
+   [link](atoms-family format [symbol1 symbol2 ...])
+   [link](command cmd [arguments] ...)
+   [link](menucmd string)

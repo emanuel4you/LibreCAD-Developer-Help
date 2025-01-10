@@ -1,0 +1,23 @@
+DCL Attributes
+
+   upper_only = flag;
+     __________________________________________________________________
+
+   Force input text to be upper-case.
+     __________________________________________________________________
+
+   When flag = true, this attribute converts user typed text to upper-case. When flag = false (the default), the text is not converted.
+
+   Possible values are true or false (default: false).
+
+   The upper_only attribute is unique to the implementation of DCL included with LibreCAD.
+
+EXAMPLE
+   upper_only = true;
+
+Valid Tiles
+   [link]edit_box
+   [link]multi_edit_box
+
+More about...
+   [link]value

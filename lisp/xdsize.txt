@@ -1,0 +1,15 @@
+LISP Functions
+
+   (xdsize list)
+     __________________________________________________________________
+
+   Assess the amount of space utilized by a list in the context of extended entity data.
+     __________________________________________________________________
+
+   This function provides the size (in bytes) that a list consumes as extended entity data. The input parameter is a list containing extended data. If the application name is not registered, LibreCAD will show the error message, "Invalid application name in 1001 group nil."
+
+NOTE
+   An invalid list generates an error message, which is recorded through an error code in the system variable ERRNO.
+
+More about...
+   [link](xdroom entity-name)

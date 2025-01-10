@@ -1,0 +1,61 @@
+DCL Tiles
+
+   : edit_box
+     __________________________________________________________________
+
+   The user is prompted to enter a line of text.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This active tile features an edit box that invites the user to input either a number or text. The text within the edit box is aligned to the left. The program appends a null character (\0) at the end of the string entered by the user. If an [link]edit_limit is set and the maximum character count is reached, all user inputs, except for backspace and delete, will be disregarded.
+
+Valid Attributes
+   : edit_box {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]allow_accept = flag;
+       [link]edit_limit = int;
+       [link]edit_width = number;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]lower_only = flag;
+       [link]mnemonic = "char";
+       [link]password_char = "char";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : edit_box {
+       action = "(texted)";
+       allow_accept = true;
+       edit_limit = 31;
+       key = "EB";
+       label = "File name: ";
+       mnemonic = "F";
+       value = "drawing";
+   }
+
+NOTE
+     * The [link]label attribute specifies the title of the edit box, which is aligned to the left.
+
+     * The [link]value attribute contains the initial text shown in the edit box, also left-justified.
+
+
+Related DCL Tiles
+   [link]button
+   [link]image_button
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]slider
+   [link]toggle
+
+More about...
+   [link]errtile

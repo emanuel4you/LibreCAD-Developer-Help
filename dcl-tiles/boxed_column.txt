@@ -1,0 +1,47 @@
+DCL Tiles
+
+   : boxed_column
+     __________________________________________________________________
+
+   A border can be applied around a column of tiles, with the possibility of adding a title.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile creates a rectangular border encasing a column of tiles, excluding radio buttons. You have the option to include a title for the column. If the [link]label attribute is absent or set to a null string (label = ""), the border will be displayed without a title.
+
+NOTE
+     * To create a column of tiles without a border or title, utilize the [link]column cluster.
+     * To enclose a column of radio buttons with a border, employ the [link]radio_button cluster.
+
+Valid Attributes
+   : boxed_column {
+       [link]alignment = position;
+       [link]children_alignment = position;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : boxed_column {
+       label = "Snap Setting";
+       width = 22;
+   }
+
+Related DCL Tiles
+   [link]dialog
+   [link]column
+   [link]row
+   [link]boxed_row
+   [link]boxed_radio_column
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]boxed_radio_column

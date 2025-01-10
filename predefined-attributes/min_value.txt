@@ -1,0 +1,30 @@
+DCL Attributes
+
+   min_value = integer;
+     __________________________________________________________________
+
+   Specify the minimum value of a slider.
+     __________________________________________________________________
+
+   This attribute specifies the minimum value that a [link]slider tile returns.
+
+   integer: a 32-bit integer; default = 0 and minimum = -2,147,483,648.
+
+EXAMPLE
+   min_value = -10;
+   max_value = 10;
+   small_increment = 1;
+   big_increment = 100;
+
+NOTE
+   Horizontal sliders increase in value from left to right; vertical sliders increase value from top to bottom.
+
+   The [link]big_increment and [link]small_increment attributes determine the amount by which the slider's value increases when the user clicks on it.
+
+Valid Tile
+   [link]dail
+   [link]scroll
+   [link]slider
+
+More about...
+   [link]mnemonic

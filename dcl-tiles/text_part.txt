@@ -1,0 +1,29 @@
+DCL Tiles
+
+   : text_part
+     __________________________________________________________________
+
+   Display multiple segments of text.     DCL Text Tile
+     __________________________________________________________________
+
+   This text tile is utilized in conjunction with the [link]concatenation and [link]paragraph tiles to present various segments of text.
+
+Valid Attribute
+   : text_part {
+       [link]label = "string";
+   }
+
+EXAMPLE
+   : concatenation {
+       text_part {label = "This";}
+       text_part {label = " is";}
+       text_part {label = " text.";}
+   }
+
+Related DCL Tiles
+   [link]concatenation
+   [link]paragraph
+   [link]text
+
+More about...
+   [link]toggle

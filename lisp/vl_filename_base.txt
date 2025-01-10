@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-filename-base filename)
+     __________________________________________________________________
+
+   This function returns a string containing the filename.
+     __________________________________________________________________
+
+   This function provides a string that includes only the name of the file, excluding the directory path and file extension.
+
+EXAMPLE
+   Code                             Returns
+   (vl-filename-base "d:\file.txt") "FILE"
+
+More about...

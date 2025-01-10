@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-search pattern string [startposition])
+     __________________________________________________________________
+
+   Search for a pattern in a string.
+     __________________________________________________________________
+
+   This function identifies the location of the matched pattern within the string and returns its position, or nil if the pattern is absent. The initial character is designated as position zero.
+
+EXAMPLE
+   Code                              Returns
+   (vl-string-search "My" "My Text") 0
+
+More about...

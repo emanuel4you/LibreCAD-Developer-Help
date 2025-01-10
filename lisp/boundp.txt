@@ -1,0 +1,24 @@
+LISP Functions
+
+   (boundp item)
+     __________________________________________________________________
+
+   Assess whether an item possesses an associated value.
+     __________________________________________________________________
+
+   The boundp function ascertains if an item has a value linked to it. If the item indeed has a value associated with it, LISP returns T. Conversely, if the item lacks a value or is bound to nil, a nil is returned.
+
+EXAMPLES
+   Code             Returns
+   (boundp 'x)      nil
+   (boundp 'y)      T
+   (boundp 'z)      nil
+
+NOTE
+
+More about...
+   [link](atom item)
+   [link](atoms-family format [symbol1 symbol2 ...])
+   [link](numberp item)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](type item)

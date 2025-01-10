@@ -1,0 +1,22 @@
+LISP Functions
+
+   (and expression ...)
+     __________________________________________________________________
+
+   This function executes a logical AND
+     __________________________________________________________________
+
+   This function executes a logical AND operation on the preceding expression. It yields a true (T) result only if both statements evaluate to true. Conversely, if either or both statements evaluate to false (nil), the function will return false (nil).
+
+EXAMPLES
+   Code      Returns
+   (setq d 9)
+   (and (> d 12) (< d 13)) nil
+   (setq d 12.25)
+   (and (> d 12) (< d 13)) T
+
+More about...
+   [link](~ number)
+   [link](boole function integer1 integer2 ...)
+   [link](not item)
+   [link](or statement ...)

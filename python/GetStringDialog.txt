@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   string GetStringDialog(string prompt)
+     __________________________________________________________________
+
+   Function displays a dialog box for input.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a string.
+
+More about...
+   [link]getString

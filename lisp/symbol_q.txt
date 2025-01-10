@@ -1,0 +1,18 @@
+LISP Functions
+
+   (symbol? x)
+     __________________________________________________________________
+
+   Return true if x is a symbol.
+     __________________________________________________________________
+
+   This function takes a single argument and returns true if the argument is a symbol.
+
+EXAMPLES
+
+   Code          Returns
+   (symbol? 'a) true
+   (symbol? 1)  false
+
+More about...
+   [link](double? x)

@@ -1,0 +1,26 @@
+LISP Functions
+
+   (getpoint [point] [prompt])
+     __________________________________________________________________
+
+   Request the user to indicate an angle.
+     __________________________________________________________________
+
+   This function pauses for the user to provide a point. The point argument can be utilized to define a starting point from which a guiding line will be drawn towards the target. The user has the option to either input a coordinate or select a point manually.
+
+   Additionally, you may incorporate a prompt to solicit the user's input for the point.
+
+EXAMPLES
+   Code                 Returns
+   (getpoint)
+   [pick point] no response
+   (getpoint "Select a point: ")
+   [pick point] Select a point:
+   2.05 3.55
+   (getpoint '(5.0 5.0) "Next point: ")
+   [pick point] Next point:
+
+More about...
+   [link](getint [prompt])
+   [link](getreal [prompt])
+   [link](inters point1 point2 point3 point4 [flag])

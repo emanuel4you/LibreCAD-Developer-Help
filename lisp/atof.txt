@@ -1,0 +1,23 @@
+LISP Functions
+
+   (atof string)
+     __________________________________________________________________
+
+   Convert the string to a real number.
+     __________________________________________________________________
+
+   Returns 0.0 if the string's content cannot be identified as a numerical value.
+
+EXAMPLES
+
+   Code            Returns
+   (atof "59")     59.0
+   (atof "213.35") 213.350
+   (atof ".1")     0.100000
+   (atof "Hello")  0.000000
+
+More about...
+   [link](angtof string [mode])
+   [link](ascii string)
+   [link](atoi string)
+   [link](chr integer)

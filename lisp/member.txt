@@ -1,0 +1,18 @@
+LISP Functions
+
+   (member item list)
+     __________________________________________________________________
+
+   Identify the first occurrence of an item in a list.
+     __________________________________________________________________
+
+   This function locates the initial appearance of a specified item within a list. It returns a new list that starts with this first occurrence and includes all subsequent items. This feature is particularly beneficial when modifications to a speci
+
+EXAMPLES
+   Code                                 Returns
+   (- (length a) (length (member 3 a))) 2
+
+More about...
+   [link](length list)
+   [link](list expression )
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

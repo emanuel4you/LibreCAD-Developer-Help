@@ -1,0 +1,16 @@
+LISP Functions
+
+   (get_tile key)
+     __________________________________________________________________
+
+   Establish the value of a dialog box's title.
+     __________________________________________________________________
+
+   The title is a string and is case-sensitive.
+
+EXAMPLE
+   Code                Returns
+   (get_tile "pdsize") "pdsize"
+
+More about...
+   [link](get_attr key attribute)

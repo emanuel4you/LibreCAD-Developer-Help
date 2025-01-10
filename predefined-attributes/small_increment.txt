@@ -1,0 +1,30 @@
+DCL Attributes
+
+   small_increment = integer;
+     __________________________________________________________________
+
+   Adjust the slider by this amount with each click.
+     __________________________________________________________________
+
+   This attribute defines the increment value of a [link]slider when the user interacts with the end arrows.
+
+
+   integer: an integer within the range of min_value and max_value. The default increment is set to 1/100 of the total range.
+
+EXAMPLE
+   min_value = -10;
+   max_value = 10;
+   small_increment = 1;
+   big_increment = 100;
+
+NOTE
+     * The default min_value is 0, with a minimum limit of -2,147,483,648. The default max_value is 10,000, while the maximum limit is 2,147,483,647.
+     * Horizontal sliders increase in value from left to right, whereas vertical sliders increase from top to bottom.
+
+Valid Tile
+   [link]dail
+   [link]scroll
+   [link]slider
+
+More about...
+   [link]tabs

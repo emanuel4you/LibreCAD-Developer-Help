@@ -1,0 +1,24 @@
+LISP Functions
+
+   (getkword [prompt])
+     __________________________________________________________________
+
+   Request the user to enter a word.
+     __________________________________________________________________
+
+   This function operates in conjunction with (equal statement1 statement2 [tolerance])(IDR_166)(initget [bits] [string])(IDR_205) to solicit a response with predefined limited options. For instance, you may wish for the user to respond exclusively with "yes" or "no." Alternatively, you might want to confine the range of numbers that the user can input to between 0 and 15.
+
+   Utilizing this function involves a two-step procedure: (1) initially, employ initget to establish the acceptable response keywords; and (2) subsequently, utilize getkword to request input. LibreCAD presents a dialog box that enumerates the valid responses defined by initget, along with a Cancel option.
+
+   Should the input fail to align with the specified criteria, the function notifies the user that the input is invalid with the message "Try again:" and prompts for another attempt. If the input is empty (indicating the user pressed the Enter key), getkword will return nil unless null input is prohibited.
+
+   In the absence of preset keywords through initget, nil will be returned.
+
+EXAMPLE
+   Code         Returns
+   (initget 2 "Yes No")
+   (getkword "Are you sure? ")
+   Displays dialog box.
+
+More about...
+   [link](getstring [flag] [prompt])

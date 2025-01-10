@@ -1,0 +1,12 @@
+PYTHON Functions
+
+   string addList(string val)
+     __________________________________________________________________
+
+   Add text to an existing dialog box string.
+     __________________________________________________________________
+
+   This function adds (or replaces) a string in the list of the currently active dialog box. This function must follow the [link]startList function, which determines: (1) which string is affected; and (2) whether the string is added or replaces another string.
+
+More about...
+   [link]startList

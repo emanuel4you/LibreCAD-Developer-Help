@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   integer RunSimpleString(string cmd)
+     __________________________________________________________________
+
+   Function executes a Lisp Script.
+     __________________________________________________________________
+
+   Argument filename is a string.
+
+   This function returns the Lisp result as a string.
+
+More about...
+   [link]RunSimpleFile

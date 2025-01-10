@@ -1,0 +1,30 @@
+LISP Functions
+
+   (read-char [file-descriptor])
+     __________________________________________________________________
+
+   Read a single character.
+     __________________________________________________________________
+
+   This function is designed to read a single character from either a file or the keyboard. When the read-char function is invoked with a file, it retrieves the character from that file. In the absence of a file descriptor, it defaults to reading from the keyboard.
+
+   The read-char function doesn't actually return the letter, rather it
+   returns the ASCII code of that letter. To actually see the letter, you
+   must convert the ASCII code using the [link]chr function.
+
+EXAMPLES
+   For the following example, assume the file sample.lsp exists, and the
+   first line is "C:\Sample\First.txt".
+
+   Code                                Returns
+   (setq file (open "sample.lsp" "r"))
+   (setq a (chr c))                    "C"
+
+   (read-char)
+   [press A] Waits for you to press a key.
+   65
+
+More about...
+   [link](read-line [file-descriptor])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](write-char character [file-descriptor])

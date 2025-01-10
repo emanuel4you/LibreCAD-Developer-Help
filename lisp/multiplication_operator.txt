@@ -1,0 +1,24 @@
+LISP Functions
+
+   (* number1 number2 ...)
+     __________________________________________________________________
+
+   Multiply all numbers together.
+     __________________________________________________________________
+
+   To find the product of all numbers, one can utilize the multiply function, which yields the result of multiplying all specified numbers together.
+
+   When multiplying all real numbers, the outcome is a real number. This principle also applies to integers; the product of all integers will result in an integer. However, in cases where both real numbers and integers are involved, the final result will be a real number.
+
+EXAMPLES
+   Code            Returns
+   (*)             0
+   (* 2)           2
+   (* 2 -3)        -6
+
+More about...
+   [link](/ number1 number2 ...)
+   [link](fix number)
+   [link](float number)
+   [link](rem number1 number2 [number3 ...])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

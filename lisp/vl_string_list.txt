@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string->list string)
+     __________________________________________________________________
+
+   Convert a string to character codes.
+     __________________________________________________________________
+
+   This function produces a list of integers that represent the character codes of the characters within the string.
+
+EXAMPLE
+   Code             Returns
+   (vl-string "")   nil
+
+More about...

@@ -1,0 +1,19 @@
+LISP Functions
+
+   (sssetfirst grip-set [pick-set])
+     __________________________________________________________________
+
+   Grip these entities.
+     __________________________________________________________________
+
+   This function emphasizes entities within the pick-set and encircles them with grips from the grip-set. Grips refer to the small squares that enclose a selected entity, which can be utilized for manipulation or modification of that entity.
+
+NOTE
+   pick-set selection sets.
+
+EXAMPLE
+   (sssetfirst ss1)
+
+More about...
+   [link](ssdel entity-name selection-set)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])

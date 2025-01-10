@@ -1,0 +1,18 @@
+LISP Functions
+
+   (hash-map) (hash-map & keyvals)
+     __________________________________________________________________
+
+   Returns a new hash map with supplied mappings.
+     __________________________________________________________________
+
+   This Function takes a variable but even number of arguments and returns a new mal hash-map value with keys from the odd arguments and values from the even arguments respectively. This is basically the functional form of the {} reader literal syntax.
+
+EXAMPLES
+
+   Code                        Returns
+   (hash-map)                  {}
+   (hash-map :key1 1, :key1 2) {:key1 2}
+
+More about...
+   [link](def!)

@@ -1,0 +1,58 @@
+DCL Tiles
+
+   : radio_button
+     __________________________________________________________________
+
+   Display a radio button.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This active tile features a radio button that indicates selection through the appearance of a dot when activated. The unique characteristic of the radio button allows for the selection of only one option at a time; selecting one radio button will deactivate any other radio button within the same group.
+
+   It is essential to position a radio_button tile within a [link]radio_column or [link]radio_row cluster tile. Failure to do so will result in the program being unable to determine the relationships among the radio buttons.
+
+   To enable users to select multiple options, it is advisable to utilize check boxes (through the [link]toggle tile) instead.
+
+NOTE
+   When creating a DCL file that includes multiple radio buttons within a radio_column or radio_row cluster that are activated (value = "1"), the program will disregard all subsequent "turned-on" radio buttons after the first.
+
+Valid Attributes
+   : radio_button {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]mnemonic = "char";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : radio_button {
+   action = "(option_1)";
+   key = "R1";
+   label = "Option 1";
+   }
+
+NOTE
+   The value attribute signifies which radio button is currently selected, indicated by the value of "1":
+
+   value = "1".
+
+Related DCL Tiles
+   [link]button
+   [link]edit_box
+   [link]image_button
+   [link]list_box
+   [link]popup_list
+   [link]slider
+   [link]toggle
+
+More about...
+   [link]radio_column

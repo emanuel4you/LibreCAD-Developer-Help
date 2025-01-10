@@ -1,0 +1,15 @@
+LISP Functions
+
+   (mapcar function list1 [list2 ...])
+     __________________________________________________________________
+
+   Apply the function to the list.
+     __________________________________________________________________
+
+   This function serves as a highly effective tool for managing extensive lists. Mapcar applies a specified function to each element within a list and subsequently produces a new list. While it is possible to utilize multiple lists, it is essential that each list contains the appropriate number of items to ensure that the function operates on all lists simultaneously.
+
+More about...
+   [link](apply function list)
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](eval statement)

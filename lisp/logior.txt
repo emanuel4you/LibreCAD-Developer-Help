@@ -1,0 +1,16 @@
+LISP Functions
+
+   (logior integer1 integer2 ...)
+     __________________________________________________________________
+
+   Determine what is the logical OR.
+     __________________________________________________________________
+
+   This represents a logical function utilizing the Boolean OR operation. The outcome is indicated by a 1; conversely, if it is "off," a 0 is shown. If either the first bit or the second bit in the column is active, then that bit will also be active. The OR function necessitates that at least one bit within a column is active.
+
+More about...
+   [link](~ number)
+   [link](and expression ...)
+   [link](boole function integer1 integer2 ...)
+   [link](lsh integer1 integer2)
+   [link](or statement ...)

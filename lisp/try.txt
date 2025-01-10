@@ -1,0 +1,22 @@
+LISP Functions
+
+   (try* cmd [arguments] ...)
+     __________________________________________________________________
+
+   Error Handling when executing Lisp code.
+     __________________________________________________________________
+
+   When executing Lisp code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things. When an error occurs, Lisp will normally stop and generate an error message. The technical term for this is: Lisp will throw an exception (throw an error). The try catch form looks like this: (try* A (catch* B C)). The form A is evaluated, if it throws an exception, then form C is evaluated with a new environment that binds the symbol B to the value of the exception that was thrown.
+
+EXAMPLES
+
+   Code                      Returns
+   (try* 123 (catch* e 456)) 123
+
+   (try* abc (catch* exc (prn "exc is:" exc)))
+   "exc is:" "'abc' not found" => to History prompt.
+                             nil
+
+More about...
+   [link](*error*)
+   [link](throw)

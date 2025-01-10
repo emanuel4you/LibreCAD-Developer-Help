@@ -1,0 +1,25 @@
+LISP Functions
+
+   (apply function list)
+     __________________________________________________________________
+
+   Applies a specified operation to a list.
+     __________________________________________________________________
+
+   This function applies a specified operation to a list. The initial argument, referred to as "function," can be either a built-in or a user-defined function, which is particularly beneficial when constructing a list dynamically.
+
+
+EXAMPLES
+   Code        Returns
+   (apply '/ '(10 5)) 2
+
+NOTE
+   The subsequent examples are equivalent to those mentioned aboves:
+
+   Code     Returns
+   (/ 10 5) 2
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](lambda arguments expression ...)

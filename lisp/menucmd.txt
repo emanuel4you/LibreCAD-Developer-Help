@@ -1,0 +1,40 @@
+LISP Functions
+
+   (menucmd string)
+     __________________________________________________________________
+
+   Execute the specified menu command.
+     __________________________________________________________________
+
+   This function carries out a command from the menu bar, which includes both the cursor menu and pull-down menus. The string parameter can be formatted in the following ways:
+
+   "menu=value"
+
+   "menu=*"
+
+   The menu parameter consists of two components; for instance, in the example (menucmd "P1.2=*"), "P1" denotes the first pull-down menu (typically the File menu), while ".2" indicates the first item within that menu (usually the Open item). The initial values for the menu available in LibreCAD are as follows:
+
+   Menu Meaning
+   P0   Cursor menu
+   P1 - P16 Pull-down menus 1-16
+
+   The value parameter is defined as follows:
+
+   Value Meaning
+   ?     What is status of the menu item?
+   *     Display the menu.
+   ~     Disable the menu item (grayed out).
+   !.    Prefix menu item with a check mark.
+         (blank) Remove properties.
+   name  Load the menu name.
+
+EXAMPLES
+   Code               Meaning
+   (menucmd "P3=*")   Display menu #3 (the View menu).
+   (menucmd "P3.1=~") Disable menu #3, item #1 (the View | Redraw menu
+   item).
+   (menucmd "P3.1=")  Re enable the View | Redraw item.
+
+More about...
+   [link](command cmd [arguments] ...)
+   [link](menugroup name)

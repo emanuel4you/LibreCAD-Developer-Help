@@ -1,0 +1,17 @@
+LISP Functions
+
+   (time-ms)
+     __________________________________________________________________
+
+   Returns current time point in ms.
+     __________________________________________________________________
+
+   This function takes no arguments and returns the number of milliseconds since epoch (00:00:00 UTC January 1, 1970), or, if not possible, since another point in time (time-ms is usually used relatively to measure time durations.
+
+EXAMPLES
+
+   Code      Returns
+   (time-ms) 1736468575077
+
+More about...
+   [link](timeout)

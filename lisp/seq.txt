@@ -1,0 +1,24 @@
+LISP Functions
+
+   (seq coll)
+     __________________________________________________________________
+
+   This function returns a seq on the collection.
+     __________________________________________________________________
+
+   This function takes a list, vector, string, or nil. If an empty list, empty vector, or empty string ("") is passed in then nil is returned. Otherwise, a list is returned unchanged, a vector is converted into a list, and a string is converted to a list containing the original string split into single character strings. If the collection is empty, returns nil. (seq nil) returns nil.
+
+EXAMPLES
+   Code         Rerurns
+   (seq '(1))   (1)
+   (seq [1 2])  (1 2)
+   (seq "abc")  (\a \b \c)
+
+   ;; Corner cases
+   (seq nil)    nil
+   (seq '())    nil
+   (seq [])     nil
+   (seq "")     nil
+
+More about...
+   [link](list 1 2 3)

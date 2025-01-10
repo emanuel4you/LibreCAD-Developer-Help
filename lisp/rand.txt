@@ -1,0 +1,18 @@
+LISP Functions
+
+   (rand)
+     __________________________________________________________________
+
+   Returns a random floating point number.
+     __________________________________________________________________
+
+   This function returns a random floating point number between 0 and 1.
+
+
+EXAMPLES
+   Code   Returns
+   (rand) 0.344947
+
+
+More about...
+   [link](rand-int)

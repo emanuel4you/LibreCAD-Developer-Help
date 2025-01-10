@@ -1,0 +1,56 @@
+DCL Tiles
+
+   : row
+     __________________________________________________________________
+
+   Display a row of horizontal tiles.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile arranges a sequence of tiles in a horizontal alignment without any borders. The row cluster is capable of accommodating any tile type, with the exception of a standalone radio button; for grouping radio buttons, it is advisable to utilize either the [link]radio_column or [link]radio_row cluster tiles.
+
+NOTE
+   To enclose the column of tiles within a box, use the [link]boxed_row cluster.
+
+Valid Attributes
+   : row {
+       [link]alignment = position;
+       [link]children_alignment = position;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : row {
+       : button {
+            action = "(zoomcmd)";
+            key = "BZ";
+            label = "Zoom";
+       }
+
+       : button {
+            action = "(pancmd)";
+            key = "BP";
+            label = "Pan";
+       }
+   }
+
+Related DCL Tiles
+   [link]dialog
+   [link]column
+   [link]row
+   [link]boxed_column
+   [link]boxed_row
+   [link]boxed_radio_column
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]slider

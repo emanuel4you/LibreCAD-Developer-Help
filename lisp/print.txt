@@ -1,0 +1,25 @@
+LISP Functions
+
+   (print [expression [file-descriptor]])
+     __________________________________________________________________
+
+   Print, using formatted printing.
+     __________________________________________________________________
+
+   The print function automatically inserts a new-line character prior to the expression and appends a space following it. Similar to [link]prin1, the print function interprets control characters literally, meaning it does not execute them.
+
+EXAMPLES
+   Code Prints Returns
+   (print "First pt: ") New line.
+   "First pt:Space." "First pt:"
+
+   (print "\nCompany\005: ") New line. "\nCompany\005: "
+      "\nCompany\005:Space."
+
+NOTE
+   It is important to note that the distinction between the print function and other print-related functions in LISP, such as [link]prin1 and [link]princ, lies in the fact that print inherently adds a new-line character before the expression and a space after it.
+
+More about...
+   [link](prompt string)
+   [link](terpri)
+   [link](write-line string [file-descriptor])

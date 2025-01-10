@@ -1,0 +1,18 @@
+LISP Functions
+
+   (vals map)
+     __________________________________________________________________
+
+   Returns a sequence of the map's values.
+     __________________________________________________________________
+
+   This function takes a hash-map and returns a list (mal list value) of all the values in the hash-map.
+
+EXAMPLES
+   Code                        Returns
+   (vals {:a "foo", :b "bar"}) ("foo" "bar")
+   (vals {})                   nil
+   (vals nil)                  nil
+
+More about...
+   [link](map f coll)

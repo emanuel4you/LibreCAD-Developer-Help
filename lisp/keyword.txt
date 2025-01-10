@@ -1,0 +1,18 @@
+LISP Functions
+
+   (keyword name) (keyword ns name)
+     __________________________________________________________________
+
+   Returns a Keyword with the given namespace and name.
+     __________________________________________________________________
+
+   This function takes a string and returns a keyword with the same name usually just be prepending the special keyword unicode.
+
+EXAMPLES
+
+   Code            Returns
+   (keyword "foo") :foo
+
+More about...
+   [link](map)
+

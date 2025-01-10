@@ -1,0 +1,20 @@
+LISP Functions
+
+   (read-string s)
+     __________________________________________________________________
+
+   Reads one object from the string s.
+     __________________________________________________________________
+
+   This function reads one object from the string s.
+
+EXAMPLES
+   Code                Returns
+   (read-string "1.1") 1.100000
+
+NOTE
+   read-string can execute code, and as such should be used only with trusted sources.
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])

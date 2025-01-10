@@ -1,0 +1,15 @@
+LISP Functions
+
+   (atan number1 [number2])
+     __________________________________________________________________
+
+   Calculate the arctangent.
+     __________________________________________________________________
+
+   This function calculates the principal arc tangent of the ratio of number1 to number2. In the absence of number2, it defaults to 1.0, thereby yielding the principal arctan of number1. The result is consistently within the range of -pi/2 to pi/2 radians.
+
+More about...
+   [link](cos angle)
+   [link](sin angle)
+   [link](tan angle)
+   [link]pi

@@ -1,0 +1,21 @@
+LISP Functions
+
+   (regapp appname)
+     __________________________________________________________________
+
+   Register the application.
+     __________________________________________________________________
+
+   This function incorporates the application name into the list of registered applications for the drawing. You may register an unlimited number of applications within each drawing. The application name is recorded in the APPID symbol table, facilitating the organization of extended entity data associated with entities. This enables distinct applications to identify their specific extended entity data.
+
+   The application name may consist of a maximum of 255 characters and can include letters, numbers, and special characters, but it must not contain any spaces. If the application name is already present, a nil value is returned.
+
+EXAMPLES
+   Code                          Returns
+   (regapp "AM/FM.DESIGNER")     "AM/FM.DESIGNER"
+   (regapp "LibreCad-DEPT.52") "LibreCad-DEPT.52")
+
+More about...
+   [link](ads)
+   [link](setfunhelp "c:filename" [helpfile [topic [command-name]]]])
+   [link](xload appname [flag])

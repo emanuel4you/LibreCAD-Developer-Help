@@ -1,0 +1,35 @@
+LISP Functions
+
+   (< item1 item2 ...)
+     __________________________________________________________________
+
+  The initial item is smaller than the subsequent ones.
+     __________________________________________________________________
+
+   The less-than function yields a T (true) or a nil (false) result:
+
+     * If item1 is smaller than item2 (and so forth), the function will return a T.
+     * Conversely, if item2 is greater than or equal to the first item, the function will return nil.
+
+   In cases where the function evaluates more than two items, it will return T if every item to the right is smaller than the item to its left. The items may consist of either numbers or strings.
+
+EXAMPLES
+   Code            Returns
+   (< 9 11)        T
+   (< 25 20)       nil
+   (< 2)           T
+   (< -2)          T
+   (< "x" "x")     nil
+   (< "x" "y" "z") T
+
+NOTE
+   To operator function.
+
+More about...
+   [link](<= item1 item2 ...)
+   [link](= item1 item2 ...)
+   [link](> item1 item2 ...)
+   [link](>= item1 item2 ...)
+   [link](cond (statement1 result1 ...) ...)
+   [link](if test statement1 [statement2])
+   [link](while text statement )

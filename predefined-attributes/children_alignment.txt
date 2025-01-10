@@ -1,0 +1,27 @@
+DCL Attributes
+
+   children_alignment = position;
+     __________________________________________________________________
+
+   Specifies the default alignment.
+     __________________________________________________________________
+
+   Possible values for columns, the available options are left, right, or centered (default: centered).
+
+   Possible values fows, the options include top, bottom, or centered (default: centered).
+
+EXAMPLE
+   children_alignment = right;
+
+Valid Tiles
+   [link]row
+   [link]column
+   [link]radio_row
+   [link]radio_column
+   [link]boxed_row
+   [link]boxed_column
+   [link]boxed_radio_row
+   [link]boxed_radio_column
+
+More about...
+   [link]children_fixed_height

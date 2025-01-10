@@ -1,0 +1,24 @@
+LISP Functions
+
+   (eq statement1 statement2)
+     __________________________________________________________________
+
+   Determine whether two expressions are bound to the same symbol.
+     __________________________________________________________________
+
+   This function assesses whether two expressions are associated with the same symbol. If they are, the function returns T; otherwise, it returns nil.
+
+EXAMPLES
+   Code               Comments
+   (setq s1 '(1 2 3)) Create symbol s1.
+   (setq s2 '(1 2 3)) Create symbol s2.
+   (setq s3 s2)       Bind s2 to s3.
+   (eq s1 s3)         nil because s1 and s3 are not the same list.
+   (eq s3 s2)         T because s3 and s2 are the same list.
+
+NOTE
+   It is important to note the distinctions among the =, equal, and eq functions. The = function yields T when two numbers or strings are identical. The equal function returns T when two expressions are equivalent. In contrast, the eq function returns T when two expressions are linked to the same symbol.
+
+More about...
+   [link](boundp item)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

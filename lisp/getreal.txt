@@ -1,0 +1,23 @@
+LISP Functions
+
+   (getreal [prompt])
+     __________________________________________________________________
+
+   Request the user to indicate a real number.
+     __________________________________________________________________
+
+   You may include a prompt argument to guide the user in entering the desired number.
+
+EXAMPLES
+   Code            Returns
+   (getreal)
+   [type -5] no response
+   -5.0
+   (getreal "Scale factor: ")
+   [type 5 Scale factor
+   5.0
+
+More about...
+   [link](getint [prompt])
+   [link](getpoint [point] [prompt])
+   [link](getstring [flag] [prompt])

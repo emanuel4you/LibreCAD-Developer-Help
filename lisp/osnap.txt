@@ -1,0 +1,38 @@
+LISP Functions
+
+   (osnap point mode)
+     __________________________________________________________________
+
+   Identify the three-dimensional coordinates of an entity snap.
+     __________________________________________________________________
+
+   This function utilizes the entity snap modes available in LibreCAD to locate a specific point. You can indicate the desired entity snap mode through the mode argument, and it is possible to assign multiple modes at the same time.
+
+   Mode  Meaning
+   "nea" NEArest
+   "end" ENDpoint
+   "mid" MIDpoint
+   "cen" CENter
+   "per" PERpendicular
+   "tan" TANgent
+   "qua" QUAdrant
+   "ins" INSertion
+   "po"  POint
+   "int" INTersection (3D intersection)
+   "pla" PLAnview (2D intersection)
+   "vis" VISible (apparent intersection)
+   "off" Off
+
+   By employing the point argument, you designate a specific point in proximity to the entity where the snap connection is established. In the absence of a point that meets the mode requirements, the function will yield a nil result.
+
+EXAMPLES
+   Code                          Returns
+   (osnap '(1 5) "center")       (5.0 5.0 0.0)
+   (osnap p1 "midp,endp,center") (2.5 3.0 0.0)
+
+NOTE
+   It is important to note that the permissible distance between the initial point and the entity is governed by the system variable APERTURE, which can vary from 1 to 50 pixels.
+
+More about...
+   [link](getpoint [point] [prompt])
+   [link](inters point1 point2 point3 point4 [flag])

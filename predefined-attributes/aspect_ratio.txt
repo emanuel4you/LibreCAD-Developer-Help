@@ -1,0 +1,26 @@
+DCL Attributes
+
+   aspect_ratio = real;
+     __________________________________________________________________
+
+   Specify an image's aspect ratio.
+     __________________________________________________________________
+
+   This attribute defines the proportion of an image's width in relation to its height. A frequently used aspect ratio is 1.33, corresponding to a width of 4 and a height of 3.
+
+   To produce images with the appropriate aspect ratio, one should establish a paperspace viewport measuring 1.333 units in width and 1 unit in height, subsequently scaling as needed. Transition to modelspace to accurately center the image by utilizing Pan and Zoom, and then create a slide.
+
+   For the real parameter, please specify a real number. When the value is set to 0.0, the image tile will expand to match the image size. The default setting is (none).
+
+EXAMPLE
+   aspect_ratio = 0.0;
+
+NOTE
+   It is important to note that slide libraries are not supported. The aspect_ratio attribute is used with the [link]height or [link]width attribute. You do not use the aspect_ratio attribute when you use both height and width.
+
+Valid Tiles
+   [link]image
+   [link]image_button
+
+More about...
+   [link]big_increment

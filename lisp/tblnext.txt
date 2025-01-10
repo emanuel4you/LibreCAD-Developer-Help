@@ -1,0 +1,37 @@
+LISP Functions
+
+   (tblnext table-name [flag])
+     __________________________________________________________________
+
+   Retrieve the subsequent item in the table.
+     __________________________________________________________________
+
+  This function identifies the first (or next, based on the flag) occurrence of a symbol type within the drawing table. The parameter table-name denotes the specific symbol type to be located. Acceptable table-names include:
+
+   Table-name           Meaning
+   "appid"    Application identification.
+   "block"    Block names.
+   "dimstyle" Dimension style names.
+   "layer"    Layer names.
+   "ltype"    Linetype names.
+   "style"    Text style names.
+   "ucs"      UCS names.
+   "view"     View names.
+   "vport"    Viewport names.
+
+   Initially, the tblnext function yields the first designated symbol from the pairs. When invoked repeatedly, it provides the next symbol in sequence. If there are no additional symbols available in the list, nil is returned.
+
+   When the flag argument is provided (usually set to T), the search commences from the beginning of the table.
+
+EXAMPLE
+   Code                           Comments
+   (tblnext "block" T)            Gets first block.
+   ((0 . "BLOCK")                 Symbol type.
+   (2 . "MYBLOCK")                Block name.
+   (10 0.0 0.0 0.0)               Insertion point.
+
+More about...
+   [link](entget entity-name [application-list])
+   [link](tblobjname table-name symbol)
+   [link](tblsearch table-name symbol [flag])
+   [link](vports)

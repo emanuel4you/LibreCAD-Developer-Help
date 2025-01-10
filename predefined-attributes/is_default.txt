@@ -1,0 +1,24 @@
+DCL Attributes
+
+   is_default = true/false;
+     __________________________________________________________________
+
+   Activate this button when [Enter] is pressed.
+     __________________________________________________________________
+
+   This attribute indicates that a specific button is designated as the default button when the user presses the [Enter] key. In a dialog box, only one button may have the is_default attribute set to true. Generally, the is_default attribute is applied to the OK or Apply button.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   is_default = true;
+
+NOTE
+     * The is_default attribute does not apply while another button has the focus.
+     * Setting the [link]initial_focus to the OK button ensures that is_default applies and allows the user to exit the dialog box quickly.
+
+Valid Tile
+   [link]button
+
+More about...
+   [link]is_enabled

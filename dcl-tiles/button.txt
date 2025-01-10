@@ -1,0 +1,63 @@
+DCL Tiles
+
+   : button
+     __________________________________________________________________
+
+   Create a button may or may not include a label.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This active tile facilitates the creation of a button, which can feature a label or remain unlabelled. Typically, a button serves the purpose of closing a dialog box or presenting an additional box (referred to as "tunneling dialog boxes"). It is essential for every dialog box to contain at least one button linked to the [link]LISP function [link]done_dialog; failure to do so will result in the program becoming unresponsive.
+
+   : button {
+       action = "(done_dialog)";
+       label = "OK";
+   }
+
+NOTE
+   Several predefined tiles are available that encompass the most frequently used button configurations, such as the [link]ok_only attribute, [link]ok_cancel, and [link]ok_cancel_help tiles.
+
+Valid Attributes
+   : button {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_cancel = flag;
+       [link]is_default = flag;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]mnemonic = "char";
+       [link]width = number;
+   }
+
+EXAMPLE
+
+   : button {
+       action = "(convdxf)";
+       label="Convert to DXF";
+       mnemonic="C";
+       key="BC";
+   }
+
+NOTE
+   The [link]label attribute indicates the text on the button-for
+
+   EXAMPLE
+        label = "Sync Grid to Snap"
+
+Related DCL Tiles
+   [link]edit_box
+   [link]image_button
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]slider
+   [link]toggle
+
+More about...
+   [link]column

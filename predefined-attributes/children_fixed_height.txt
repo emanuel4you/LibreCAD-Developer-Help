@@ -1,0 +1,27 @@
+DCL Attributes
+
+   children_fixed_height = true/false;
+     __________________________________________________________________
+
+   Specifies the default height.
+     __________________________________________________________________
+
+   The height attribute of a child is not overridden if it has been explicitly defined.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   children_fixed_height = false;
+
+Valid Tiles
+   [link]row
+   [link]column
+   [link]radio_row
+   [link]radio_column
+   [link]boxed_row
+   [link]boxed_column
+   [link]boxed_radio_row
+   [link]boxed_radio_column
+
+More about...
+   [link]children_fixed_width

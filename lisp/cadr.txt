@@ -1,0 +1,18 @@
+LISP Functions
+
+   (cadr list)
+     __________________________________________________________________
+
+   Returns the second element of a list
+     __________________________________________________________________
+
+   This function returns the second element of a list
+
+EXAMPLES
+
+   Code                         Returns
+   (setq pt '(7.10 2.0))   (5.25 2.0)
+   (caddr pt)                  2.0
+
+More about...
+   [link](car)

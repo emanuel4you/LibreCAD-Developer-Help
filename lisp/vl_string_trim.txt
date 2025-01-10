@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-trim characterset string)
+     __________________________________________________________________
+
+   Remove specified characters from the beginning and end of a string.
+     __________________________________________________________________
+
+   This function produces a string that excludes the designated characters from both its beginning and end.
+
+EXAMPLE
+   Code                                     Returns
+   (vl-string-trim "Text" "My Middle Text") "MIDDLE"
+
+More about...

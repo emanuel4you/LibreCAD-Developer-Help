@@ -1,0 +1,20 @@
+LISP Functions
+
+   (member coll x)
+     __________________________________________________________________
+
+   Returns true if x is member off coll true, false otherwise.
+     __________________________________________________________________
+
+   This function evaluates whether x is member off coll, if it is not in coll, the function will return false.
+
+EXAMPLES
+
+   Code                           Returns
+   (member '("one" "two" "three") "one") true
+   (member '("one" "two" "three") "six") false
+
+More about...
+   [link](list expression )
+   [link](number? item)
+   [link](reverse list)

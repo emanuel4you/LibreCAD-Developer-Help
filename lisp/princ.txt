@@ -1,0 +1,43 @@
+LISP Functions
+
+   (princ [expression [file-descriptor]])
+     __________________________________________________________________
+
+   Print, taking into account control characters.
+     __________________________________________________________________
+
+   This function outputs content either to a file or to the display screen. If a file descriptor is specified, LISP directs the output to a file; if the file descriptor is absent, the output is sent to the Prompt History window.
+
+   When outputting to a file, it is essential that the file has been created beforehand.
+
+   The argument expression denotes the content to be printed. This can encompass any type of expression, not limited to strings. The expression will be printed along with a newline character.
+
+   In contrast to the functions [link]print and [link]prin1, the princ function processes any control characters found within the expression. The following control characters may be utilized within the expression:
+
+   Control Character        Meaning
+   \\                \ backslash character
+   \"                " quote character
+   \e                Escape
+   \n                Newline
+   \r                Return
+   \t                Tab
+   \nnn              Octal code nnn
+
+EXAMPLES
+   Code Prints Returns
+   (princ "\nName:") (new line)
+   Name: "\n Name:"
+
+   (setq a "Address: ")
+   (princ a) Address: "Address: "
+   (princ 'a) A A
+   (princ "Telephone: " f) Telephone: (to file f) "Telephone: "
+
+NOTE
+   It is important to note that the princ function differs from LISP's other printing functions, such as print and prin1, in that it specifically addresses control characters.
+
+More about...
+   [link](prompt string)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](terpri)
+   [link](write-line string [file-descriptor])

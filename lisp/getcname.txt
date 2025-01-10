@@ -1,0 +1,23 @@
+LISP Functions
+
+   (getcname [ _ ]command-name)
+     __________________________________________________________________
+
+   Establish the localized command designation.
+     __________________________________________________________________
+
+   This function provides the corresponding command designation based on the presence of the underscore (_) prefix:
+
+     * If the command is prefixed by _, the localized command designation is returned.
+     * If there is no prefix, the English command designation is returned.
+
+EXAMPLES
+   Code               Returns
+   (getcname "_zoom") "zoom"
+   (getcname "zoom")  "_zoom"
+
+More about...
+   [link](command cmd [arguments] ...)
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](menucmd string)

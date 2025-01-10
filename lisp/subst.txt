@@ -1,0 +1,19 @@
+LISP Functions
+
+   (subst new old list)
+     __________________________________________________________________
+
+   Replace a specified element with another within a list.
+     __________________________________________________________________
+
+   This function operates similarly to the search-and-replace feature found in word processing software. However, the distinction lies in the fact that the subst function is designed to work with lists rather than strings.
+
+   The subst function substitutes every instance of the old element with the new element within the list.
+
+EXAMPLE
+   Code Returns
+   (subst '"a" '"b" '("a" "b" "c")) (a a c)
+
+More about...
+   [link](length list)
+   [link](member item list)

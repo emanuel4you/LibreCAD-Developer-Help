@@ -1,0 +1,35 @@
+LISP Functions
+
+   (entmod entity-list)
+     __________________________________________________________________
+
+   Modify the entity in the drawing.
+     __________________________________________________________________
+
+   This function modifies the entity specified by the entity-list within the drawing database. It is possible that you have made alterations to the entity-list that have been permanently saved in the database.
+
+EXAMPLE
+   Utilize the following LISP code example as a reference to alter any property of any entity:
+
+   Code Explanation
+   (setq en (entnext)) ;Retrieve the entity name of the first entity in the drawing.
+   (setq en1 (entget en)) ;Obtain the entity data corresponding to the entity name.
+   (setq en1 (subst (cons 62 5)
+   (assoc 62 en1) ;Change the color to blue (color #5).
+   en1))
+   (entmod en1) ;Update the color of entity en1.
+
+NOTES
+     * Entmod verifies that the following parameters are valid for each entity: layer name, linetype name, and color name or number.
+     * Entmod will automatically create a layer if it does not already exist.
+
+More about...
+   [link](entdel entity-name)
+   [link](entget entity-name [application-list])
+   [link](entlast)
+   [link](entmake [entity-list])
+   [link](entsel [prompt])
+   [link](entupd entity-name)
+   [link](nentsel [prompt])
+   [link](nentselp [prompt] [point])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,20 @@
+LISP Functions
+
+   (write-char character [file-descriptor])
+     __________________________________________________________________
+
+   Write that character to a file.
+     __________________________________________________________________
+
+   This function is designed to write a character to a specified file. The characters written are represented in ASCII code. To convert a letter into its ASCII code, one can utilize the (equal statement1 statement2). If the file descriptor is omitted, the character will be output to both the command line and the Prompt History window.
+
+NOTE
+   It is important to note that the [link]write-line function, which accepts a string as its format argument, is generally more practical and efficient compared to the write-char function.
+
+EXAMPLE
+   Code Returns Prints in File
+
+More about...
+   [link](chr integer)
+   [link](read-char [file-descriptor])
+   [link](write-line string [file-descriptor])

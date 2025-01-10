@@ -1,0 +1,34 @@
+LISP Functions
+
+   (getorient [pt] [prompt])
+     __________________________________________________________________
+
+   Request the user to indicate a specific angle.
+     __________________________________________________________________
+
+   The output provided by the getorient function is not influenced by the variables ANGDIR and ANGBASE. The reference point is consistently positioned at the zero-radian direction, which is oriented to the right (or east). Angles are measured in a counterclockwise manner. The angles produced by getorient are expressed in radians.
+
+   This function is more suitable for determining absolute angles (orientation) rather than relative angles (amount of rotation).
+
+   It is not permissible to use another LISP expression as a response to a getorient inquiry.
+
+EXAMPLES
+   Code                 Returns
+   (getorient)
+   [pick first point]
+   [pick second point] no response
+   Second point:
+   (getorient '(3.5 2.0))
+   [pick point] no response
+   (getorient "Real Angle: ")
+   [pick first point]
+   [pick second point] Real Angle:
+   Second point:
+   0.3222
+   [pick point] Real Angle:
+
+More about...
+   [link](angle point1 point2)
+   [link](getangle [point] [prompt])
+   [link](getdist [point] [prompt])
+   [link](polar point angle distance)

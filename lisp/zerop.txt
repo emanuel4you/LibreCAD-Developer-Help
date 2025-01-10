@@ -1,0 +1,23 @@
+LISP Functions
+
+   (zerop number)
+     __________________________________________________________________
+
+   Assess whether this number is equal to zero.
+     __________________________________________________________________
+
+   In the case that the value is zero, the zerop function yields a T. If not, it returns a nil.
+
+EXAMPLES
+   Code           Returns
+   (zerop 0)      T
+   (zerop 0.5)    nil
+   (zerop 0.0000) T
+
+More about...
+   [link](atom item)
+   [link](boundp item)
+   [link](listp item)
+   [link](not item)
+   [link](null item)
+   [link](numberp item)

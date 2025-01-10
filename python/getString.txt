@@ -1,0 +1,17 @@
+PYTHON Functions
+
+   string getString(string msg = "Enter a text: ")
+     __________________________________________________________________
+
+   Function prompt a message in commandline. Input in commandline.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a string.
+
+NOTE
+   If no Commandline, fallback to dialog box for input.
+
+More about...
+   [link]getInt

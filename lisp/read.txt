@@ -1,0 +1,26 @@
+LISP Functions
+
+   (read string)
+     __________________________________________________________________
+
+   Identify the initial element in a string.
+     __________________________________________________________________
+
+   Spaces should not be included in the string argument unless they are part of a list or another string.
+
+EXAMPLES
+   Code                     Returns       Type
+   (read "one" )            ONE           Atom.
+   (read "one two" )        ONE           Atom.
+   (read " (1 2 3) (1) " )  (1 2 3)       List.
+   (read " (one two) " )    (ONE TWO)     List.
+   (read "12")              12            Integer.
+   (read "\"First Name:\"") "First Name:" String.
+
+More about...
+   [link](car list)
+   [link](cdr list)
+   [link](last list)
+   [link](print [expression [file-descriptor]])
+   [link](read-char [file-descriptor])
+   [link](write-line string [file-descriptor])

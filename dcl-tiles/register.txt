@@ -1,0 +1,36 @@
+DCL Tiles
+
+   : register
+     __________________________________________________________________
+
+   Display a register of tabs.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile arranges a sequence of tab tiles in a horizontal order. The register cluster only the [link]tab tile.
+
+NOTE
+   The register tile is specifically designed for the DCL implementation included with LibreCAD.
+
+Valid Attributes
+   : register {
+       [link]label = "string";
+   }
+
+EXAMPLE
+   : register {
+       : tab {
+            label = "Tab 1";
+       }
+
+       : tab {
+            label = "Tab 2";
+       }
+   }
+
+Related DCL Tiles
+   [link]tab
+
+More about...
+   [link]tab

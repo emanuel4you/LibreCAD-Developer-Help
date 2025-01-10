@@ -1,0 +1,30 @@
+LISP Functions
+
+   (new_dialog dialog dcl-id [function point])
+     __________________________________________________________________
+
+   Display a dialog box.
+     __________________________________________________________________
+
+   To present a dialog box, utilize the following function. The dialog box is recognized by its designated name and the corresponding DCL file indicated by the handle.
+
+   The new_dialog function may optionally invoke the LISP routine specified by the function argument. To disregard this argument, use " "; this is necessary when you wish to define the point coordinates without executing a function.
+
+   The optional point parameter indicates the x,y coordinates of the upper-left corner of the dialog box. If the point contains negative coordinates, such as '(-1 -1), the dialog box will be positioned at the default location, typically the center of the LibreCAD window.
+
+   Upon successful execution of the new_dialog function, it returns T; if unsuccessful, it returns nil.
+
+EXAMPLE
+   Code
+   ((setq dcl_id (load_dialog "dcl_filename.dcl"))
+   (if (not (new_dialog "Dialog_Name" dcl_id) ) (alert "Cannot create
+   dialog"))
+
+NOTE
+   The sequence for invoking a dialog box is as follows:
+    1. l[link]oad_dialog
+    2. new_dialog
+    3. [link]action_tile, [link]start_image, [link]start_list, etc. (this includes all necessary dialog box initialization, such as linking actions to tiles, creating images, and preparing lists for list boxes).
+
+More about...
+   [link](unload_dialog dcl_id)

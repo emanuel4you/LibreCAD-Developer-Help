@@ -1,0 +1,22 @@
+LISP Functions
+
+   (list expression ...)
+     __________________________________________________________________
+
+   Make it a list.
+     __________________________________________________________________
+
+   This function generates a list based on the specified expressions. The last example illustrates this process. Instead of utilizing elements that are already defined as a list, you may need to construct your own list. This newly created list will serve as a variable, with its values introduced by the command list.
+
+EXAMPLES
+   Code                                Returns
+   (setq b (list 1 2))                 (1 2)
+   (setq c (list "string1" "string2")) ("string1" "string2")
+   (setq a (list (car b) (car c)))     (1 "string2")
+   (setq d '(1 2 "buckle my shoe"))    (1 2 "buckle my shoe")
+
+More about...
+   [link](cons item list)
+   [link](length list)
+   [link](listp item)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

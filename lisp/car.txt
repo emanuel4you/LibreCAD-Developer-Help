@@ -1,0 +1,25 @@
+LISP Functions
+
+   (car list)
+     __________________________________________________________________
+
+   Get the first item of a list.
+     __________________________________________________________________
+
+   This function disassembles a list and retrieves the initial element. For instance, if one were to have a list of points like (1.0, 2.0, 3.0), the car function would yield the first element of the list, which is 1.0.
+
+EXAMPLE
+
+   Code                                Returns
+   (setq a '("first" "second" "third") ("first" "second" "third")
+   (setq b (car a))                    "FIRST"
+
+More about...
+   [link](append list1 list2 ...)
+   [link](cdr list)
+   [link](cons item list)
+   [link](last list)
+   [link](length list)
+   [link](list expression )
+   [link](reverse list)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

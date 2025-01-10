@@ -1,0 +1,39 @@
+LISP Functions
+
+   (dictsearch ename symbol [setnext])
+     __________________________________________________________________
+
+   Search a dictionary for an item.
+     __________________________________________________________________
+
+   The dictremove function is designed to search through a dictionary (ename) in order to eliminate a specified item.
+
+   ; Create an entity list
+   (setq dictionary (list '(0 . "DICTIONARY") '(100 . "AcDbDictionary")))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex dictionary))
+
+   ; Get the named object dictionary
+   (setq nmdict (namedobjdict))
+
+   ; Add a record to dictionary table and returns the entity name of the object added
+   (setq newdict (dictadd nmdict "MY_DICTIONARY" xname))
+
+   ; Create an entity list
+   (setq datalist (append (list '(0 . "XRECORD") '(100 . "AcDbXrecord"))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex datalist))
+
+   ; Add a record and returns the entity name of the object added to the dictionary.
+   (dictadd newdict "DATA_RECORD" xname)
+
+   ; Searches the record and returns the record if found.
+   (setq newdictlist (dictsearch nmdict "MY_DICTIONARY"))
+
+More about...
+   [link](dictadd)
+   [link](dictnext)
+   [link](dictremove)
+   [link](dictrename)

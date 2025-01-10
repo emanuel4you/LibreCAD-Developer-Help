@@ -1,0 +1,20 @@
+LISP Functions
+
+   (getenv variable)
+     __________________________________________________________________
+
+   Assess the value of the operating system variable.
+     __________________________________________________________________
+
+   This function retrieves the value of a designated operating system environment variable, such as that stored by the DOS PATH variable. If the variable is present, its value is returned as a string; if it is absent, nil is returned.
+
+EXAMPLES
+
+   Code            Returns
+   (getenv "PATH") C:\\;C:\\WIN95;C:\\LibreCad
+   (getenv "junk") nil
+
+More about...
+   [link](getcfg parameter)
+   [link](getvar sysvar)
+   [link](setenv variable value)

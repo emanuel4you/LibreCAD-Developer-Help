@@ -1,0 +1,19 @@
+LISP Functions
+
+   (deref ref)
+     __________________________________________________________________
+
+   Exec this LibreCAD dummy.
+     __________________________________________________________________
+
+   This function takes an atom argument and returns the LISP value referenced by this atom..
+
+EXAMPLES
+   ;; Testing read of @/deref bad with CAD as @ is used...
+   Code                                  Returns
+   ;=> @a
+   ;=> (deref a)
+
+More about...
+   [link](atom a)
+

@@ -1,0 +1,12 @@
+LISP Functions
+
+   (count coll)
+     __________________________________________________________________
+
+   Returns the total number of items present in that collection.
+     __________________________________________________________________
+
+   The first parameter as a list or vector and return the number of elements that it contains. The resulting number is an integer.
+
+More about...
+   [link](length list)

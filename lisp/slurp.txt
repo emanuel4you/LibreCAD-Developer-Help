@@ -1,0 +1,16 @@
+LISP Functions
+
+   (slurp filename)
+     __________________________________________________________________
+
+   Opens a reader on f and reads all its contents, returning a string.
+     __________________________________________________________________
+
+   If successful, this function returns a string or throws an error message.
+
+EXAMPLE
+   Code                  Returns
+   (slurp "blubber.txt") "test"
+
+More about...
+   [link](load-file)

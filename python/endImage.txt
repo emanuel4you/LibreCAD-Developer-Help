@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   None endImage()
+     __________________________________________________________________
+
+   End the creation of a dialog box image.
+     __________________________________________________________________
+
+   This function signals the end of the creation of an image in the current dialog box, which was begun by the [link]startImage function.
+
+   This function returns None
+
+More about...
+   [link]endList

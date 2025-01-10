@@ -1,0 +1,18 @@
+LISP Functions
+
+   (chr integer)
+     __________________________________________________________________
+
+   Convert this integer to ASCII.
+     __________________________________________________________________
+
+   The chr function converts an ASCII code to the corresponding sign
+
+EXAMPLES
+   Code      Returns
+   (chr 120) "x"
+   (chr 0)   ""
+   (chr 2)   "/002"
+
+More about...
+   [link](ascii string)

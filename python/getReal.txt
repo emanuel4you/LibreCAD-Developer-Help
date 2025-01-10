@@ -1,0 +1,17 @@
+PYTHON Functions
+
+   double getReal(string msg = "Enter a floating point number: ")
+     __________________________________________________________________
+
+   Function prompt a message in commandline. Input in commandline.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a double.
+
+NOTE
+   If no Commandline, fallback to dialog box for input.
+
+More about...
+   [link]getDist

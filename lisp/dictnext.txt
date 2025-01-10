@@ -1,0 +1,55 @@
+LISP Functions
+
+   (dictnext ename [rewind])
+     __________________________________________________________________
+
+   Find the next item in a dictionary.
+     __________________________________________________________________
+
+   The dictnext function is designed to search through a dictionary (ename) to locate the subsequent item within that dictionary. If the rewind parameter is provided and is not nil, the dictionary will be reset, allowing for the retrieval of the first entry.
+
+EXAMPLE
+   ; Create an entity list
+   (setq dictionary (list '(0 . "DICTIONARY") '(100 . "AcDbDictionary")))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex dictionary))
+
+   ; Get the named object dictionary
+   (setq nmdict (namedobjdict))
+
+   ; Add a record to dictionary table and returns the entity name of the object added
+   (setq newdict (dictadd nmdict "MY_DICTIONARY" xname))
+
+   ; Create an entity list
+   (setq datalist (append (list '(0 . "XRECORD") '(100 . "AcDbXrecord"))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex datalist))
+
+   ; Add a record to dictionary table and returns the entity name of the object added
+   (dictadd newdict "FIRST_DATA_RECORD" xname)
+
+   ; Create an entity from entity list
+   (setq xname (entmakex datalist))
+
+   ; Add a record to dictionary table.
+   (dictadd newdict "SECOND_DATA_RECORD" xname)
+
+   ; Returns entity name of FIRST_DATA_RECORD
+   (cdr (car (dictnext newdict)))
+
+   ; Returns entity name of SECOND_DATA_RECORD
+   (cdr (car (dictnext newdict)))
+
+   ; Returns nil as there are no more records
+   (cdr (car (dictnext newdict)))
+
+   ; Rewinds and so returns entity name of FIRST_DATA_RECORD
+   (cdr (car (dictnext newdict T)))
+
+More about...
+   [link](dictadd)
+   [link](dictremove)
+   [link](dictrename)
+   [link](dictsearch)

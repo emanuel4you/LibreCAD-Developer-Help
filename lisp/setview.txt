@@ -1,0 +1,25 @@
+LISP Functions
+
+   (setview view-descriptor [vport])
+     __________________________________________________________________
+
+   Establish a 3-D viewpoint.
+     __________________________________________________________________
+
+   This function modifies the three-dimensional perspective of a designated viewport.
+
+   The view-descriptor parameter does not consist of the straightforward x, y, z coordinates, such as '(1.0 2.0 3.0), which one might anticipate from the Viewpoint command. Instead, it necessitates the view descriptor table as provided by the following:
+
+EXAMPLE
+   A straightforward method to generate the viewpoint data is by utilizing the View Save command. The example code below illustrates how to create and retrieve this data.
+   Code                                Comments
+   (command "view" "s" "asdf")         1. Establish a viewpoint named ASDF.
+   (setq vp (tblsearch "VIEW" "asdf")) 2. Retrieve the viewpoint data.
+   (setq cv (getvar "cvport"))         3. Obtain the current viewport number.
+
+NOTE
+   The vport parameter is an optional integer that indicates the viewport number. In cases where there is only one viewport, this argument is unnecessary; the default value is 2. To ascertain the number of the current viewport, utilize the Cvport system variable, as demonstrated in the example above.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](vports)

@@ -1,0 +1,18 @@
+LISP Functions
+
+   (startapp appname [filename])
+     __________________________________________________________________
+
+   Launch a application.
+     __________________________________________________________________
+
+   This function initiates any specified application identified by appname. Additionally, it may load a filename into the application if desired. Upon successful execution, the startapp function yields an integer value greater than 2; conversely, if it fails, it returns the negativ value.
+
+EXAMPLES
+   Code              Returns
+   (startapp "junk") 2
+
+More about...
+   [link](help [filename [topic [flag]]])
+   [link](load filename [flag])
+   [link](xload appname [flag])

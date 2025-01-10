@@ -1,0 +1,25 @@
+LISP Functions
+
+   (read-line [file-descriptor])
+     __________________________________________________________________
+
+   Read whole line.
+     __________________________________________________________________
+
+   It is typically more practical and efficient to utilize. Any content can be retrieved from a file, as the format is a string. The file is designated by a specific function.
+
+EXAMPLE
+   For instance, consider the following example: if the file sample.lsp is present, the first line contains "C:\Sample\First.txt," and the second line reads "Second Line."
+   Code                                Returns
+   (setq file (open "sample.lsp" "r"))
+   (setq c (read-line file))           "C:\\Sample\\First.txt"
+   (setq d (read-line file))           "Second Line"
+
+NOTES
+     * The read-line function advances to the subsequent line in the file automatically, providing the next line as its output.
+
+     * Upon reaching the end of the file, the read-line function returns nil.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](write-line string [file-descriptor])

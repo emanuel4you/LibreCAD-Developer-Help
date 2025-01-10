@@ -1,0 +1,16 @@
+LISP Functions
+
+   (untrace function ...)
+     __________________________________________________________________
+
+   Turn off debug mode.
+     __________________________________________________________________
+
+   This function disables the trace debugging assistance for the selected output.
+
+EXAMPLE
+   Code Returns
+   (untrace fname) FNAME
+   Clears trace aid for FNAME function.
+
+More about...

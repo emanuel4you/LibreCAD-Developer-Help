@@ -1,0 +1,32 @@
+LISP Functions
+
+   (cvunit value from to)
+     __________________________________________________________________
+
+   Convert one unit to an other.
+     __________________________________________________________________
+
+   This function facilitates the conversion of a value from one measurement type to another. The value represents the numerical quantity intended for conversion. The 'from' and 'to' parameters specify the units being converted.
+
+   For instance, the command (cvunit 10 "hour" "day") performs a conversion from hours to days. If the specified units are not compatible, the function will return a nil value.
+
+   The available units of measurement can be located in the LibreCad.unt file. Additional information regarding LibreCAD can be found in the LibreCAD User's Guide.
+
+NOTE
+   Points, or numerical lists, can also be transformed, as demonstrated in the examples provided above.
+
+
+
+More about...
+   [link](angtof string [mode])
+   [link](angtos angle [mode [precision]])
+   [link](ascii string)
+   [link](atof string)
+   [link](atoi string)
+   [link](chr integer)
+   [link](distof string [mode])
+   [link](fix number)
+   [link](float number)
+   [link](itoa integer)
+   [link](rtos number [mode [precision]])
+   [link](strcase string [flag])

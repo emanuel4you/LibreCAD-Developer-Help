@@ -1,0 +1,75 @@
+LISP Functions
+
+   (acad_truecolordlg color-number [flag])
+     __________________________________________________________________
+
+   Display the Color dialog box with the Index Color, True Color, and
+   Color Books tabs.
+     __________________________________________________________________
+
+   This function displays the Color dialog box with the Index Color, True
+   Color, and Color Books tabs. This function returns the color that the
+   user selects from the dialog box or nil when the user clicks the Cancel
+   button.
+
+   The color-number argument lets you provide a default color that is
+   selected when the dialog box opens.
+     * Type 62 long value = A color index in the range 0 - 256. The Color
+       Index tab is current. Note that when defcol is 0, the default is
+       BYBLOCK; when defcol is 256, the default is BYLAYER.
+       Color tab is current.
+       The Color Books tab is current.
+
+   When flag is nil, the dialog box disables the BYBLOCK and BYLAYER
+   buttons.
+
+   The function returns the color that was selected by the user in list
+   form containing dotted pairs:
+     * Color index Only one dotted pair is present: a 62 group code type,
+       which is the selected index color.
+     * True color Two dotted pairs are present. The last dotted pair is a
+       first dotted pair is the closest matching index color.
+     * Color book color Three dotted pairs are present. The last dotted
+       color. The second dotted pair is the corresponding true color and
+       the first dotted pair is the closest matching index color.
+
+EXAMPLES
+   The following example opens the dialog box with the color red as the
+   default.
+
+   (setq selectedColor (acad_truecolordlg '(62 . 1)))
+
+   When the user selects a different color, that value will be assigned to
+   the variable selectedColor:
+
+   (setq selectedColor (acad_truecolordlg '(62 . 1))
+
+   To get the value of the return:
+
+   (cdr (car selectedColor))
+
+NOTE
+   The first eight color numbers have the following meanings:
+   Number       Color
+   1      Red
+   2      Yellow
+   3      Green
+   5      Blue
+   6      Magenta (pink)
+   9      Light Gray
+
+   The following example opens the dialog box with a color book color as
+   the default.
+
+   sample")))
+
+   When the user selects a different color, that value will be assigned to
+   the variable selectedColor:
+
+
+   To get the value of the return:
+
+   (cdr colorPair)
+   "Deeppink$Color book sample"
+
+More about...

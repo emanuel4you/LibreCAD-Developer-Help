@@ -1,0 +1,16 @@
+LISP Functions
+
+   (quit)
+     __________________________________________________________________
+
+   Quit the current LISP routine.
+     __________________________________________________________________
+
+   This function compels the current LISP routine to terminate, and an error message is generated.
+EXAMPLE
+   Code   Returns
+   (quit) error: quit / exit abort
+
+More about...
+   [link](*error* string)
+   [link](end_image)

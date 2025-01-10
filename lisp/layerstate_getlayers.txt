@@ -1,0 +1,17 @@
+LISP Functions
+
+   (layerstate-getlayers layerstatename [invert])
+     __________________________________________________________________
+
+   This function retrieves the layers that have been stored in a specified layer state.
+     __________________________________________________________________
+
+   The argument layerstatename is a string that indicates the name of the layer state for which the layers are to be queried. If the invert parameter is not provided or is set to nil, the function will return a list of layers that are saved within the specified layer state. Conversely, if invert is set to T, it will return a list of layers present in the drawing that are not included in the layer state.
+
+   The output will be a list of layer names. If the specified layer state does not exist or does not contain any layers, the function will return nil.
+
+EXAMPLE
+   Code                                Returns
+   (layerstate-getlayers myLayerState) Layername1 Layername2
+
+More about...

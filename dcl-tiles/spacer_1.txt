@@ -1,0 +1,27 @@
+DCL Tiles
+
+   spacer_1;
+     __________________________________________________________________
+
+   Insert a unit blank tile with dimensions of 1 in both width and height.
+
+   DCL Decorator Tile
+     __________________________________________________________________
+
+   This decorator tile introduces a blank tile with the attributes of [link]height and [link]width configured to 1.
+
+NOTE
+   It is important to observe that the structure of this tile is distinct from that of most other tiles: it lacks a : (colon) prefix and a { ... } (brace) suffix.
+
+Valid Attributes
+   none
+
+EXAMPLE
+   spacer_1;
+
+Related DCL Tiles
+   [link]spacer
+   [link]spacer_0
+
+More about...
+   [link]text

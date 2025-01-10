@@ -1,0 +1,24 @@
+LISP Functions
+
+   (set 'symbol statement)
+     __________________________________________________________________
+
+   Assign the statement to the symbol.
+     __________________________________________________________________
+
+   The function 'set' assigns the statement argument to the specified symbol. It is essential that the symbol is enclosed in quotes. If the symbol is not quoted, it will alter the values of symbols that have been assigned previously.
+
+EXAMPLES
+   Code          Returns
+   (set 'x 56)         56
+   (set 'y "Hello")    "Hello"
+   (set 'z '(a b c d)) (A B C D)
+
+NOTE
+   The distinction between the 'set' function and the 'setq' function lies in the fact that 'set' evaluates the symbol. The following expressions are equivalent:
+
+   (set 'i "Me")
+   (setq i "Me")
+
+More about...
+   [link](quote statement)

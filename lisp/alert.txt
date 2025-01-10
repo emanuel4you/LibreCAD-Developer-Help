@@ -1,0 +1,21 @@
+LISP Functions
+
+   (alert string)
+     __________________________________________________________________
+
+   Display an info message box.
+     __________________________________________________________________
+
+   This function presents a dialog box containing your specified string (a personalized message) along with an OK button. To include multiple lines of text, utilize the new-line character (\n) within the string to delineate the lines.
+
+EXAMPLES
+   Code Returns
+   (alert "Hello, World!") Hello, World!
+   (alert "Select: \n Y or N") Select:
+   Y or N
+
+NOTE
+   It is advisable to maintain the alert text concise and direct.
+
+More about...
+   [link](*error* string)

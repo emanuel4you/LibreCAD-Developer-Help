@@ -1,0 +1,49 @@
+DCL Attributes
+
+   value = "string";
+     __________________________________________________________________
+
+   Specify the default value of a tile.
+     __________________________________________________________________
+
+   This attribute defines the default value assigned to a tile, which varies based on the tile's type.
+
+   string: a string; no default.
+
+   The following table summarizes the default value for each type of tile:
+
+   Tile Type              Default Value
+   [link]boxed_radio_column Key of the selected radio button.
+   [link]boxed_radio_row    Key of the selected radio button.
+   [link]dialog             Optional text for the dialog box's title bar.
+   [link]edit_box           Default text seen by the user in the edit box.
+   [link]image              Default image seen in the image box.
+   [link]list_box           Lists items that are initially highlighted.
+   [link]popup_list         Lists items that are initially highlighted.
+   [link]radio_button       "1" = button is on; "0" = button is off.
+   [link]radio_column       Key of the selected radio button.
+   [link]radio_row          Key of the selected radio button.
+   [link]slider             Default value of the slider.
+   [link]dail             Default value of the slider.
+   [link]scroll             Default value of the slider.
+   [link]slider             Default value of the slider.
+   [link]text               Text displayed by the tile.
+   [link]toggle             "1" = checked or on; "0" = unchecked or off.
+
+EXAMPLE
+   value = "1";
+
+Valid Tiles
+   [link]text
+   [link]popup_list
+   [link]edit_box
+   [link]multi_edit_box
+   [link]radio_button
+   [link]dail
+   [link]scroll
+   [link]slider
+   [link]list_box
+   [link]toggle
+
+More about...
+   [link]width

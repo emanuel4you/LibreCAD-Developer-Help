@@ -1,0 +1,11 @@
+LISP Functions
+
+   (vl-string-mismatch string1 string2 [pos1 pos2 ignore-case-p)
+     __________________________________________________________________
+
+   Return the number of matched characters in two strings.
+     __________________________________________________________________
+
+   This function provides an integer value that indicates the count of characters that match at corresponding positions in the two strings.
+
+More about...

@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   None prompt(string prompt)
+     __________________________________________________________________
+
+   Function prompt a message in commandline.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a None.
+
+More about...
+   [link]Messagebox

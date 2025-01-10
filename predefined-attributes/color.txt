@@ -1,0 +1,39 @@
+DCL Attributes
+
+   color = colorname;
+     __________________________________________________________________
+
+   Specifies the background color of an image.
+     __________________________________________________________________
+
+   Possible values include either an integer or a reserved word (default: 7), which can be indicated as a LibreCAD color number or as one of the symbolic names presented in the table below:
+
+   Symbolic name              Meaning
+   dialog_line                Current dialog box line color
+   dialog_foreground          Current dialog box foreground color (for text)
+   dialog_background          Current dialog box background color
+   graphics_background        Current background of the LibreCAD graphics screen (usually equivalent to 0)
+   black                      LibreCAD color = 0 (black) (appears white on a black background)
+   red                        LibreCAD color = 1 (red)
+   yellow                     LibreCAD color = 2 (yellow)
+   green                      LibreCAD color = 3 (green)
+   cyan                       LibreCAD color = 4 (cyan)
+   blue                       LibreCAD color = 5 (blue)
+   magenta                    LibreCAD color = 6 (magenta)
+   white/graphics_foreground  LibreCAD color = 7 (white) (appears black on a light background)
+
+EXAMPLE
+   color = green;
+
+Valid Tiles
+   [link]row
+   [link]column
+   [link]radio_row
+   [link]radio_column
+   [link]boxed_row
+   [link]boxed_column
+   [link]boxed_radio_row
+   [link]boxed_radio_column
+
+More about...
+   [link]edit_limit

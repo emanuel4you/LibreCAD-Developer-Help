@@ -1,0 +1,18 @@
+LISP Functions
+
+   (expt base power)
+     __________________________________________________________________
+
+   Calculate the exponential.
+     __________________________________________________________________
+
+   This function computes the base raised to a specified exponent. When both the base and the exponent are real numbers, the outcome will also be a [link]real number.
+
+EXAMPLES
+   Code         Returns
+   (expt 5 2)   25
+
+More about...
+   [link](exp number)
+   [link](log number)
+   [link](log10 number)

@@ -1,0 +1,22 @@
+LISP Functions
+
+   (command cmd [arguments] ...)
+     __________________________________________________________________
+
+   Exec this LibreCAD command.
+     __________________________________________________________________
+
+   This function allows the utilization of any LibreCAD command within a LISP program. The subsequent arguments will be employed for this purpose. It is essential to assign points to variables following the invocation of the function [link]getpoint.
+
+   Certain commands may extend beyond the specified points. To terminate a command, input a space enclosed in quotes to signify an Enter, thereby concluding the command.
+
+EXAMPLES
+
+   Code                                  Returns
+   (command "arc" p1 p2 p3)              Using preset variables.
+   (command "line" p1 p2 p3 " ")         Space to end the command.
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])
+   [link](menucmd string)

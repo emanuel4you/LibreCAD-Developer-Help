@@ -1,0 +1,18 @@
+LISP Functions
+
+   (alloc integer)
+     __________________________________________________________________
+
+   Set the memory segment size for LISP.
+     __________________________________________________________________
+
+   This function establishes the quantity of segments, which serves as a measure of memory, for LISP operations as indicated by the integer provided. The function also returns the amount of memory that was allocated prior, as illustrated in the examples below.
+
+EXAMPLES
+   Code        Returns
+   (alloc 0)   2
+   (alloc 512) 0
+
+More about...
+   [link](expand integer)
+   [link](gc)

@@ -1,0 +1,24 @@
+LISP Functions
+
+   (mem)
+     __________________________________________________________________
+
+   Present the status of the LISP memory.
+     __________________________________________________________________
+
+   This function provides information regarding the memory utilization by LISP. The parameters reported by mem are defined as follows:
+
+   mem         Meaning
+   Nodes       Total number of nodes allocated to LISP.
+   Free nodes  Number of nodes freed by garbage collection.
+   Segments    Number of segments allocated.
+   Allocate    Size of the segment.
+   Collections Number of garbage collections.
+
+NOTE
+   A node is 12 bytes.
+   to change the size of the segment. Use the [link]expand function to
+   change the number of segments.
+
+More about...
+   [link](gc)

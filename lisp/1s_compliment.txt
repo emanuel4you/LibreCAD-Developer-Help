@@ -1,0 +1,19 @@
+LISP Functions
+
+   (~ number)
+     __________________________________________________________________
+
+   Apply the 1s compliment.
+     __________________________________________________________________
+
+   This function computes the bitwise NOT of a given number. The input number is required.
+
+EXAMPLES
+   Code            Returns
+   (~ 10)          -11
+   (~ 0)           -1
+
+More about...
+   [link](and expression ...)
+   [link](not item)
+   [link](or statement ...)

@@ -1,0 +1,36 @@
+LISP Functions
+
+   (ssadd [entity-name [selection-set]])
+     __________________________________________________________________
+
+   Add it to the selection set.
+     __________________________________________________________________
+
+   This function incorporates the entity named entity-name into the selection set or establishes a new selection set when ssadd is invoked without any parameters. The ssadd function operates in one of the following three manners:
+
+   Code Result
+   (ssadd) A new selection set is created with no entitys.
+   (ssadd entity-name) A new selection set is created containing
+   entity-name as the only entity.
+   (ssadd entity-name selection-set) Adds the entity, entity-name, to an
+   existing selection set, selection-set.
+
+   The newly created or modified selection set name is returned in a format akin to the following:
+
+   LibreCAD allows for multiple selection sets to be open simultaneously.
+
+EXAMPLES
+   Code Comments
+   (setq sset1 (ssadd)) Creates a new selection set called sset1.
+   (setq ent1 (car (entsel))) Prompts the user to select the entity to set
+   to ent1
+   (ssadd ent1 sset1) Adds ent1 to sset1.
+   (setq ent2 (entlast)) Returns last entity in drawing; sets it to ent2.
+   (ssadd ent2 sset1) Adds ent2 to sset1.
+
+More about...
+   [link](entlast)
+   [link](entsel [prompt])
+   [link](ssdel entity-name selection-set)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

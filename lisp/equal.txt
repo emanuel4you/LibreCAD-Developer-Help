@@ -1,0 +1,22 @@
+LISP Functions
+
+   (equal statement1 statement2 [tolerance])
+     __________________________________________________________________
+
+   Assess whether two statements are identical.
+     __________________________________________________________________
+
+   This function evaluates statement1 and statement2. If they are identical, LISP returns a T; otherwise, it returns nil. This applies to the equal function and strings.
+
+EXAMPLES
+   Code                 Returns
+   (setq y x)
+   (equal x y)          T
+
+   The tolerance represents the permissible difference between the two expressions, which is particularly significant when comparing real numbers, as they are prone to rounding errors. In the subsequent example, the two statements may vary by 0.01:
+
+NOTE
+   The equal function should not be confused with the = (equal to operator) and eq functions. The = function yields T when two numbers or strings are identical. The equal function yields T when two expressions are equivalent. The eq function yields T when two expressions reference the same symbol.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

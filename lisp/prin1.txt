@@ -1,0 +1,34 @@
+LISP Functions
+
+   (prin1 [expression [file-descriptor]])
+     __________________________________________________________________
+
+   Print it exactly the way it looks.
+     __________________________________________________________________
+
+   This function outputs data either to the screen or to a file. If a file descriptor is specified, LISP directs the output to that file; if the file descriptor is absent, LISP sends the output to the LibreCAD Prompt History window.
+
+   When outputting to a file, it is necessary for the file to have been created beforehand.
+
+   The argument expression denotes the content to be printed. This can encompass any expression, not limited to strings. Only the expression itself is printed, without any additional new line or space.
+
+   The prin1 function can be invoked without arguments to yield a null string, resulting in an empty file being printed.
+
+EXAMPLES
+   Code                Prints              Returns
+   (setq v1 222)
+
+   (prin1 v1)          222                 222
+   (prin1 'v1)         V1                  V1
+   (prin1 "Thank You") "Thank you"         "Thank you"
+   (prin1 "Sample" f)  "Sample"(to file f) "Sample"
+   (prin1 "\nName:")   "\nName:"           "\nName:"
+
+NOTES
+     * To prevent the display of nil upon the completion of a LISP routine, utilize the prin1 function at the end:
+
+More about...
+   [link](prompt string)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](terpri)
+   [link](write-line string [file-descriptor])

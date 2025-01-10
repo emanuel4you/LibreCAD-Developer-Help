@@ -1,0 +1,29 @@
+LISP Functions
+
+   (/ number1 number2 ...)
+     __________________________________________________________________
+
+   Divide the initial number by the subsequent numbers.
+     __________________________________________________________________
+
+   This function calculates the quotient of the two numbers. When provided with two numbers, divide the first number by the second number. In cases where there are more than two numbers, divide the first number by the product of all subsequent numbers.
+
+   The output will be a real number. This also applies to integers; dividing integers will yield an integer result. However, if there is a mixture of real numbers and integers, the integers will be treated as real numbers, resulting in a real number output.
+
+EXAMPLES
+   Code            Returns
+   (/ 6.0 12 5)    0.100000
+   (/ 600.0 5)     120.000
+   (/ 6 -3)        -2
+   (/)             0
+   (/ 0.5)         0.500000
+
+NOTE
+   A digit must precede a decimal point. For instance, 0.5 is considered valid, whereas .5 triggers the LibreCAD error message, "Error: invalid argument list."
+
+More about...
+   [link](* number1 number2 ...)
+   [link](fix number)
+   [link](float number)
+   [link](rem number1 number2 [number3 ...])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,21 @@
+DCL Attributes
+
+   is_tab_stop = true/false;
+     __________________________________________________________________
+
+   Specifies whether the tile receives keyboard focus when pressing the Tab key.
+     __________________________________________________________________
+
+   Possible values are true or false (default: true).
+
+NOTE
+   If the tile is disabled, it is not a tab stop even if this attribute is true. If false, the tile is not a tab stop.
+
+Valid Tiles
+   All active tiles
+
+EXAMPLE
+   is_tab_stop = true;
+
+More about...
+   [link]key

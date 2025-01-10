@@ -1,0 +1,17 @@
+LISP Functions
+
+   (meta obj)
+     __________________________________________________________________
+
+   Returns the metadata of obj, returns nil if there is no metadata.
+     __________________________________________________________________
+
+   This function this takes a single LISP function/list/vector/hash-map argument and returns the value of the metadata attribute.
+
+EXAMPLES
+   Code                                   Returns
+   (meta (fn* (a) a))                     nil
+   (meta (with-meta (fn* (a) a) {"b" 1})) {"b" 1}
+
+More about...
+   [link](with-meta func)

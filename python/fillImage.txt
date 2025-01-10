@@ -1,0 +1,27 @@
+PYTHON Functions
+
+   integer fillImage(int x, int y, int width, int height, int color)
+     __________________________________________________________________
+
+   Fill a dialog box's rectangle with color.
+     __________________________________________________________________
+
+   This function draws a rectangle (or square), and then fills it with a color. This function must be used between the [link]startImage and [link]endImage functions.
+
+   The x and y arguments specify the upper-left corner of the rectangle.
+
+   The width and height arguments indicate the relative distance to the lower-right corner;
+
+   The color argument is one of the standard 255 LibreCAD colors number or a logical color number:
+
+   Color number       Description
+   7           "graphics_foreground" (current foreground of graphics screen)
+   0           "graphics_background" (current background of graphics screen)
+   -1000       "dialog_foreground"   (current dialog box foreground color)
+   -1001       "dialog_background"   (current dialog box background color)
+   -1002       "dialog_line"         (current dialog box line color)
+
+   This function returns Color number as integer
+
+More about...
+   [link]getAttr

@@ -1,0 +1,22 @@
+LISP Functions
+
+   (angtos angle [mode [precision]])
+     __________________________________________________________________
+
+   Transform this absolute angle into a string format, in relation to angbase.
+     __________________________________________________________________
+
+   The angtos function is designed to convert angles expressed in radians into string representations, rather than merely converting numerical values into strings. An optional mode argument is available for further specification.
+
+   Mode Description      Example
+   0    Decimal degrees  360d
+   2    Grad             132g
+
+NOTE
+   The optional precision argument enables the selection of the number of decimal places, with a permissible range from 0 to 15.
+
+More about...
+   [link](angle point1 point2)
+   [link](angtof string [mode])
+   [link](polar point angle distance)
+   [link](rtos number [mode [precision]])

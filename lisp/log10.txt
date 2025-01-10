@@ -1,0 +1,20 @@
+LISP Functions
+
+   (log10 number)
+     __________________________________________________________________
+
+   Calculate the common logarithm.
+     __________________________________________________________________
+
+   This function provides the common logarithm with a base of 10 (log10 x).
+
+EXAMPLES
+   Code          Returns
+   (log10 100)   2.0
+
+NOTE
+   The [link]expt function is the opposite of the log10 function.
+
+More about...
+   [link](exp number)
+   [link](log number)

@@ -1,0 +1,20 @@
+LISP Functions
+
+   (terpri)
+     __________________________________________________________________
+
+   Print a carriage return.
+     __________________________________________________________________
+
+   This function outputs a line break in the command prompt area and returns nil.
+
+EXAMPLE
+   Code Returns:
+   (terpri) Carriage return.
+   nil
+
+NOTE
+   Do not use this function to print a new line in a file. For that,
+
+More about...
+   [link](prompt string)

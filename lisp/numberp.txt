@@ -1,0 +1,19 @@
+LISP Functions
+
+   (numberp item)
+     __________________________________________________________________
+
+   Determine whether an item is a number.
+     __________________________________________________________________
+
+   Assess whether the given item qualifies as a number. If the item is identified as a number, a T is returned; otherwise, nil is returned.
+
+EXAMPLES
+   Code                 Returns
+   (numberp 0.2653)     T
+   (numberp '(5 3.2 6)) nil
+   (numberp "Name")     nil
+
+More about...
+   [link](not item)
+   [link](type item)

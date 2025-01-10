@@ -1,0 +1,28 @@
+LISP Functions
+
+   (angtof string [mode])
+     __________________________________________________________________
+
+   Convert this angle into a real number.
+     __________________________________________________________________
+
+   The number should be in radian format. The optional mode indicates the format of the "number" within the string:
+
+   Mode value String format
+   0          Decimal degrees
+   1          Degrees-minutes-seconds
+   2          Grad
+   3          Radian
+
+NOTE
+   This command will not succeed if the string's text cannot be interpreted as an angle measurement.
+
+NOTES
+     * The backslash indicates that there is a quotation mark within the string. When LISP encounters the second quotation mark, it recognizes this as the conclusion of the string.
+     * The angtof function serves as the inverse of the angtos function.
+
+More about...
+   [link](angle point1 point2)
+   [link](getangle [point] [prompt])
+   [link](polar point angle distance)
+   [link](rtos number [mode [precision]])

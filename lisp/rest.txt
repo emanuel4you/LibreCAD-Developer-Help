@@ -1,0 +1,20 @@
+LISP Functions
+
+   (rest coll)
+     __________________________________________________________________
+
+   Returns the items after the first.
+     __________________________________________________________________
+
+   This function takes a list or vector as its argument and returns a new list containing all the elements except the first. If the list or vector is empty or is nil then () (empty list) is returned.
+
+EXAMPLES
+
+   Code                          Returns
+   (rest '(1 2 3 4 5))           (2 3 4 5)
+   (rest [1 2 3 4 5])            (2 3 4 5)
+   (rest ["a" "b" "c" "d" "e"])  ("b" "c" "d" "e")
+   (rest '())                    ()
+
+More about...
+   [link](first coll)

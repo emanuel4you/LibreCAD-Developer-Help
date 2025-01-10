@@ -1,0 +1,15 @@
+LISP Functions
+
+   (sqrt number)
+     __________________________________________________________________
+
+   Calculate the square root.
+     __________________________________________________________________
+
+   This function returns the square root of the number.
+
+More about...
+   [link](expt base power)
+   [link](log number)
+   [link](log10 number)
+   [link]pi

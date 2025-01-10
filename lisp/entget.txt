@@ -1,0 +1,50 @@
+LISP Functions
+
+   (entget entity-name [application-list])
+     __________________________________________________________________
+
+   Identify the DXF data associated with an entity.
+     __________________________________________________________________
+
+   This function extracts the list of entities from the drawing database. The list is stored in a variable and subsequently disassembled.
+
+   The returned entity list consists of element pairs referred to as [link]dotted pairs, where a dot separates each component. In each pair, the first number indicates the code number corresponding to a characteristic of the element, while the second number represents the data linked to that code.
+
+EXAMPLE
+   For instance, consider the example of drawing a line and assigning it specific variable values:
+
+   Line
+   >Start point: 0,0
+   >Close/Undo/<Next point>: 5,5
+
+   Change
+   Select entities: Pick line
+   Properties/<Change point>: P
+   (Color/Elev/LAyer/LType/ltScale/Thickness)? C
+   New color <BYLAYER>: 5
+   New Layer <0>: Electric
+   New Linetype <BYLAYER>: Continuous
+   Using the settings above, the following example applies:
+
+   Function             Returns         Code
+   (0 . "LINE")         0=Entity type
+   (5 . "2B")           5=Handle
+   (100 . "AcDbEntity")
+   (62 . 5)             62=Color number
+   (6 . "CONTINUOUS")   6=Linetype name
+   (100 . "AcDbLine")
+   (10 0.0 0.0 0.0)     10=x,y,z-coords
+   (11 5.0 5.0 0.0)     11=Other x,y,z-coords
+   (210 0.0 0.0 1.0))   210=x,y,z-extrusion
+
+NOTE
+     * The entget function does not provide complete information regarding an entity. It omits dotted pair data concerning the entity's properties when they align with default values, such as color, linetype, thickness, attributes-follow flag, and the entity handle.
+     * Although the data returned by entget closely resembles the DXF format, a significant distinction exists: the x, y, z coordinates are returned by entget as a single value, rather than as separate values in DXF. Consequently, only group code 10 is visible with entget, in contrast to the DXF group codes 10 (x-coordinate), 20 (y-coordinate), and 30 (z-coordinate).
+
+More about...
+   [link](entdel entity-name)
+   [link](entlast)
+   [link](entmake [entity-list])
+   [link](entmod entity-list)
+   [link](entsel [prompt])
+   [link](entupd entity-name)

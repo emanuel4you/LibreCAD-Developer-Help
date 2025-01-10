@@ -1,0 +1,19 @@
+LISP Functions
+
+   (exp number)
+     __________________________________________________________________
+
+   Calculate the natural exponent.
+     __________________________________________________________________
+
+   The exp function yields the natural exponent, which is the inverse of the natural logarithmic function, elevated to the power of a given number (e^x), where e represents the base of the natural logarithm.
+
+EXAMPLES
+   Code       Returns
+   (exp 0)    1.00000
+
+More about...
+   [link](expt base power)
+   [link](log number)
+   [link](log10 number)
+   [link](sqrt number)

@@ -1,0 +1,22 @@
+LISP Functions
+
+   (lambda arguments expression ...)
+     __________________________________________________________________
+
+   Develop a temporary, unnamed LISP function.
+     __________________________________________________________________
+
+   This function generates another function dynamically. It is utilized when the overhead associated with establishing a new function is unwarranted. The lambda function typically appears within the context of another function and is frequently employed.
+
+EXAMPLE
+   Code          Returns
+   (apply '(lambda (a b c)
+   (+ a (* b c)))
+   '( 5 2 3))
+   11
+
+More about...
+   [link](command cmd [arguments] ...)
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](progn statement1 statement2 ...)

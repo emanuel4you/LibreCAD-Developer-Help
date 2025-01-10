@@ -1,0 +1,21 @@
+LISP Functions
+
+   (list? coll)
+     __________________________________________________________________
+
+   Determine whether an coll is a list.
+     __________________________________________________________________
+
+   This function evaluates whether the specified coll qualifies as a list. If the coll referenced by list? is indeed a list, the function will return true. Conversely, if it is not a list, the function will return false.
+
+EXAMPLES
+
+   Code                           Returns
+   (list? '("one" "two" "three")) true
+   (list? "one")                  false
+   (list? 1.00)                   false
+
+More about...
+   [link](list expression )
+   [link](number? item)
+   [link](reverse list)

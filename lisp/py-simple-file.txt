@@ -1,0 +1,16 @@
+LISP Functions
+
+   (py-simple-file)
+     __________________________________________________________________
+
+   Exec a Python Script.
+     __________________________________________________________________
+
+   This function runs a Python script and returns 0 if successful.
+
+EXAMPLE
+   Code                           Result
+   (py-simple-file "myModule.py") 0
+
+More about...
+   [link](py-simple-string "print()")

@@ -1,0 +1,33 @@
+DCL Tiles
+
+   : spacer
+     __________________________________________________________________
+
+   Insert a blank tile.
+
+   DCL Decorator Tile
+     __________________________________________________________________
+
+   This decorative tile creates an empty space within a dialog box. Although a spacer can be utilized to assist in the arrangement of other tiles, this particular tile is generally unnecessary, as the program typically arranges all tiles automatically with suitable spacing.
+
+Valid Attributes
+   : spacer {
+       [link]alignment = position;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]width = number;
+   }
+
+EXAMPLE
+   : spacer {
+       height = "5";
+       width = "10";
+   }
+
+Related DCL Tiles
+   [link]spacer_0
+   [link]spacer_1
+
+More about...
+   [link]spacer_0

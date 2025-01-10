@@ -1,0 +1,23 @@
+DCL Attributes
+
+   height = number;
+     __________________________________________________________________
+
+   Define the height of a tile.
+     __________________________________________________________________
+
+   This attribute specifies the minimum height of a tile, unless a fixed height is established by a fixed_xxx attribute, such as fixed_height. Typically, this attribute is not necessary unless there is a desire to enhance the visual appeal of the dialog box.
+
+   number: a [link]real number or an [link]integer that indicates the height in terms of character height units, which represents the maximum height of a line of screen characters, including the spacing between lines.
+
+EXAMPLE
+   height = 10.0;
+
+NOTE
+   It is important to note that the [link]aspect_ratio attribute is applicable in conjunction with either the height or [link]width attribute. The aspect_ratio attribute should not be utilized when both height and width are specified.
+
+Valid Tiles
+   all tiles
+
+More about...
+   [link]initial_focus

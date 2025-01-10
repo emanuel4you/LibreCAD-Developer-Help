@@ -1,0 +1,52 @@
+DCL Tiles
+
+   : image_button
+     __________________________________________________________________
+
+   Display an image on a button.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   This interactive tile presents an image on a button. The function provides the x and y coordinates of the user's selected point.
+
+NOTE
+   For this tile, it is necessary to define both the height and width attributes, or alternatively, to specify the aspect_ratio attribute in conjunction with either height or width, but not both attributes simultaneously.
+
+Valid Attributes
+   : image_button {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]allow_accept = flag;
+       [link]aspect_ratio = real;
+       [link]color = clr;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]mnemonic = "char";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : image_button {
+       aspect_ratio = 1.33;
+       height = 2;
+       action = "(fontlsp)";
+       key = "FN";
+   }
+
+Related DCL Tiles
+   [link]button
+   [link]edit_box
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]slider
+   [link]toggle
+
+More about...
+   [link]list_box

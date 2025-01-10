@@ -1,0 +1,19 @@
+LISP Functions
+
+   (layerstate-restore layerstatename viewport [restoreflags])
+     __________________________________________________________________
+
+   Restores a layer state into the current drawing.
+     __________________________________________________________________
+
+   The layerstatename parameter is a string that indicates the name of the layer state to be restored. The viewport parameter is an ename (ads_name) corresponding to the viewport where the layer state should be applied. If the viewport is nil, the layer state will be restored to the model space. The restoreflags parameter is an optional integer that influences the restoration process of the layer state:
+   1. Deactivate all layers that are not part of the restored layer state.
+   2. Freeze all layers that are not included in the restored layer state.
+
+   The viewport must not be nil. The function returns nil if the specified layer state does not exist or lacks any layers; otherwise, it returns a list of layer names.
+
+EXAMPLE
+   Code                                           Returns
+   (layerstate-restore myLayerState viewportId 5) Layername1 Layername2
+
+More about...

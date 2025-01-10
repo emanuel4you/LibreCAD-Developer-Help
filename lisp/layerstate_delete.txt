@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-delete layerstatename)
+     __________________________________________________________________
+
+   Delete a layer state.
+     __________________________________________________________________
+
+   The layerstatename parameter is a string that indicates the name of the layer state intended for deletion. It returns T upon successful deletion; otherwise, it returns nil.
+
+EXAMPLE
+   Code                             Returns
+   (layerstate-delete myLayerState) T
+
+More about...

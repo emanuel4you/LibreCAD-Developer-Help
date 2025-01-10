@@ -1,0 +1,23 @@
+LISP Functions
+
+   (1+ number)
+     __________________________________________________________________
+
+   Increase the value by one.
+     __________________________________________________________________
+
+   [link]integer. This function takes exactly one argument.
+
+EXAMPLES
+   Code            Returns
+   (1+ 22)         23
+   (1+ 5.02)       6.02000
+   (1+ -36)        -35
+
+NOTE
+   This function serves as a useful increment counter.
+
+More about...
+   [link](+ number1 number2 ...)
+   [link](1- number)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

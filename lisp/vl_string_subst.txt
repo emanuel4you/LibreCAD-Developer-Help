@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-subst newstring pattern string [startpos])
+     __________________________________________________________________
+
+   Replace one string within a string with a different string.
+     __________________________________________________________________
+
+   This function returns the string if any replacements are made successfully.
+
+EXAMPLE
+   Code                                     Returns
+   (vl-string-subst "My" "My Text" "Your" ) "YOUR TEXT"
+
+More about...

@@ -1,0 +1,16 @@
+LISP Functions
+
+   (py-eval-vector cmd)
+     __________________________________________________________________
+
+   Run a Python Command.
+     __________________________________________________________________
+
+   This function runs a Python Command and returns the vector.
+
+EXAMPLE
+   Code                                       Result
+   (py-eval-vector "myModule.getPoint()")     (100.00000 100.00000 0)
+
+More about...
+   [link](py-simple-file "myModule.py")

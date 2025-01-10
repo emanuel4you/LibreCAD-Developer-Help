@@ -1,0 +1,21 @@
+LISP Functions
+
+   (1- number)
+     __________________________________________________________________
+
+   Decrease the value by one.
+     __________________________________________________________________
+
+   This function requires a single argument, which must be a number or an [link]integer.
+
+EXAMPLES
+   Code            Returns
+   (1- 43)         42
+
+NOTE
+   This function serves as a decrementing counter.
+
+More about...
+   [link](- number1 number2 ...)
+   [link](1+ number)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

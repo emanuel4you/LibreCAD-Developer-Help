@@ -1,0 +1,18 @@
+LISP Functions
+
+   (get_attr key attribute)
+     __________________________________________________________________
+
+   Identify the characteristic of a dialog box's key.
+     __________________________________________________________________
+
+   This function returns the value of the dialog box attribute. Note that
+   this value changes due to user input, as well as by calls made by the
+   [link]tile; key is a string and is case-sensitive.
+
+EXAMPLE
+   Code                              Returns
+   (get_attr "pdsize_label" "Units") "Units"
+
+More about...
+   [link](get_tile key)

@@ -1,0 +1,28 @@
+DCL Attributes
+
+   edit_width = number;
+     __________________________________________________________________
+
+   Define the width of the input section of an edit box.
+     __________________________________________________________________
+
+   This attribute defines the width (measured in characters) of the text input area within an [link]edit_box, which is aligned to the right.
+
+   For number, use a [link]real number or an [link]integer.
+
+NOTE
+   It is important to note that the edit_width attribute usually differs from the [link]edit_limit attribute, which determines the maximum number of characters a user is permitted to enter in the edit box. By setting the edit_limit value higher than that of edit_width, users can input more characters than can be visually accommodated by the edit box. Consequently, not all characters in the input string may be visible simultaneously. The horizontal arrows facilitate scrolling to view the beginning or end of the input.
+
+EXAMPLE
+   edit_width = 0;
+
+NOTE
+   The default value of the edit_width attribute is 0.0, which stretches the dialog box to fit the required space.
+
+Valid Tiles
+   [link]edit_box
+   [link]multi_edit_box
+   [link]popup_list
+
+More about...
+   [link]fixed_height

@@ -1,0 +1,14 @@
+LISP Functions
+
+   (textpage)
+     __________________________________________________________________
+
+   Switch to the Text window.
+     __________________________________________________________________
+
+EXAMPLE
+   Code    Returns
+   (textpage) nil
+
+More about...
+   [link](grtext [flag text])

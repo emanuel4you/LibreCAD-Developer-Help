@@ -1,0 +1,25 @@
+DCL Attributes
+
+   layout = position;
+     __________________________________________________________________
+
+   Determine whether the slider is horizontal or vertical.
+     __________________________________________________________________
+
+   This attribute determines the orientation of a [link]slider.
+
+   position: horizontal (default) or vertical.
+
+EXAMPLE
+   layout = vertical;
+
+NOTE
+   Horizontal sliders increase in value from left to right; vertical sliders increase value from bottom to top.
+
+Valid Tile
+   [link]dail
+   [link]scroll
+   [link]slider
+
+More about...
+   [link]list

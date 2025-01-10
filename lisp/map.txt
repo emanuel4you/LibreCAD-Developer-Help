@@ -1,0 +1,17 @@
+LISP Functions
+
+   (map f coll)
+     __________________________________________________________________
+
+   evaluates the function against every element of the coll.
+     __________________________________________________________________
+
+   This function takes a function and a list or vector and evaluates the function against every element of the list or vector one at a time and returns the results as a list.
+
+EXAMPLES
+
+   Code                 Returns
+   (map 1- '(10 20 30)) (9 19 29)
+
+More about...
+   [link](mapcar '1+ coll)

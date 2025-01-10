@@ -1,0 +1,22 @@
+LISP Functions
+
+   (exit)
+     __________________________________________________________________
+
+   Terminate function.
+     __________________________________________________________________
+
+   This function forces the current application to quit.
+
+EXAMPLE
+   Code Returns
+   (exit)
+
+   error: quit/exit abort
+
+More about...
+   [link](*error* string)
+   [link](alert string)
+   [link](quit)
+   [link](trace function . . .)
+   [link](untrace function ...)

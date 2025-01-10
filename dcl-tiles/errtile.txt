@@ -1,0 +1,29 @@
+DCL Tiles
+
+   errtile;
+     __________________________________________________________________
+
+   Display an error notification at the lower section of a dialog box.
+
+   DCL Error Handler Tile
+     __________________________________________________________________
+
+   This error handler tile presents a concise error notification at the bottom of a dialog box. To display a message within the errtile, assign a value to the tile associated with the key "error." By default, the errtile is empty.
+
+   It is important to note that the format of this tile is distinct from that of most other tiles, as it does not include a colon (:) prefix or a brace ({}) suffix.
+
+Valid Attributes
+   none
+
+EXAMPLE
+   errtile;
+
+Related DCL Tiles
+   [link]ok_only
+   [link]ok_cancel
+   [link]ok_cancel_help
+   [link]ok_cancel_help_errtile
+   [link]ok_cancel_help_info
+
+More about...
+   [link]image

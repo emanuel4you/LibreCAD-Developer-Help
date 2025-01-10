@@ -1,0 +1,33 @@
+DCL Tiles
+
+   : concatenation
+     __________________________________________________________________
+
+   Concatenate one or more text_part tiles.
+
+   DCL Text Tile
+     __________________________________________________________________
+
+   This text tile merges one or more text strings into a single entity. The strings are specified in the [link]text_part tile, which does not apply any margins to the text; however, a margin is present around the entire concatenated result.
+
+
+NOTE
+   In comparison, the [link]paragraph cluster tile organizes text in a stacked format.
+
+Valid Attributes
+   none
+
+EXAMPLE
+   : concatenation {
+       text_part {label = "This";}
+       text_part {label = " is";}
+       text_part {label = " text.";}
+   }
+
+Related DCL Tiles
+   [link]paragraph
+   [link]text
+   [link]text_part
+
+More about...
+   [link]edit_box

@@ -1,0 +1,28 @@
+LISP Functions
+
+   (distof string [mode])
+     __________________________________________________________________
+
+   Convert a string to a real number.
+     __________________________________________________________________
+
+   This function transforms a string that represents a real number into an actual real number. The distof follows a specific format, similar to that of the rtos function.
+
+   Mode                   Format
+   1    Scientific.
+   2    Decimal.
+   3    Engineering: feet and decimal inches.
+   5    Fractional.
+
+EXAMPLES
+   Code                   Returns
+   (distof "2'-5.25\"" 3) 29.25
+
+NOTE
+   The backslash denotes that there will be a quote within the
+   string. Once LISP sees the second quote, it knows it's the end of the
+   string.
+
+More about...
+   [link](atof string)
+   [link](atoi string)

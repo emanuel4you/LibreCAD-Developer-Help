@@ -1,0 +1,35 @@
+LISP Functions
+
+   (xunload appname [flag])
+     __________________________________________________________________
+
+   Unload that SDS application.
+     __________________________________________________________________
+
+   LibreCAD instructs the application to release any allocated memory and terminate its operation, subsequently unloading the application and deregistering its commands.
+
+   The optional flag argument is utilized solely in the event of an error during the loading process. The xunload function returns the value of this flag if a failure occurs; if the flag is absent, an error message will be presented instead.
+
+   Should the application you are attempting to xunload not be currently loaded, a notification will be displayed indicating this, and the request will be disregarded.
+
+EXAMPLES
+   Code Returns
+   (xunload "goodapp") Unloads the application "goodapp".
+   (xunload "badapp") Error unloading application:
+   Could not find badapp.dll.
+   (xunload "badapp" "Uh-oh!") Error loading application:
+   Could not find badapp.dll. "Uh-oh!"
+   (xunload "badapp") Unloads the application "goodapp".
+   Error loading application:
+   Could not find badapp.dll
+   (xunload "notloaded") Error loading application:
+   Could not find notloaded.dll
+   Application "notloaded" not loaded
+   error: XUNLOAD failed
+   (xunload "notloaded") *Cancel*
+   "notloaded"
+
+More about...
+   [link](ads)
+   [link](load filename [flag])
+   [link](xload appname [flag])

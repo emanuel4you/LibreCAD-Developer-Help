@@ -1,0 +1,17 @@
+LISP Functions
+
+   (let* [bindings*] exprs*)
+     __________________________________________________________________
+
+   This function Evaluates the exprs in a lexical context.
+     __________________________________________________________________
+
+   This function Evaluates the exprs in a lexical context in which the symbols in the binding-forms are bound to their respective init-exprs or parts therein.
+
+EXAMPLES
+
+   Code                     Returns
+   (let* [a 1 b 2] (+ a b)) 3
+
+More about...
+   [link](progn)

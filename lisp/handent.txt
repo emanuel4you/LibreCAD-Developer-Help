@@ -1,0 +1,13 @@
+LISP Functions
+
+   (handent handle)
+     __________________________________________________________________
+
+   Identify the entity name associated with the specified handle.
+     __________________________________________________________________
+
+   This function obtains the entity name corresponding to a particular handle. In contrast to the entity name, the handle name remains unchanged.
+
+More about...
+   [link](entget entity-name [application-list])
+   [link](tblsearch table-name symbol [flag])

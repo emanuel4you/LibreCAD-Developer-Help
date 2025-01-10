@@ -1,0 +1,17 @@
+LISP Functions
+
+   (unload_dialog dcl_id)
+     __________________________________________________________________
+
+   Unload a dialog box.
+     __________________________________________________________________
+
+   This function unloads a dialog box identified by dcl_id.
+
+EXAMPLE
+   Code                Returns
+   (unload_dialog hlg) nil
+
+More about...
+   [link](load_dialog filename)
+   [link](new_dialog dialog dcl-id [function point])

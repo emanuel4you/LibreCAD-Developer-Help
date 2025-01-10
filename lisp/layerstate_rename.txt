@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-rename oldlayerstatename newlayerstatename)
+     __________________________________________________________________
+
+   Renames a layer state.
+     __________________________________________________________________
+
+   The argument newlayerstatename is a string that designates the new name for the layer state, while the argument oldlayerstatename is a string that indicates the current name of the layer state to be modified. The function returns T if the renaming operation is successful; otherwise, it returns nil.
+
+EXAMPLE
+   Code                                             Returns
+   (layerstate-rename myLayerState myNewLayerState) T
+
+More about...

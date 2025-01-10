@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   None unloadDialog(int id)
+     __________________________________________________________________
+
+   Unload that dialog box.
+     __________________________________________________________________
+
+   This function unloads a dialog box identified by id. Obtain id comes from from the [link]newDialog function.
+
+   This function only returns RTNORM.
+
+More about...
+   [link]termDialog

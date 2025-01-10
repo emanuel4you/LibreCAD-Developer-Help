@@ -1,0 +1,24 @@
+LISP Functions
+
+   (progn statement1 statement2 ...)
+     __________________________________________________________________
+
+   Evaluate all the elements of the list and return the final evaluated element.
+     __________________________________________________________________
+
+   The function is constrained, as the if function permits only one if statement followed by a then statement. Each if function can accommodate only a single then statement and an else statement. In contrast, the progn function enables the evaluation of multiple statements. The value returned corresponds to the last statement evaluated.
+
+EXAMPLE
+   Code Returns
+   (setq a 9)
+   (progn (setq b a)
+      (setq (1+ b)
+      )
+   )
+   10
+
+More about...
+   [link](apply function list)
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

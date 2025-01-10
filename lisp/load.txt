@@ -1,0 +1,31 @@
+LISP Functions
+
+   (load filename [flag])
+     __________________________________________________________________
+
+   Load a LISP file.
+     __________________________________________________________________
+
+   LISP program files must be imported into LibreCAD prior to execution. The load function should be enclosed in parentheses; otherwise, LibreCAD will attempt to load a text or shape file instead.
+
+   The filename argument denotes the name of the LSP file to be imported. It is unnecessary to specify the file extension .lsp, as this is implied. The filename may also include the directory path; if it is omitted, LibreCAD will search the environmental paths defined in the configuration settings.
+
+   Upon successful loading of the LSP file, the last expression from the program will be returned to the command line. Conversely, if the file cannot be located, an error message will be displayed, indicating that the loading process has failed.
+
+   Additionally, you may wish for the program to display a different specified string, which can be indicated by the optional flag argument.
+
+EXAMPLES
+   The following examples assume that invalid.lsp does not exist while valid.lsp does. The last expression in valid.lsp is LST-FUNCT.
+
+   Code                               Returns
+   (load "valid")                     LST-FUNCT
+   (load "\\sample\\valid")           LST-FUNCT
+   (load "invalid")                   Error: Cannot open invalid
+   (load "invalid" "Does not exist.") "Does not exist."
+
+More about...
+   [link](atoms-family format [symbol1 symbol2 ...])
+   [link](command cmd [arguments] ...)
+   [link](load_dialog filename)
+   [link](menucmd string)
+   [link](xload appname [flag])

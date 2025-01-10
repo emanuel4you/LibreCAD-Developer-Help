@@ -1,0 +1,18 @@
+LISP Functions
+
+   (vector) (vector a) (vector a b c d e f & args)
+     __________________________________________________________________
+
+   Creates a new vector containing the args.
+     __________________________________________________________________
+
+   This function takes a variable number of arguments and returns a vector containing those arguments.
+
+EXAMPLES
+   Code           Returns
+   (vector)       []
+   (vector nil)   [nil]
+   (vector 1 2 3) [1 2 3]
+
+More about...
+   [link](list 1 2 3)

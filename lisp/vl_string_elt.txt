@@ -1,0 +1,11 @@
+LISP Functions
+
+   (vl-string-elt string position)
+     __________________________________________________________________
+
+   Return an ASCII number of a string at a specified position.
+     __________________________________________________________________
+
+   This function retrieves the ASCII value of the character in the string located at the designated position.
+
+More about...

@@ -1,0 +1,18 @@
+LISP Functions
+
+   (client_data_table key data)
+     __________________________________________________________________
+
+   Link the data to a dialog box tile.
+     __________________________________________________________________
+
+   The key identifies the tile and is a case-sensitive string. The data, referred to as $data, is a string that defines the information.
+
+More about...
+   [link](action_tile key expression)
+   [link](dimx_tile key)
+   [link](dimy_tile key)
+   [link](get_attr key attribute)
+   [link](get_tile key)
+   [link](mode_tile key mode)
+   [link](set_tile key value)

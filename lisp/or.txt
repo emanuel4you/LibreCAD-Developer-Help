@@ -1,0 +1,21 @@
+LISP Functions
+
+   (or statement ...)
+     __________________________________________________________________
+
+   Calculate the logical OR.
+     __________________________________________________________________
+
+   This function executes a logical OR operation on the preceding statements. If at least one of the statements evaluates to true, LISP will return a T. Conversely, if all statements are false, LISP will return nil.
+
+EXAMPLES
+   Code          Returns
+   (setq x nil)
+   (or x y 15.1) T
+   (or nil x)    nil
+
+More about...
+   [link](and expression ...)
+   [link](equal statement1 statement2 [tolerance])
+   [link](logior integer1 integer2 )
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

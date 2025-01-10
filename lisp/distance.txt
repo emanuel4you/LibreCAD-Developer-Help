@@ -1,0 +1,22 @@
+LISP Functions
+
+   (distance point1 point2)
+     __________________________________________________________________
+
+   Calculate the distance between two points.
+     __________________________________________________________________
+
+   The distance function computes the distance separating two points. Point1 and Point2 represent the coordinates in either two-dimensional (x, y) or three-dimensional (x, y, z) space.
+
+EXAMPLE
+   Code      Returns
+   (setq a '(2 3))
+   (setq b '(5 1))
+   (distance a b)
+   3.60555
+
+More about...
+   [link](angle point1 point2)
+   [link](inters point1 point2 point3 point4 [flag])
+   [link](polar point angle distance)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

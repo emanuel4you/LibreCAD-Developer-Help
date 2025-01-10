@@ -1,0 +1,30 @@
+LISP Functions
+
+   (entsel [prompt])
+     __________________________________________________________________
+
+   Request the user to choose an entity.
+     __________________________________________________________________
+
+   The entsel function allows for the selection of a single entity through a point-and-click method, subsequently returning a list that includes the name of the entity and the coordinates of the selected point. Previous entity snap settings will not influence the selection unless explicitly specified during the function.
+
+   When a prompt is provided, the user will be instructed to select the entity using the specified wording. In the absence of a provided prompt, the default message "Select Entity:" will be shown.
+
+EXAMPLES
+   Code                          Returns
+   (entsel)
+   (setq b (entsel "Select an line:"))
+   [pick a line] Select an entity:
+
+NOTE
+   The function entsel works only with top-level entities. To select
+
+More about...
+   [link](entdel entity-name)
+   [link](entget entity-name [application-list])
+   [link](entlast)
+   [link](entmake [entity-list])
+   [link](entmod entity-list)
+   [link](entupd entity-name)
+   [link](nentselp [prompt] [point])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

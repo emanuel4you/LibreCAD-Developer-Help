@@ -1,0 +1,40 @@
+LISP Functions
+
+   (acad_colordlg color-number [flag])
+     __________________________________________________________________
+
+   Display the Color dialog box.
+     __________________________________________________________________
+
+   This function presents the Color dialog box. It returns the selected color number from the dialog or nil if the user opts to click the Cancel button.
+
+
+   The function accepts two optional parameters:
+   Parameter Description Example Range color-number Color Number 1 0 - 256 flag Flag nil nil or true (equivalent to not specifying the flag)
+
+NOTES
+     * The color-number parameter allows for the specification of a default color. If clrno is 0, the default is set to BYBLOCK; if clrno is 256, the default is set to BYLAYER.
+     * When set to nil, the dialog box will disable the BYBLOCK and BYLAYER options.
+
+
+EXAMPLES
+   Code Result
+   (acad_colordlg 1) Displays dialog box with color 1 [red] selected as the default.
+   (acad_colordlg 1 nil) Displays dialog box with color 1 [red] selected as the default, and the BYBLOCK and BYLAYER buttons are disabled.
+
+NOTE
+   The first eight color numbers have the following meanings:
+
+   Number Color
+   1      Red
+   2      Yellow
+   3      Green
+   5      Blue
+   6      Magenta (pink)
+   9      Light Gray
+
+More about...
+   [link](command cmd [arguments] ...)
+   [link](getvar sysvar)
+   [link](help [filename [topic [flag]]])
+   [link](setvar sysvar value)

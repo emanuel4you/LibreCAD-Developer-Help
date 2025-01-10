@@ -1,0 +1,22 @@
+LISP Functions
+
+   (float number)
+     __________________________________________________________________
+
+   Convert that integer into a real number.
+     __________________________________________________________________
+
+   A decimal point is added, followed by zeroes, transforming it into a real number.
+
+EXAMPLES
+   Code Returns
+   (float 2)
+   2.00000
+
+NOTE
+   This function is the opposite of the [link]fix function.
+
+More about...
+   [link](atof string)
+   [link](atoi string)
+   [link](itoa integer)

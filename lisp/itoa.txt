@@ -1,0 +1,18 @@
+LISP Functions
+
+   (itoa integer)
+     __________________________________________________________________
+
+   Convert that integer into ASCII.
+     __________________________________________________________________
+
+   Transform the integer into its corresponding ASCII representation.
+
+EXAMPLES
+   Code    Returns
+   (itoa 0)   "0"
+   (itoa 42) "42"
+
+More about...
+   [link](ascii string)
+   [link](atoi string)

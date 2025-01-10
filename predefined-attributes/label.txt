@@ -1,0 +1,37 @@
+DCL Attributes
+
+   label = "string";
+     __________________________________________________________________
+
+   Specify a tile's label.
+     __________________________________________________________________
+
+   This attribute defines the text for a tile's title and may also include the tile's mnemonic. The placement of the label is contingent upon the type of tile, and its location cannot be modified. To indicate the absence of a label, use " " as the string.
+
+   string: a string. The & (ampersand) prefix determines the mnemonic.
+
+EXAMPLES
+   label = "This is a Label";
+   label = "&OK";
+
+NOTE
+     * The & (ampersand) preceding a character designates it as the mnemonic. The mnemonic allows for focus change but does not activate the tile.
+     * Additionally, the [link]mnemonic attribute can be utilized to define the mnemonic character.
+
+Valid Tiles
+   [link]boxed_row
+   [link]boxed_column
+   [link]boxed_radio_row
+   [link]boxed_radio_column
+   [link]button
+   [link]dialog
+   [link]edit_box
+   [link]multi_edit_box
+   [link]list_box
+   [link]popup_list
+   [link]radio_button
+   [link]text
+   [link]toggle
+
+More about...
+   [link]value

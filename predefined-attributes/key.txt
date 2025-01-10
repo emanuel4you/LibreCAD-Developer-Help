@@ -1,0 +1,30 @@
+DCL Attributes
+
+   key = "string";
+     __________________________________________________________________
+
+   Specify the name of a tile, as used by a LISP or Python function.
+     __________________________________________________________________
+
+   This attribute specifies the name by which a [link]LISP or [link]Python program to identify a tile. Each key must be distinct within the dialog box, and the string is case-sensitive.
+
+   string: a string.
+
+EXAMPLE
+   key = "accept";
+
+Valid Tiles
+   [link]button
+   [link]popup_list
+   [link]edit_box
+   [link]multi_edit_box
+   [link]radio_button
+   [link]image_button
+   [link]dail
+   [link]scroll
+   [link]slider
+   [link]list_box
+   [link]toggle
+
+More about...
+   [link]label

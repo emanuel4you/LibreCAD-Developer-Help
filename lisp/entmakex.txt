@@ -1,0 +1,20 @@
+LISP Functions
+
+   (entmake [elist])
+     __________________________________________________________________
+
+   This function generates a new object or entity, assigns it a handle and an entity name, and subsequently returns the name of the newly created entity.
+     __________________________________________________________________
+
+   The function facilitates the creation of new entities, encompassing both graphical and non-graphical types, with the parameter elist representing a compilation of the necessary information for defining the entity. Should any essential definition data be missing, entmakex will return nil, resulting in the rejection of the entity. In cases where optional definition data, such as the layer, is not provided, entmakex will default to the standard value. Upon successful execution, entmakex will return the name of the created entity. Conversely, if entmakex fails to create the entity, it will return nil.
+
+NOTE
+   It is important to note that objects and entities lacking owners will not be saved in .dwg or .dxf files. Therefore, it is advisable to assign an owner after utilizing entmakex. The dictadd function can be employed to designate a dictionary as the owner of an object.
+
+More about...
+   [link](entmake)
+   [link](dictadd)
+   [link](dictnext)
+   [link](dictremove)
+   [link](dictrename)
+   [link](dictsearch)

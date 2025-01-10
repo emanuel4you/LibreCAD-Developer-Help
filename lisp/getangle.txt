@@ -1,0 +1,38 @@
+LISP Functions
+
+   (getangle [point] [prompt])
+     __________________________________________________________________
+
+   Request the user to specify an angle.
+     __________________________________________________________________
+
+   This function requests the user to input an angle in the format of the current angle units, which is subsequently returned in radians. If a two-dimensional point is provided, the getangle function calculates the angle between the current zero direction, as defined by the ANGBASE variable, and the guiding line; the angle is measured in a counterclockwise direction.
+
+   In converting the provided angle to radians, the getangle function disregards the ANGDIR variable and measures counterclockwise, with zero radians corresponding to the current ANGBASE setting.
+
+   A prompt can be provided to solicit either a point or an angle from the user.
+
+   The user is not permitted to enter an alternative LISP expression in response to the getangle function.
+
+EXAMPLES
+   Code                   Returns
+   (getangle)
+   [pick point] Second point:
+   (getangle "Rotation angle: ")
+   [pick point] Rotation angle:
+   0.25553
+
+   (getangle '(5.0 2.0))
+   [pick point] no response
+   (getangle '(1.0 3.5) "Rotation angle: ")
+   [pick point] Rotation angle:
+   1.33221
+
+NOTE
+   The getangle function measures the angle from the zero angle as established by the Units command. To measure the angle from the absolute reference, additional considerations are required.
+
+More about...
+   [link](angle point1 point2)
+   [link](getdist [point] [prompt])
+   [link](getpoint [point] [prompt])
+   [link](polar point angle distance)

@@ -1,0 +1,22 @@
+LISP Functions
+
+   (max number1 number2 ...)
+     __________________________________________________________________
+
+   Identify the largest number.
+     __________________________________________________________________
+
+   If all the numbers in the list are real, the outcome will also be real. If all the numbers are integers, the outcome will be an integer. When real numbers and integers are combined, the result will be a real number.
+
+EXAMPLES
+   Code      Returns
+   (max 22 56)   56
+   (max -9 -60)  9
+   (max 25 19.9) 25.0000
+   (max 2)       2
+   (max)         0
+
+More about...
+   [link](fix number)
+   [link](gcd integer1 integer2)
+   [link](min number1 number2 )

@@ -1,0 +1,19 @@
+LISP Functions
+
+   (ascii string)
+     __________________________________________________________________
+
+   Convert the first character of str to ASCII.
+     __________________________________________________________________
+
+   The initial character of the string is transformed into its corresponding ASCII numerical value.
+
+EXAMPLES
+   Code      Returns:
+   (ascii "x")   120
+
+More about...
+   [link](angtof string [mode])
+   [link](atof string)
+   [link](atoi string)
+   [link](chr integer)

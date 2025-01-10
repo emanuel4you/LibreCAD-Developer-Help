@@ -1,0 +1,16 @@
+LISP Functions
+
+   (vec list)
+     __________________________________________________________________
+
+   Creates a new vec containing the args.
+     __________________________________________________________________
+
+   This Funktion turning a list into a vector with the same elements. If provided a vector, vec return it unchanged.
+
+EXAMPLE
+   Code           Returns
+   (vec '(1 2 3)) [1 2 3]
+
+More about...
+   [link](list 1 2 3)

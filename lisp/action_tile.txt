@@ -1,0 +1,30 @@
+LISP Functions
+
+   (action_tile key expression)
+     __________________________________________________________________
+
+   Respond when the user clicks a dialog box tile.
+     __________________________________________________________________
+
+   This function designates the expression to be evaluated upon the selection of a key, which is case-sensitive. Typically, the expression is another LISP function, while the key pertains to the specific tile. This function is applicable to tiles that are selectable by the user within a dialog box, including elements such as radio buttons, check boxes, or buttons.
+
+   The expression references the tile through the following parameters:
+
+   Argument Meaning
+   $value   Current value
+   $key     Tile name
+   $data    Application specific data
+   $reason  Callback reason
+   $x       Image x-coordinate
+   $y       Image y-coordinate
+
+EXAMPLE
+   Code                        Returns
+   (action_tile "xpt" x_coord) nil
+
+NOTES
+     * The expression assigned by action_tile takes precedence over the default action of the dialog box, which is established through the new_dialog function, as well as the tile's action attribute.
+     * The command function is not permissible to be invoked by action_tile.
+
+More about...
+   [link](client_data_table key data)

@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-filename-extension filename)
+     __________________________________________________________________
+
+   This function provides a string that represents the directory path.
+     __________________________________________________________________
+
+   This function provides a string that includes only the file extension of the filename, excluding both the directory path and the filename itself.
+
+EXAMPLE
+   Code                                 Returns
+   (vl-filename-extension"d:\file.txt") ".TXT"
+
+More about...

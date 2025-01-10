@@ -1,0 +1,23 @@
+LISP Functions
+
+pi
+     __________________________________________________________________
+
+   3.14...
+     __________________________________________________________________
+
+   Pi is not classified as a function; instead, it is a constant value frequently utilized in programming LibreCAD with LISP.
+
+EXAMPLES
+   Code Returns
+   WARNING There is a risk of losing the value of pi. For instance, the following code results in pi being assigned the value of 2.0:
+
+   Code          Returns
+   (setq pi 2.0) 2.0
+   !pi           2.0
+
+More about...
+   [link](atan number1 [number2])
+   [link](cos angle)
+   [link](sin angle)
+   [link](tan angle)

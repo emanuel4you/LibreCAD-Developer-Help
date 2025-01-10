@@ -1,0 +1,21 @@
+DCL Attributes
+
+   tabs = "string";
+     __________________________________________________________________
+
+   Set up these tab stops.
+     __________________________________________________________________
+
+   This attribute defines the spacing of tabs, which is beneficial for arranging text into vertical columns.
+
+   string: a string of [link]real numbers or [link]integers, each separated by a space.
+
+EXAMPLE
+   tabs = "5 10 15 20 25 30 35 40";
+
+Valid Tiles
+   [link]list_box
+   [link]popup_list
+
+More about...
+   [link]tab_truncate

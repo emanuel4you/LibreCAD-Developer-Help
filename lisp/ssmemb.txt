@@ -1,0 +1,24 @@
+LISP Functions
+
+   (ssmemb entity-name selection-set)
+     __________________________________________________________________
+
+   Determine whether an entity is in a selection set.
+     __________________________________________________________________
+
+   This function assesses the presence of the entity, referred to as entity-name, within the selection set known as selection-set. It conducts a search among the entities contained in the selection set to ascertain whether entity-name is present. If the entity is found, its name is returned; otherwise, nil is returned.
+
+EXAMPLES
+   Code Comments
+   (setq sset1 (ssadd)) Creates a new selection set called sset1.
+   (ssadd ent1 sset1) Adds ent1 to sset1.
+   (ssmemb ent1 sset1) Asks if ent1 is a member of sset1. Yes, so entity
+   name is returned.
+   (ssmemb ent2 sset1) Asks if ent2 is a member of sset1. No, so nil is
+   returned.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](ssadd [entity-name [selection-set]])
+   [link](ssdel entity-name selection-set)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])

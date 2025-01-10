@@ -1,0 +1,17 @@
+LISP Functions
+
+   (help "function")
+     __________________________________________________________________
+
+   Display the Help dialog box.
+     __________________________________________________________________
+
+   This function displays the LibreCAD help window.
+
+EXAMPLE
+   Code Result
+   (help "setq") Displays the LibreCAD Help window.
+
+More about...
+   [link](*error* string)
+   [link](acad_colordlg color-number [flag])

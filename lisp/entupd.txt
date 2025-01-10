@@ -1,0 +1,29 @@
+LISP Functions
+
+   (entupd entity-name)
+     __________________________________________________________________
+
+   Redraw a entity.
+     __________________________________________________________________
+
+   This function is responsible for redrawing the entity on the display. When a block attribute or polyline vertex is altered, the block or polyline does not refresh automatically, as recalculating and rendering numerous changes can be time-consuming.
+
+   To address this, you can manually trigger an update of complex entities on the screen once the calculations are complete by utilizing the entupd command. The entity-name associated with an entity within the block or polyline will refresh the entire entity group.
+
+EXAMPLE
+   Code                           Meaning
+   (setq a (entnext)) Assigns the entity-name to a.
+   (entupd a)         Regenerates entity group, which contains a.
+
+NOTE
+   You can ensure that all entities on the screen are updated with
+   the ([link]command"regen") function.
+
+More about...
+   [link](entdel entity-name)
+   [link](entget entity-name [application-list])
+   [link](entlast)
+   [link](entmake [entity-list])
+   [link](entsel [prompt])
+   [link](nentsel [prompt])
+   [link](nentselp [prompt] [point])

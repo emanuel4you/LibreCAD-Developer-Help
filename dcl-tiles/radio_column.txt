@@ -1,0 +1,64 @@
+DCL Tiles
+
+   : radio_column
+     __________________________________________________________________
+
+   Display a vertical column of radio buttons.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+  This cluster tile organizes one or more radio buttons in a vertical arrangement. A radio_button tile must be positioned either within this tile or within a radio_row cluster tile. If not, the program will be unable to determine the relationships among the radio buttons.
+
+NOTE
+   A radio_column cluster is exclusively for radio buttons. For other types of tiles, the column cluster should be utilized.
+
+Valid Attributes
+   : radio_column {
+       [link]alignment = position;
+       [link]children_alignment = position;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : radio_column {
+       label = "3D Viewpoints";
+
+       : radio_button {
+                 action = "(frontview)";
+                 key = "R1";
+                 label = "Front View";
+       }
+
+       : radio_button {
+                 action = "(topview)";
+                 key = "R2";
+                 label = "Top View";
+       }
+   }
+
+NOTE
+   The value attribute signifies which radio button is currently selected, represented by the value of "1":
+
+   value = "1"
+
+Related DCL Tiles
+   [link]dialog
+   [link]column
+   [link]row
+   [link]boxed_column
+   [link]boxed_row
+   [link]boxed_radio_column
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]radio_row

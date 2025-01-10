@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   RS_Vector getPoint(string msg = "Enter a point: ", RS_Vector basePoint=RS_Vector())
+     __________________________________________________________________
+
+   Function prompt a message in commandline. Input in commandline or mouse.
+     __________________________________________________________________
+
+   argument is a string.
+
+   This function returns a RS_Vector.
+
+More about...
+   [link]getCorner

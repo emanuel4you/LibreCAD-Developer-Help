@@ -1,0 +1,24 @@
+LISP Functions
+
+   (menugroup name)
+     __________________________________________________________________
+
+   Assess whether a menu group is currently loaded.
+     __________________________________________________________________
+
+   This function verifies if a specific menu group is loaded. The argument "name" indicates the name of the menu group in question. If the provided name corresponds to a loaded menu group, the menugroup function will return the name of that group; if not, it will return nil.
+
+EXAMPLE
+   (menugroup "MyMenuGroup")
+
+   If the specified menu group is not loaded, it returns nil; if the menu group is loaded, it returns the string "MyMenuGroup." The menu group functions similarly to a namespace and is defined in the menu file with the following notation:
+
+   ***MENUGROUP= MyMenuGroup
+
+   By including a menugroup specification in your menu file, you can utilize the (menugroup) function to ascertain whether your menu is loaded or not.
+
+More about...
+   [link](ads)
+   [link](atoms-family format [symbol1 symbol2 ...])
+   [link](command cmd [arguments] ...)
+   [link](menucmd string)

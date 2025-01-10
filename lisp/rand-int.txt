@@ -1,0 +1,18 @@
+LISP Functions
+
+   (rand-int n)
+     __________________________________________________________________
+
+   Returns a random integer.
+     __________________________________________________________________
+
+   This function returns a random integer between 0 and n.
+
+
+EXAMPLES
+   Code          Returns
+   (rand-int 30) 10
+
+
+More about...
+   [link](rand)

@@ -1,0 +1,21 @@
+DCL Attributes
+
+   edit_limit = integer;
+     __________________________________________________________________
+
+   Define the maximum number of characters the user can type in an edit box.
+     __________________________________________________________________
+
+   This attribute defines the upper limit on the number of characters that a user is permitted to enter in an edit box title.
+
+   integer: an integer; default value = 132 characters; maximum value = 256.
+
+EXAMPLE
+   edit_limit = 100;
+
+Valid Tiles
+   [link]edit_box
+   [link]multi_edit_box
+
+More about...
+   [link]edit_width

@@ -1,0 +1,19 @@
+PYTHON Functions
+
+   bool newDialog(string name, int id)
+     __________________________________________________________________
+
+   Display a dialog box.
+     __________________________________________________________________
+
+   Use this function to display a dialog box.
+
+   The dialog box is identified by dialog within the DCL file named dcl-file. The string dialog is obtained from the [link]loadDialog function.
+
+   This function returns True if successful otherwise, False.
+
+NOTE
+   After you use newDialog the first time to initialize a dialog box, then use the [link]newPositionedDialog function to display a dialog box at a specific screen location.
+
+More about...
+   [link]newPositionedDialog

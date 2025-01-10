@@ -1,0 +1,18 @@
+DCL Attributes
+
+   is_bold = true/false;
+     __________________________________________________________________
+
+   Specifies whether the text is displayed in bold characters.
+     __________________________________________________________________
+
+   Possible values are true or false (default: false).
+
+Valid Tiles
+   [link]text
+
+EXAMPLE
+   is_bold = true;
+
+More about...
+   [link]is_cancel

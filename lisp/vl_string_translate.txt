@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-translate sourceset destinationset string)
+     __________________________________________________________________
+
+   Replace characters in a string with different characters.
+     __________________________________________________________________
+
+   This function returns the string if any replacements are made successfully.
+
+EXAMPLE
+   Code                                      Returns
+   (vl-string-translate "My" "ab" "My Text") "ab Text"
+
+More about...

@@ -1,0 +1,24 @@
+LISP Functions
+
+   (println [expression [file-descriptor]])
+     __________________________________________________________________
+
+   Print, using formatted printing.
+     __________________________________________________________________
+
+   The println function automatically inserts a new-line character prior to the expression and appends a space following it. Similar to [link]prin1, the println function interprets control characters literally, meaning it does not execute them.
+
+EXAMPLES
+   Code Prints Returns
+   Command: (println "Hello world.")
+            Hello world.
+            Hello world.
+            nil
+
+NOTE
+   It is important to note that the distinction between the println function and other println-related functions in LISP, such as [link]prin1 and [link]princ, lies in the fact that println inherently adds a new-line character before the expression and a space after it.
+
+More about...
+   [link](prompt string)
+   [link](terpri)
+   [link](write-line string [file-descriptor])

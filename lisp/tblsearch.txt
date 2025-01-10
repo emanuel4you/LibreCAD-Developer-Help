@@ -1,0 +1,19 @@
+LISP Functions
+
+   (tblsearch table-name symbol [flag])
+     __________________________________________________________________
+
+   Locate a symbol within the table.
+     __________________________________________________________________
+
+   This function retrieves information regarding a specified symbol from a drawing table identified by its name. After providing the table name and the known symbol, the flag (when set to a non-nil value, such as T) allows the tblnext function to access the subsequent item in the table:
+
+   (tblsearch "layer" "0" T)
+   (tblnext "LAYER")
+
+   The list returned is identical to that produced by tblnext.
+
+More about...
+   [link](entget entity-name [application-list])
+   [link](tblobjname table-name symbol)
+   [link](vports)

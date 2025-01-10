@@ -1,0 +1,17 @@
+LISP Functions
+
+   (keys name) (keys ns name)
+     __________________________________________________________________
+
+   Returns a list of all the keys in the hash-map
+     __________________________________________________________________
+
+   This function takes a hash-map and returns a list of all the keys in the hash-map.
+
+EXAMPLES
+   Code         Returns
+   (keys "foo") :foo
+
+More about...
+   [link](map)
+

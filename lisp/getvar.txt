@@ -1,0 +1,18 @@
+LISP Functions
+
+   (getvar sysvar)
+     __________________________________________________________________
+
+   Determine the value of that system variable.
+     __________________________________________________________________
+
+   To ascertain the value of the specified system variable, the getvar function is utilized to obtain and present the current configuration of that variable.
+
+EXAMPLE
+   Code                Returns
+   (getvar "blipmode") 0
+
+More about...
+   [link](getcfg parameter)
+   [link](getenv variable)
+   [link](setvar sysvar value)

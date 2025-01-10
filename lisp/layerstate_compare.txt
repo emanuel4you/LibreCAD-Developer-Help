@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-compare layerstatename viewport)
+     __________________________________________________________________
+
+   This function evaluates a layer state against the layers present in the current drawing.
+     __________________________________________________________________
+
+   The layerstatename parameter is a string that indicates the name of the layer state to be compared. The viewport parameter is an ename (ads_name) representing the viewport utilized for the comparison. If the viewport is nil, the function defaults to using the current viewport. The function returns s T upon success; otherwise, it returns nil.
+
+EXAMPLE
+   Code                                Returns
+   (layerstate-compare "myLayerState") T
+
+More about...

@@ -1,0 +1,17 @@
+LISP Functions
+
+   (dissoc map) (dissoc map key) (dissoc map key & ks)
+     __________________________________________________________________
+
+   Returns a new map of the same (hashed/sorted) type, that does not contain a mapping for key(s).
+     __________________________________________________________________
+
+   This function takes a hash-map and a list of keys to remove from the hash-map. Again, note that the original hash-map is unchanged and a new hash-map with the keys removed is returned. Key arguments that do not exist in the hash-map are ignored.
+
+EXAMPLES
+   Code                         Returns
+   (dissoc {:a 1 :b 2 :c 3})    {:a 1 :b 2 :c 3}
+   (dissoc {:a 1 :b 2 :c 3} :b) {:a 1 :c 3}
+
+More about...
+   [link](deref)

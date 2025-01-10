@@ -1,0 +1,15 @@
+PYTHON Functions
+
+   None termDialog()
+     __________________________________________________________________
+
+   Terminate all dialog boxes.
+     __________________________________________________________________
+
+   This function terminates all dialog boxes. This function is especially useful for closing several nested dialog boxes all at once.
+
+   This function returns None.
+
+More about...
+   [link]unloadDialog
+   [link]startList

@@ -1,0 +1,15 @@
+LISP Functions
+
+   (rgbstrtocolorref string)
+     __________________________________________________________________
+
+   Convert a string to an integer index.
+     __________________________________________________________________
+
+   This function transforms a string into an integer index that serves as a reference for color. The output of this function is the corresponding integer index.
+
+EXAMPLES
+   Code                             Returns
+   (rgbstrtocolorref "RGB:255,0,0") 255
+
+More about...

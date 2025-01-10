@@ -1,0 +1,18 @@
+LISP Functions
+
+   (fn arguments expression ...)
+     __________________________________________________________________
+
+   Develop a temporary, unnamed LISP function.
+     __________________________________________________________________
+
+   This function generates another function dynamically. It is utilized when the overhead associated with establishing a new function is unwarranted. The fn function typically appears within the context of another function and is frequently employed.
+
+EXAMPLE
+   Code                   Returns
+   (fn* (a) a)            #user-function(0xaaaad1a8fd20)
+   ((fn* (a) a) 7)        7
+   ((fn* (a) (+ a 1)) 10) 11
+
+More about...
+   [link](lambda (a) a)

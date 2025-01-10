@@ -1,0 +1,20 @@
+DCL Attributes
+
+   alignment = position;
+     __________________________________________________________________
+
+   Specifies the horizontal or vertical positioning.
+     __________________________________________________________________
+
+   For a tile that is a descendant of a column, the acceptable values include left, right, or centered, with the default setting being left.
+
+   For a tile that is a descendant of a row, the permissible values are top, bottom, or centered, with the default setting being centered.
+
+EXAMPLE
+   alignment = top;
+
+Valid Tiles
+   All tiles
+
+More about...
+   [link]allow_accept

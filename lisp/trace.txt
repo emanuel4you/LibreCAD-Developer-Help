@@ -1,0 +1,17 @@
+LISP Functions
+
+   (trace function . . .)
+     __________________________________________________________________
+
+   Turn on debug mode.
+     __________________________________________________________________
+
+   This function is utilized for debugging purposes by establishing a trace debug aid for the designated function. Every time the function is executed, the trace is displayed, and the output of the function is printed.
+
+EXAMPLE
+   Code          Returns
+   (trace fname) FNAME
+   Sets trace aid for FNAME function.
+
+More about...
+   [link](untrace function ...)

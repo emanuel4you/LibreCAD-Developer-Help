@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-filename-directory filename)
+     __________________________________________________________________
+
+   This function returns a string containing the directory path.
+     __________________________________________________________________
+
+   This function provides a string that represents the directory path. It returns solely the directory path of the specified filename, excluding both the filename and its file extension.
+
+EXAMPLE
+   Code                                 Returns
+   (vl-filename-directory"d:\file.txt") "D:\"
+
+More about...

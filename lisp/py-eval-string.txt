@@ -1,0 +1,16 @@
+LISP Functions
+
+   (py-eval-string cmd)
+     __________________________________________________________________
+
+   Run a Python Command.
+     __________________________________________________________________
+
+   This function runs a Python Command and returns the string.
+
+EXAMPLE
+   Code                                       Result
+   (py-eval-string "'Hello,' + ' LibreCAD!'") "Hello, LibreCAD!"
+
+More about...
+   [link](py-simple-file "myModule.py")

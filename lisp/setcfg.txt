@@ -1,0 +1,27 @@
+LISP Functions
+
+   (setcfg parameter value)
+     __________________________________________________________________
+
+   Adjust the parameter to the specified value.
+     __________________________________________________________________
+
+   This function modifies the data within the [AppData] section of the LibreCad.Cfg file, provided that it is present. The value may consist of any text or numerical representation. The parameter is defined as a string following this format:
+
+   "AppData/appname/sname/parameter"
+
+   where:
+   Cfg Name            Meaning
+   AppData   The [AppData] section.
+   appname   The name of the application.
+   sname     The section name.
+   parameter The parameter name.
+
+EXAMPLE
+   Code                                            Returns
+   (setcfg "appdata/appname/sname/parameter" "56") "56"
+
+More about...
+   [link](getcfg parameter)
+   [link](setenv variable value)
+   [link](setvar sysvar value)

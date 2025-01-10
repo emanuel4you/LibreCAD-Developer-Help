@@ -1,0 +1,45 @@
+LISP Functions
+
+   (wcmatch string pattern)
+     __________________________________________________________________
+
+   Search that string.
+     __________________________________________________________________
+
+   This function identifies internal string matches. It allows you to determine whether a specific string exists or to compare it with another string.
+
+   For instance, if you have a string variable named MYVAR that contains the value "SUPERCALIFRAGILISTIC123\##" and you wish to check if the substring "FRAG" appears within it, you can utilize the wcmatch function as follows:
+     * (wcmatch MYVAR "*FRAG*")
+
+   If a match is detected, wcmatch will return T. Conversely, if no match is found, it will return nil. It is important to note that the wcmatch function is case-sensitive.
+
+   Several wildcards can be employed with wcmatch:
+
+   Wildcard Definition
+   ~ (tilde) Pattern not found in string.
+   * Standard wildcard; can be used anywhere.
+   ? Matches for a space held by a character or number; number of question
+   marks (?) must exactly match number of characters or numbers in the
+   string.
+   # (pound) Matches any single number.
+   @@ Matches any single character; may not be a number.
+   . (period) Matches any single non-alphanumeric character.
+   (space) Matches one or more spaces.
+   [ ] Matches for any of the characters enclosed in the brackets.
+   [~ ] True only if there are extra characters not included in the
+   brackets.
+   [ - ] (hyphen) Searches within a predefined range pattern.
+   , (comma) The "or" option.
+   ' (reverse quote) Read next character literally; use for special
+   characters.
+
+EXAMPLES
+   Code Returns Comments
+   (wcmatch N "*opic*" ) T "opic" is found with anything before and after.
+   (wcmatch N "?????????????????????") T There are 21 characters, numbers
+   and spaces in this string.
+   (wmatch N "#####*") T Matches 5 digits, followed by anything.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](substr string start [length])

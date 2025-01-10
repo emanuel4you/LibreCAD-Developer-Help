@@ -1,0 +1,18 @@
+LISP Functions
+
+   (grclear)
+     __________________________________________________________________
+
+   Clear the viewport.
+     __________________________________________________________________
+
+   This function temporarily obscures the graphic window, and the current function consistently returns nil.
+
+EXAMPLE
+   Code            Result
+   (grclear)       Clears the graphics window
+   (redraw)        Returns the graphics.
+
+More about...
+   [link](grdraw point1 point2 color [highlight])
+   [link](redraw [ename [mode]])

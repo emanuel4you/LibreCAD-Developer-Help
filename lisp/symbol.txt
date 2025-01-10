@@ -1,0 +1,16 @@
+LISP Functions
+
+   (symbol name)
+     __________________________________________________________________
+
+   Returns a Symbol with the given namespace and name.
+     __________________________________________________________________
+
+   This function takes a string and returns a new Symbol with the string as its name..
+
+EXAMPLES
+   Code           Returns
+   (symbol "foo") foo
+
+More about...
+   [link](def!)

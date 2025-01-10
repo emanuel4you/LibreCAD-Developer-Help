@@ -1,0 +1,27 @@
+PYTHON Functions
+
+   string startList(string key, int operation=-1, int index=-1)
+     __________________________________________________________________
+
+   Start processing a list box.
+     __________________________________________________________________
+
+   This function signals the start of processing a list key in a dialog box.
+
+   The handle argument is the name of the dialog box.
+
+   The key argument identifies the tile.
+
+   The optional value argument describes the list operation to be performed (default = 3):
+
+   Value Meaning
+   1     Change selected list contents
+   2     Append new list entry
+   3     Delete old list, create new default list
+
+   A numerical value that designates the list item to be modified by the following add_list invocation. The initial item in the list is assigned index 0. In the absence of specification, the index defaults to 0.
+
+   This function returns The key argument
+
+More about...
+   [link]startImage

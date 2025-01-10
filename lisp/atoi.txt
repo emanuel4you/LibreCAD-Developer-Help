@@ -1,0 +1,20 @@
+LISP Functions
+
+   (atoi string)
+     __________________________________________________________________
+
+   Convert the string to an integer.
+     __________________________________________________________________
+
+   This command truncates any numbers that appear after the decimal point. If the string's text cannot be identified as a number, it will return 0.
+
+EXAMPLES
+   Code           Returns
+   (atoi "-25")   -25
+   (atoi "Hello") 0
+
+More about...
+   [link](angtof string [mode])
+   [link](ascii string)
+   [link](atof string)
+   [link](chr integer)

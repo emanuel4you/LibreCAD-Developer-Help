@@ -1,0 +1,18 @@
+LISP Functions
+
+   (swap! atom f) (swap! atom f x) (swap! atom f x y) (swap! atom f x y & args)
+     __________________________________________________________________
+
+   Atomically swaps the value of atom
+     __________________________________________________________________
+
+   Atomically swaps the value of atom to be: (apply f current-value-of-atom args). Note that f may be called multiple times, and thus should be free of side effects. Returns the value that was swapped in.
+
+EXAMPLE
+   Code                             Returns
+   (def! m1 (atom {:a "A" :b "B"})) (atom {:a "A" :b "B"})
+   (swap! m1 assoc :a "Aaay")       {:a "Aaay" :b "B"}
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])

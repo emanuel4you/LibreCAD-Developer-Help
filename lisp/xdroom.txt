@@ -1,0 +1,17 @@
+LISP Functions
+
+   (xdroom entity-name)
+     __________________________________________________________________
+
+   Assess the remaining xdata space available for a specific entity.
+     __________________________________________________________________
+
+   This function provides information regarding the quantity of xdata (extended entity data) space that remains unallocated within the entity specified by the entity-name. It encompasses all forms of user-defined data. This function indicates the number of bytes that are still available.
+
+NOTE
+   It is advisable to utilize this function prior to adding xdata to the entity in order to confirm whether there is sufficient xdata capacity.
+
+More about...
+   [link](entlast)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](xdsize list)

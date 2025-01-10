@@ -1,0 +1,35 @@
+DCL Attributes
+
+   mnemonic = "char";
+     __________________________________________________________________
+
+   Specify which tile has the focus when the user presses a key.
+     __________________________________________________________________
+
+   This attribute specifies the tile that will gain focus when the user presses a key. The character indicated by the mnemonic attribute must precisely correspond to a letter present in the tile's label attribute, including its capitalization, as illustrated in the examples below. Nevertheless, the user is permitted to input either uppercase or lowercase letters when utilizing mnemonics. It is not necessary for the mnemonic character to be unique within the dialog box, enabling the user to navigate through tiles that serve similar functions.
+
+   char: a character in the label of the tile.
+
+EXAMPLES
+   label = "Edit";
+   mnemonic = "d";
+   label = "View";
+   mnemonic = "V";
+   label = "Help";
+   mnemonic = "H";
+
+Valid Tiles
+   [link]button
+   [link]popup_list
+   [link]edit_box
+   [link]multi_edit_box
+   [link]radio_button
+   [link]image_button
+   [link]dail
+   [link]scroll
+   [link]slider
+   [link]list_box
+   [link]toggle
+
+More about...
+   [link]multiple_select

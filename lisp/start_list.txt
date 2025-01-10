@@ -1,0 +1,29 @@
+LISP Functions
+
+   (start_list key [operation [index]])
+     __________________________________________________________________
+
+   Start processing a list box.
+     __________________________________________________________________
+
+   This function initiates the processing of a list key within a dialog box. The optional operation parameter specifies the type of list operation to be executed, with a default value of 3:
+
+   Operation Meaning
+   1 Modify the contents of the list.
+   2 Add new data to the list.
+   3 Substitute the existing list with a new one (default).
+
+   The optional index parameter is applicable only when the operation is set to 1. It denotes the item number to be modified, where the first item is numbered as 0, the second as 1, and so forth.
+
+EXAMPLES
+   Code                 Comments
+   (start_list ssg)     Replace list with new list.
+   (start_list ssg 3)   Performs the same action as above.
+   (start_list ssg 2)   Adds data to the existing list.
+
+NOTE
+   This function is also utilized when creating list boxes and drop-down menus with DCL; refer to [link]list_box and [link]popup_list (drop-down list box) for further details.
+
+More about...
+   [link](add_list string)
+   [link](end_list)

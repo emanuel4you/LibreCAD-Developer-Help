@@ -1,0 +1,60 @@
+DCL Tiles
+
+   name : dialog
+     __________________________________________________________________
+
+   Create a dialog box.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   Present a vertical list of text, which may include an optional scrollbar. This cluster tile establishes a dialog box, with the name prefix specifying the case-sensitive identifier for the dialog box. This identifier is essential for recognizing the dialog box within the DCL file. To access the dialog box within [link]LISP, use the [link]load_dialog (to load the DCL file) and the [link]new_dialog (to display the dialog box) functions, as in the following EXAMPLE:
+
+   (setq dlg (load_dialog "dclfile"))
+   (new_dialog "name" dlg)
+
+NOTE
+   When both the [link]label and [link]value attributes are specified, the value attribute will take precedence over the label.
+
+Valid Attributes
+   name : dialog {
+       [link]initial_focus = "string";
+       [link]label = "string";
+       [link]pointsize = int;
+       [link]typeface = "string";
+       [link]value = "string";
+   }
+
+EXAMPLE
+   objext : dialog {
+   initial_focus = "OK"
+   label = "Object Extraction"
+
+       : boxed_row {
+       label="Select Objects";
+            : button {
+                 action = "(linelsp)";
+                 key = "BB";
+                 label = "Line";
+            }
+
+            : button {
+                 action = "(circlelsp)";
+                 key = "BW";
+                 label = "Circle";
+            }
+       }
+   }
+
+Related DCL Tiles
+   [link]column
+   [link]row
+   [link]boxed_column
+   [link]boxed_row
+   [link]boxed_radio_column
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]ok_cancel

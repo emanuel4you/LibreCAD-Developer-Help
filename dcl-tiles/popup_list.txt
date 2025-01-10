@@ -1,0 +1,97 @@
+DCL Tiles
+
+   : popup_list
+     __________________________________________________________________
+
+   Display a drop-down list.
+
+   DCL Active Tile
+     __________________________________________________________________
+
+   The active tile features a drop-down list box. Notably, despite its designation, the popup_list descends rather than ascends.
+
+   Initially, the popup_list tile is presented as a single line, with additional options becoming visible upon the user's interaction with the down-arrow. If required, the expanded list can also include more items. This tile is particularly advantageous when there is limited space available in dialog boxes.
+
+NOTE
+   In contrast, a list_box tile displays a minimum of two lines by default and may include vertical scrollbars if necessary. Furthermore, a list_box allows for multiple selections, which is not an option with a popup_list.
+
+   Creating and Modifying a Pop-up List with LISP Functions
+
+   To create and adjust the list shown by the popup_list tile,
+   the following LISP functions should be utilized:
+     * ([link]start_list "key" int1 int2)
+
+     The start_list function requires three parameters. The key parameter denotes the name of the popup_list tile. The int1 parameter indicates the intended action
+
+   int1         Meaning
+   1    Modify a single item in the list.
+   2    Append an item to the end of the list.
+   3    Generate a new list; this is the default option.
+
+     The int2 parameter specifies the item number to be modified (with the first item being #0); int2 is applicable only when int1 is set to 1. For instance:
+       (start_list "L1" 1 3) ; modifies the fourth item in the list.
+
+     * ([link]add_list "string")
+
+     To implement the change, the add_list function should be employed. The string parameter indicates the text to be added or substituted in the list:
+       (start_list "L1" 1 3 ; modifies the fourth item in the list.
+       (add_list "New item")
+
+     When start_list is in modification mode (int1 = 1), each invocation of add_list alters the same item. Conversely, when start_list is in addition mode (int1 = 2), each invocation of add_list appends a new item to the end of the list.
+
+     * ([link]end_list)
+
+     To conclude the list processing, the end_list function should be called as follows:
+       (start_list "L1" 1 3) ; changes the fourth item in the list.
+       (add_list "New item")
+       (end_list)
+
+NOTE
+   There are no LISP functions for inserting an item in the middle of the list nor for deleting an item from the list.
+
+Valid Attributes
+   : popup_list {
+       [link]action = "(string)";
+       [link]alignment = position;
+       [link]edit_width = number;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_enabled = flag;
+       [link]is_tab_stop = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]list = "string";
+       [link]mnemonic = "char";
+       [link]tabs = "string";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+
+   : popup_list {
+       action = "(patternlsp)";
+       edit_width = 0;
+       key = "PL2";
+       value = "Closed\nFilled\nOpen";
+       list = "2";
+   }
+
+NOTE
+     * The [link]label attribute displays the text to the left of the popup list box.
+     * The [link]value attribute determines which items on the list are initially selected or highlighted. The attribute consists of a string of integers separated by spaces, such as:
+     value = "0 2 5";
+     * The first item is #0. A null string "" means no items are highlighted.
+
+Related DCL Tiles
+   [link]button
+   [link]edit_box
+   [link]image_button
+   [link]list_box
+   [link]radio_button
+   [link]slider
+   [link]toggle
+
+More about...
+   [link]radio_button

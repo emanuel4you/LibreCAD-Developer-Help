@@ -1,0 +1,35 @@
+LISP Functions
+
+   (>= item1 item2 ...)
+     __________________________________________________________________
+
+   The initial item is either greater than or equal to the subsequent items.
+     __________________________________________________________________
+
+   This function serves as the greater-than or equal-to operator:
+
+     * If item1 is greater than or equal to item2, the function yields a T (true).
+     * Conversely, if item1 is less than item2, the function yields nil (false).
+
+   If this function contains more than two items, the function returns T
+   when each item to the right is greater-than or equal to the item on its
+   left. The items can be numbers or strings.
+
+EXAMPLES
+   Code             Returns
+   (>= 3.1 3.0)     T
+   (>= 6 5 5)       T
+   (>= 6)           T
+   (>= "x" "y" "z") nil
+
+NOTE
+   function.
+
+More about...
+   [link](/= item1 item2 ...)
+   [link](<= item1 item2 ...)
+   [link](= item1 item2 ...)
+   [link](> item1 item2 ...)
+   [link](cond (statement1 result1 ...) ...)
+   [link](if test statement1 [statement2])
+   [link](while text statement )

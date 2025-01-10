@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-left-trim characterset string)
+     __________________________________________________________________
+
+   Remove specified characters from the beginning of a string.
+     __________________________________________________________________
+
+   This function outputs the string after eliminating the designated characters from its beginning.
+
+EXAMPLE
+   Code                                 Returns
+   (vl-string-left-trim "My" "My Text") "TEXT"
+
+More about...

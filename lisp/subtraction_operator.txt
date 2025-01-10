@@ -1,0 +1,22 @@
+LISP Functions
+
+   (- number1 number2 ...)
+     __________________________________________________________________
+
+   Subtract all following numbers from the first number.
+     __________________________________________________________________
+
+   This function calculates the difference between the specified numbers. In the case of two numbers, it subtracts the second number from the first. When more than two numbers are provided, it subtracts the total of the second number through the last number from the first number.
+
+EXAMPLES
+   Code            Returns
+   (- 5 2)         3
+   (- 6 [-5])      11
+   (- 9 3 11)      5
+   (-)             0
+   (- 2)           -2
+
+More about...
+   [link](+ number1 number2 ...)
+   [link](1- number)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,18 @@
+LISP Functions
+
+   (add_list string)
+     __________________________________________________________________
+
+   Add text to an existing dialog box tile.
+     __________________________________________________________________
+
+   This function adds (or replaces) a string in the currently active tile.
+
+EXAMPLE
+   See [link]start_list for example usage.
+
+NOTE
+   You use this function when creating list boxes and drop-down list boxes in [link]DCL. For examples using this function in conjunction with DCL, see [link]list_box and [link]popup_list (drop-down list box).
+
+More about...
+   [link](end_list)

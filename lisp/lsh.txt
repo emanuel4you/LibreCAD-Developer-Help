@@ -1,0 +1,19 @@
+LISP Functions
+
+   (lsh integer1 integer2)
+     __________________________________________________________________
+
+   Do a bitwise shift.
+     __________________________________________________________________
+
+   This function executes a bitwise shift operation. The variable integer1 represents the number to be shifted, whereas integer2 indicates the number of positions by which integer1 will be shifted. A positive value for integer2 results in a leftward shift, while a negative value causes a rightward shift.
+
+   indicates that it is inactive.
+
+More about...
+   [link](~ number)
+   [link](and expression ...)
+   [link](boole function integer1 integer2 ...)
+   [link](logand integer1 integer2 )
+   [link](logior integer1 integer2 )
+   [link](or statement ...)

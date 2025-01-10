@@ -1,0 +1,18 @@
+LISP Functions
+
+   (expand integer)
+     __________________________________________________________________
+
+   Expand the memory space.
+     __________________________________________________________________
+
+   This function increases the available node space, which is a type of memory utilized by LISP, by a specified integer number of segments.
+
+EXAMPLE
+   Code Returns
+   (expand 10)
+   10
+
+More about...
+   [link](alloc integer)
+   [link](mem)

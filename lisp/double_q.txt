@@ -1,0 +1,18 @@
+LISP Functions
+
+   (double? x)
+     __________________________________________________________________
+
+   Returns true if x is a Double.
+     __________________________________________________________________
+
+   If the value is a [link]real number this functions returns true otherwise false.
+
+EXAMPLES
+
+   Code          Returns
+   (double? 1.0) true
+   (double? 1)   false
+
+More about...
+   [link](integer? 1)

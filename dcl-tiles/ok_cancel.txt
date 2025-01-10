@@ -1,0 +1,38 @@
+DCL Tiles
+
+   ok_cancel;
+     __________________________________________________________________
+
+   Present the OK, and Cancel buttons.
+
+   DCL Error Handler Tile
+     __________________________________________________________________
+
+   This error handler tile displays the OK and Cancel buttons.
+
+   It is important to note that the format of this tile is distinct from that of most other tiles: it does not include a : (colon) prefix or a { ... } (brace) suffix.
+
+   The program automatically assigns a key to each button, as follows:
+
+   Button   Key
+   OK     "accept"
+   Cancel "cancel"
+
+NOTE
+   To display only the OK button in a dialog box (for EXAMPLE, in a message or alert box), use the [link]ok_only.
+
+Valid Attributes
+   none
+
+EXAMPLE
+   ok_cancel;
+
+Related DCL Tiles
+   [link]errtile
+   [link]ok_only
+   [link]ok_cancel_help
+   [link]ok_cancel_help_errtile
+   [link]ok_cancel_help_info
+
+More about...
+   [link]ok_cancel_help

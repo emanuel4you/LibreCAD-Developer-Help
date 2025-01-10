@@ -1,0 +1,22 @@
+LISP Functions
+
+   (substr string start [length])
+     __________________________________________________________________
+
+   Give me part of that string.
+     __________________________________________________________________
+
+   This function dissects strings by extracting a sub-string from the original string, which can subsequently be assigned to a variable or utilized as any other string.
+
+   The parameter 'start' specifies the character position in the string from which to begin extraction. In contrast to other functions that operate on list elements, the 'substr' function treats the first character of the string as position one (rather than zero). If the starting position exceeds the length of the string, 'substr' will return an empty string (non-nil).
+
+   The 'length' parameter indicates the number of characters to be included in the extraction. If this argument is omitted, the sub-string will extend to the end of the original string. Should the specified length exceed the available number of characters, the function will return the entire segment from the indicated starting character to the end without generating an error.
+
+EXAMPLES
+   Code                       Returns
+   (substr "Texas" 3 )        "xas"
+   (substr "New Mexico" 12 )  ""
+
+More about...
+   [link](strcat string1 [string2] )
+   [link](strlen [string1] [string2] )

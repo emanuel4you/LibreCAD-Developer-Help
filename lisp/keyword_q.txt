@@ -1,0 +1,18 @@
+LISP Functions
+
+   (keyword? x)
+     __________________________________________________________________
+
+   Return true if x is a Keyword.
+     __________________________________________________________________
+
+   This Function takes a single argument and returns true if the argument is a Keyword, otherwise returns false.
+
+EXAMPLES
+
+   Code          Returns
+   (keyword? :x) true
+   (keyword? 'x) false
+
+More about...
+   [link](double? x)

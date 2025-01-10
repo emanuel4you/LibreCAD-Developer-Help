@@ -1,0 +1,21 @@
+LISP Functions
+
+   (protect)
+     __________________________________________________________________
+
+   Protect the file by encrypting it.
+     __________________________________________________________________
+
+   This function safeguards LISP code from access by unauthorized individuals. Initially, it duplicates the specified file, creating a backup with the extension ".original." Subsequently, the function encrypts the contents of the original file. The resulting encrypted file is a binary output that begins with the phrase "LibreCAD PROTECTED LISP file" on the first line, followed by the remaining data represented in binary format.
+
+EXAMPLE
+   Code              Output Files
+   (protect "d:/sampleLISP.lsp")
+   d:/sampleLISP.lsp .original (not encrypted)
+   d:/sampleLISP.lsp (encrypted)
+
+   CAUTION  Keep the copied file with the .orangial file extension. After
+   a file is encrypted, there is no way to remove the encryption and read
+   the file contents.
+
+More about...

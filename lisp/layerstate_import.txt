@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-import filename)
+     __________________________________________________________________
+
+   Imports a layer state from a designated file.
+     __________________________________________________________________
+
+   The filename parameter is a string that indicates the name of the file from which the layer state will be imported. It returns T if the import is successful; otherwise, it returns nil.
+
+EXAMPLE
+   Code                                     Returns
+   (layerstate-import c:\\mylayerstate.las) T
+
+More about...

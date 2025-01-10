@@ -1,0 +1,20 @@
+LISP Functions
+
+   (namedobjdict)
+     __________________________________________________________________
+
+   Retrieve the name of the entity from the named object dictionary of the current drawing, which serves as the foundation for all nongraphical objects within the drawing.
+     __________________________________________________________________
+
+   This function allows an application to access the nongraphical objects present in the drawing.
+
+EXAMPLE
+   ; Get the named object dictionary and sets it in nm
+   (setq nm (namedobjdict))
+
+More about...
+   [link](dictadd)
+   [link](dictnext)
+   [link](dictremove)
+   [link](dictrename)
+   [link](dictsearch)

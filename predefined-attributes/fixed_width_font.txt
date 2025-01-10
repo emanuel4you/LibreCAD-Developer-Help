@@ -1,0 +1,21 @@
+DCL Attributes
+
+   fixed_width_font = true/false;
+     __________________________________________________________________
+
+   Specifies whether a list box or pop-up list will display text in a fixed pitch font.
+     __________________________________________________________________
+
+   This facilitates improved spacing and alignment of columns with respect to tabs.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   fixed_width_font = true;
+
+Valid Tiles
+   [link]list_box
+   [link]popup_list
+
+More about...
+   [link]height

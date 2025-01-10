@@ -1,0 +1,26 @@
+LISP Functions
+
+   (ssdel entity-name selection-set)
+     __________________________________________________________________
+
+   Erase a entity from the selection set.
+     __________________________________________________________________
+
+   This function removes the entity, referred to as entity-name, from the selection set, where the selection set is mandatory.
+
+   If entity-name exists within the selection set, ssdel will eliminate it and return the updated selection set. Conversely, if entity-name is not included in the selection set, the function will return nil.
+
+EXAMPLES
+   Code Comments
+   (setq sset1 (ssget)) Creates a new selection set called sset1.
+   (setq ent1 (entnext)) Finds the first entity in the drawing and sets it
+   to ent1.
+   (ssadd ent1 sset1) Adds ent1 to sset1
+   (ssdel ent1 sset1) Deletes ent1 from sset1.
+   (ssdel ent2 sset1) Assuming ent2 is set to an entity(not in sset1), a
+   nil would return.
+
+More about...
+   [link](entnext [entity-name])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])

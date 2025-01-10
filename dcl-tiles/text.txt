@@ -1,0 +1,39 @@
+DCL Tiles
+
+   : text
+     __________________________________________________________________
+
+   Display a string of text.     DCL Text Tile
+     __________________________________________________________________
+
+   This text tile presents a sequence of text. It is recommended to utilize the text tile in conjunction with the [link]concatenation and [link]paragraph clusters to form horizontal and vertical arrangements of text, respectively.
+
+NOTE
+   It is important to note that most tiles possess their own title (through the [link]label attribute), making this function infrequently necessary.
+
+Valid Attributes
+   : text {
+       [link]alignment = position;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]is_bold = flag;
+       [link]key = "string";
+       [link]label = "string";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : text {
+       key = "T12";
+       label = "How to use progeCAD:";
+   }
+
+Related DCL Tiles
+   [link]concatenation
+   [link]paragraph
+   [link]text_part
+
+More about...
+   [link]text_part

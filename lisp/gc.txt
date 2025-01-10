@@ -1,0 +1,35 @@
+LISP Functions
+
+   (gc)
+     __________________________________________________________________
+
+   Collect the garbage in memory.
+     __________________________________________________________________
+
+   This function releases memory that is no longer in use, commonly referred to as Garbage Collection. It consistently returns nil.
+
+EXAMPLE
+   Code Returns
+   (gc) nil
+
+   Don't do this:
+   (defunc func ()
+   (setq var "hi")
+   .
+   .
+   .
+   (setq var nil)
+   )
+
+   Do this instead:
+   (defunc func (/var) <= automatically frees memory
+   (setq var "hi")
+   .
+   .
+   .
+   )
+
+More about...
+   [link](alloc integer)
+   [link](exp number)
+   [link](mem)

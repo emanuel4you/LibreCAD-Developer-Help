@@ -1,0 +1,17 @@
+LISP Functions
+
+   (quote item)
+     __________________________________________________________________
+
+    The first special quoting form is quote.
+     __________________________________________________________________
+
+   This function allows a quoted list to have internal elements of the list that are temporarily unquoted normal evaluation. There are two special forms that only mean something within a quoted list:
+
+EXAMPLES
+   Code                     Returns
+   (def! lst (quote (b c))) (b c)
+   (quote (a lst d))   (a lst d)
+
+More about...
+   [link](quasiquote item)

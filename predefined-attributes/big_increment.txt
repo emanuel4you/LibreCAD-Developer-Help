@@ -1,0 +1,29 @@
+DCL Attributes
+
+   big_increment = integer;
+     __________________________________________________________________
+
+   Adjust the slider by this amount with each click (step).
+     __________________________________________________________________
+
+   This attribute defines the increment value of a slider when the user clicks on its central section. The default increment is set to one-tenth of the total range, which is determined by the minimum value (as indicated by the [link]min_value attribute) and the maximum value (as indicated by the [link]max_value attribute.).
+
+   For integer values, please provide an integer that falls within the range established by min_value and max_value.
+
+EXAMPLE
+   min_value = -16;
+   max_value = 16;
+   small_increment = 1;
+   big_increment = 10;
+
+NOTE
+     * The default value of min_value is 0; the minimum value is -2,147,483,648. The default value of max_value is 10,000; the maximum value is 2,147,483,647.
+     * Horizontal sliders increase in value from left to right; vertical sliders increase value from top to bottom.
+
+Valid Tiles
+   [link]dail
+   [link]scroll
+   [link]slider
+
+More about...
+   [link]children_alignment

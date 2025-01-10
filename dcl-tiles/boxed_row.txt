@@ -1,0 +1,59 @@
+DCL Tiles
+
+   : boxed_row
+     __________________________________________________________________
+
+   Enclose a series of tiles within a rectangle, optionally including a title.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile creates a border surrounding a series of tiles, excluding radio buttons. The border will be displayed without a title if the [link]label attribute is absent or if an empty string ("") is provided.
+
+NOTE
+     * For a series of tiles that do not require a border or title, utilize the [link]row cluster.
+
+     * To enclose a series of radio buttons within a border, employ the [link]boxed_radio_row cluster.
+
+Valid Attributes
+   : boxed_row {
+       [link]alignment = position;
+       [link]children_alignment = flag;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : boxed_row {
+
+   label="Select Objects";
+       : button {
+            action = "(linelsp)";
+            key = "BB";
+            label = "Line";
+       }
+
+       : button {
+            action = "(circlelsp)";
+            key = "BW";
+            label = "Circle";
+       }
+   }
+
+Related DCL Tiles
+   [link]dialog
+   [link]column
+   [link]row
+   [link]boxed_column
+   [link]boxed_radio_column
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]button

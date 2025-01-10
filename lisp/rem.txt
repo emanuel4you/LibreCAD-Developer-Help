@@ -1,0 +1,19 @@
+LISP Functions
+
+   (rem number1 number2 [number3 ...])
+     __________________________________________________________________
+
+   Establish the remainder resulting from this division operation.
+     __________________________________________________________________
+
+   This function calculates the remainder obtained when number1 is divided by number2. For two numbers, the function initially determines the remainder of number1 divided by number2. This remainder is then used to perform a division by number3, and the process is repeated.
+
+EXAMPLES
+   Code             Returns
+   (rem 2 9.0)      2.0
+   (rem -36 13.0)   -10.0
+   (rem 0 0)        error: divide by zero
+
+More about...
+   [link](/= item1 item2 ...)
+   [link](fix number)

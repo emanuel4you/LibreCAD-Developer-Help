@@ -1,0 +1,23 @@
+DCL Attributes
+
+   allow_accept = true/false;
+     __________________________________________________________________
+
+   Activate the default button.
+     __________________________________________________________________
+
+   This attribute allows for input when the user either presses the [Enter] key or double-clicks on a specific tile.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   allow_accept = true;
+
+Valid Tiles
+   [link]edit_box
+   [link]multi_edit_box
+   [link]image_button
+   [link]list_box
+
+More about...
+   [link]aspect_ratio

@@ -1,0 +1,37 @@
+LISP Functions
+
+   (dictadd ename symbol newobj)
+     __________________________________________________________________
+
+   Add a nongraphical object to a dictionary.
+     __________________________________________________________________
+
+   The dictadd function is designed to incorporate an object (newobj) into a dictionary (ename), utilizing the symbol as the key identifier for the object being inserted. It is essential that each symbol represents a distinct name that is not already present in the dictionary. Furthermore, every object included in a dictionary must be unique to that specific dictionary.
+
+EXAMPLE´
+   ; Create an entity list
+   (setq dictionary (list '(0 . "DICTIONARY") '(100 . "AcDbDictionary")))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex dictionary))
+
+   ; Get the named object dictionary
+   (setq nmdict (namedobjdict))
+
+   ; Add a record to dictionary table
+   (setq newdict (dictadd nmdict "MY_DICTIONARY" xname))
+
+   ; Create an entity list
+   (setq datalist (append (list '(0 . "XRECORD") '(100 . "AcDbXrecord"))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex datalist))
+
+   ; Add a record and return the entity name of the object added to the dictionary.
+   (dictadd newdict "DATA_RECORD" xname)
+
+More about...
+   [link](dictnext)
+   [link](dictremove)
+   [link](dictrename)
+   [link](dictsearch)

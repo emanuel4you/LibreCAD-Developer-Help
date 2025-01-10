@@ -1,0 +1,17 @@
+LISP Functions
+
+   (autoload application list)
+     __________________________________________________________________
+
+   Automatically initiate the LISP application upon the invocation of any of its commands.
+     __________________________________________________________________
+
+   This function links a collection of command names to a specific application name. Consequently, when a user enters a command name, LibreCAD locates and loads the corresponding LISP file.
+
+EXAMPLE
+   Code                                         Returns
+   (autoload "routine" '("start" "run" "stop")) nil
+
+More about...
+   [link](autoxload application list)
+   [link](load filename [flag])

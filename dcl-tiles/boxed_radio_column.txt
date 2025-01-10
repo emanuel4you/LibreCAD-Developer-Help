@@ -1,0 +1,63 @@
+DCL Tiles
+
+   : boxed_radio_column
+     __________________________________________________________________
+
+   A rectangle can be drawn around a column of radio buttons, with the option to include a title.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile creates a border surrounding a column of radio buttons. If the [link]label attribute is absent or a null string ("") is provided, the border will be displayed without a title.
+
+NOTE
+     * For a column of radio buttons that does not require a border or title, utilize the [link]radio_column cluster.
+     * To encase a column of other tiles within a border, employ the [link]boxed_column cluster.
+
+Valid Attributes
+   : boxed _radio_column {
+       [link]alignment = position;
+       [link]children_alignment = position;
+       [link]children_fixed_height = flag;
+       [link]children_fixed_width = flag;
+       [link]fixed_height = flag;
+       [link]fixed_width = flag;
+       [link]height = number;
+       [link]label = "string";
+       [link]value = "string";
+       [link]width = number;
+   }
+
+EXAMPLE
+   : boxed_radio_column {
+       label="Edit Object;
+       width=40;
+
+       : radio_button {
+            action = "(trimlsp)";
+            key = "R3";
+            label = "Trim";
+       }
+
+       : radio_button {
+            action = "(extendlsp)";
+            key = "R4";
+            label = "Extend";
+       }
+   }
+
+NOTE
+   The [link]value attribute indicates which radio button is currently selected by default, via the value of "1": value = "1"
+
+Related DCL Tiles
+   [link]dialog
+   [link]column
+   [link]row
+   [link]boxed_column
+   [link]boxed_row
+   [link]boxed_radio_row
+   [link]radio_column
+   [link]radio_row
+
+More about...
+   [link]boxed_radio_row

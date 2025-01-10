@@ -1,0 +1,18 @@
+LISP Functions
+
+   (prn & more)
+     __________________________________________________________________
+
+   Prints more... followed by (newline). Observes *flush-on-newline*
+     __________________________________________________________________
+
+   This function prints followed by (newline). Observes *flush-on-newline*´
+
+EXAMPLES
+
+   Code           Returns
+   (prn "fred" 1) "fred" 1 nil
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])

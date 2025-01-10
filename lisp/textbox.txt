@@ -1,0 +1,17 @@
+LISP Functions
+
+   (textbox entity-list)
+     __________________________________________________________________
+
+   Establish the x, y, and z dimensions of the specified text entity.
+     __________________________________________________________________
+
+   This function provides the three-dimensional diagonal coordinates of a box that encapsulates a text entity. The origin is located at the lower-left corner of the bounding box, represented as (0,0) if the text does not include letters with descenders, such as 'p' and 'y'. The argument entity-list must pertain to a text entity, excluding text in dimensions and blocks.
+
+EXAMPLE
+   Code                     Returns
+   (setq txt (entlast))     Entity name.
+
+More about...
+   [link](command cmd [arguments] ...)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,28 @@
+DCL Tiles
+
+   : paragraph
+     __________________________________________________________________
+
+   Present a vertical cluster of text.
+
+   DCL Cluster Tile
+     __________________________________________________________________
+
+   This cluster tile arranges text in a vertical format and incorporates a margin around its perimeter. It is important to note that this differs from the concatenation tile, which organizes text in a horizontal manner.
+
+Valid Attributes
+   none
+
+EXAMPLE
+   : paragraph {
+       text_part { label = "This text is above";}
+       text_part { label = "this lower text.";}
+   }
+
+Related DCL Tiles
+   [link]concatenation
+   [link]text
+   [link]text_part
+
+More about...
+   [link]popup_list

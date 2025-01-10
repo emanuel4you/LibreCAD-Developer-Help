@@ -1,0 +1,18 @@
+LISP Functions
+
+   (integer? n)
+     __________________________________________________________________
+
+   Returns true if n is an integer.
+     __________________________________________________________________
+
+   If the value is a [link]integer this functions returns true otherwise false.
+
+EXAMPLES
+
+   Code           Returns
+   (integer? 1)   true
+   (integer? 1.0) false
+
+More about...
+   [link](double? x)

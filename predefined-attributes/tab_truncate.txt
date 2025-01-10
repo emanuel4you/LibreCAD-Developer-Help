@@ -1,0 +1,21 @@
+DCL Attributes
+
+   tab_truncate = true/false;
+     __________________________________________________________________
+
+   Cut off any text longer than the related tab stop.
+     __________________________________________________________________
+
+   This attribute determines if the text within a [link]list_box or a drop-down list_box is truncated when it exceeds the corresponding tab stop. It is advisable to utilize this attribute to ensure that the text does not extend beyond the subsequent tab stop.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   tab_truncate = true;
+
+Valid Tiles
+   [link]list_box
+   [link]popup_list
+
+More about...
+   [link]typeface

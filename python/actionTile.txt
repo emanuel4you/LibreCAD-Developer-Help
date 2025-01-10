@@ -1,0 +1,29 @@
+PYTHON Functions
+
+   bool actionTile(string *id, string *action)
+     __________________________________________________________________
+
+   Respond when the user clicks a dialog box tile.
+     __________________________________________________________________
+
+   This function assigns the expression to evaluate when the user selects the tile referenced by key.
+
+   The key argument refers to the tile. (In this case, the tile is a user-selectable element of a dialog, such as button, list_box, or radio_button.)
+
+   The handle argument is the name of the dialog box.
+
+   The expression is a pointer to a function called when the tile is
+   selected:
+
+   Argument          Meaning
+   $value   Current value.
+   $key     Tile name.
+   $data    Application specific data.
+   $reason  Callback reason.
+   $x       Image x-coordinate.
+   $y       Image y-coordinate.
+
+   This function returns True if successful otherwise, False.
+
+More about...
+   [link]addList

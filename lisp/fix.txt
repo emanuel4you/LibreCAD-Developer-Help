@@ -1,0 +1,20 @@
+LISP Functions
+
+   (fix number)
+     __________________________________________________________________
+
+   Convert that real number into an integer.
+     __________________________________________________________________
+
+   Values are converted to integers by removing all digits following the decimal point, without any effort to round the number.
+
+EXAMPLES
+   Code        Returns
+   (fix 3)     3
+   (fix pi)    3
+
+More about...
+   [link](atof string)
+   [link](atoi string)
+   [link](float number)
+   [link](itoa integer)

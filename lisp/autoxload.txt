@@ -1,0 +1,18 @@
+LISP Functions
+
+   (autoxload application list)
+     __________________________________________________________________
+
+   The SDS application will be loaded automatically upon the invocation of any of its commands.
+     __________________________________________________________________
+
+   This functionality links a collection of command names to a specific application name. Consequently, when a user inputs a command name, LibreCAD will be activated.
+
+EXAMPLE
+   Code                                          Returns
+   (autoxload "routine" '("start" "run" "stop")) nil
+
+More about...
+   [link](abs number)
+   [link](xload appname [flag])
+   [link](xunload appname [flag])

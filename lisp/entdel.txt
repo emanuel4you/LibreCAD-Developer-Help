@@ -1,0 +1,28 @@
+LISP Functions
+
+   (entdel entity-name)
+     __________________________________________________________________
+
+   Erase that entity from the drawing.
+     __________________________________________________________________
+
+   This function allows for the deletion of an entity identified by its entity name. If the entity has been removed from the drawing during the current editing session, it can be restored. In essence, invoking the entdel command twice will reinstate the entity. This restoration capability remains effective until the drawing is closed. Once the drawing is reloaded, the entdel command can no longer be utilized to recover entities that were deleted in the prior session.
+
+EXAMPLE
+   Code               Returns
+   (setq a (entnext))
+   (entdel a)         Delete entity.
+   (entdel a)         Undelete entity.
+
+NOTES
+     * The entdel command is exclusively for deleting entities; it cannot be used for attributes or vertices of polylines. To remove attributes and polyline vertices, the [link] command function should be employed alongside the AttEdit and PEdit commands.
+     * Entities contained within blocks cannot be deleted directly. To remove entities from a block, the [link] entmake command should be used to redefine the block, excluding the entities intended for deletion.
+
+More about...
+   [link](entget entity-name [application-list])
+   [link](entlast)
+   [link](entmod entity-list)
+   [link](entsel [prompt])
+   [link](entupd entity-name)
+   [link](nentsel [prompt])
+   [link](nentselp [prompt] [point])

@@ -1,0 +1,21 @@
+LISP Functions
+
+   (findfile filename)
+     __________________________________________________________________
+
+   Find a file.
+     __________________________________________________________________
+
+   This function performs a search on your computer to determine the location of a specified file. This process is crucial, as referencing a non-existent file name in your LISP program can lead to a program crash. If the file is found, the function returns its path and filename; if it is not found, the function returns nil.
+
+EXAMPLES
+   Code                       Returns
+   (findfile "sampledwg.dwg") "c:\\LibreCad\\sample\\sampledwg.dwg"
+   (findfile "junk.$$$")      nil
+
+More about...
+   [link](getfiled title filename ext flags)
+   [link](load filename [flag])
+   [link](open filename mode)
+   [link](startapp appname [filename])
+   [link](xload appname [flag])

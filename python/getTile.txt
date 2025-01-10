@@ -1,0 +1,12 @@
+PYTHON Functions
+
+   string getTile(string key)
+     __________________________________________________________________
+
+   Determine the value of this dialog box's tile.
+     __________________________________________________________________
+
+   This function returns the value of a dialog box tile as a string.
+
+More about...
+   [link]getListString

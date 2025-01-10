@@ -1,0 +1,17 @@
+LISP Functions
+
+   (str) (str x) (str x & ys)
+     __________________________________________________________________
+
+   returns x to String
+     __________________________________________________________________
+
+   This function With no args, returns the empty string. With one arg x, returns x to String.  (str nil) returns the empty string. With more than one arg, returns the concatenation of the str values of the args.
+
+EXAMPLES
+   Code        Returns
+   (str)       ""
+   (str 1 2 3) "123"
+
+More about...
+   [link](read-line)

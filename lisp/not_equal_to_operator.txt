@@ -1,0 +1,33 @@
+LISP Functions
+
+   (/= item1 item2 ...)
+     __________________________________________________________________
+
+   The two items are not equivalent.
+     __________________________________________________________________
+
+   This function determines whether two items are unequal:
+
+     * If item1 is not the same as item2, the function returns T (true).
+     * If the two items are equivalent, the function returns nil (false).
+
+   In cases where more than two items are provided, all items must be distinct in order to yield a T. The items may consist of either numbers or strings.
+
+EXAMPLES
+   This expression  Returns
+   (/= "x" "x" "x") nil
+   (/= "x" "x" "y") nil
+   (/= "x" "y" "z") T
+   (/= 5)           T
+
+NOTE
+   The less than operator is commonly employed in conjunction with conditional statements, including if...then, while, and cond. These comparisons enable the evaluation of two conditions (for instance, whether i equals 0) to determine the appropriate moment to terminate the conditional (for example, while i remains greater than 0).
+
+More about...
+   [link](< item1 item2 ...)
+   [link](<= item1 item2 ...)
+   [link](= item1 item2 ...)
+   [link](> item1 item2 ...)
+   [link](>= item1 item2 ...)
+   [link](if test statement1 [statement2])
+   [link](while text statement )

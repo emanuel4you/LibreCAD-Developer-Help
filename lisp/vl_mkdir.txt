@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-mkdir directory)
+     __________________________________________________________________
+
+   Create a directory.
+     __________________________________________________________________
+
+   This function returns T upon success or nil if it fails.
+
+EXAMPLE
+   Code                    Returns
+   (vl-mkdir "d:\myfiles") "C:\MYFILES\SAMPLE.TXT"
+
+More about...

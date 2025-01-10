@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-file-size filename)
+     __________________________________________________________________
+
+   Return the size of a file.
+     __________________________________________________________________
+
+   This function provides a string that represents the size of the file in bytes.
+
+EXAMPLE
+   Code                         Returns
+   (vl-file-size "d:\file.txt") 25
+
+More about...

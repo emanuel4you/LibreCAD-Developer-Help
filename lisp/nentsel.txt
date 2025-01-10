@@ -1,0 +1,20 @@
+LISP Functions
+
+   (nentsel [prompt])
+     __________________________________________________________________
+
+   Request the user to choose an entity.
+     __________________________________________________________________
+
+   Select an entity and provide its name, regardless of whether the entity is part of a block or a polyline. The prompt argument serves as an optional message that can be displayed to the user.
+
+EXAMPLE
+   Code Returns
+   (setq n (nentsel "Select a polyline: "))
+   [pick entity] Select a polyline:
+   (5.0 5.0 0.0))
+
+More about...
+   [link](initget [bits] [string])
+   [link](nentselp [prompt] [point])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,28 @@
+LISP Functions
+
+   (getcorner point [prompt])
+     __________________________________________________________________
+
+   Request the user to identify the second corner of a rectangle.
+     __________________________________________________________________
+
+   This function requests the user to select the second corner of a rectangle. The initial corner argument (point) is mandatory; the rectangle is constructed from that point as the user moves the cursor across the display. Frequently, this point is derived from a different function.
+
+   The request is optional; it can be utilized to ask the user for the corner point. Another LISP expression cannot be employed in response to this request.
+
+
+
+EXAMPLES
+   Code                   Returns
+   (getcorner '(1.0 1.0))
+   [pick point] no response
+   (getcorner '(2.0 1.5) "Select corner: ")
+   [pick point] Select corner:
+
+NOTE
+   The reference point is determined by the existing UCS. Any z-coordinate provided will be disregarded, and the current elevation will be utilized instead.
+
+More about...
+   [link](getangle [point] [prompt])
+   [link](getdist [point] [prompt])
+   [link](getpoint [point] [prompt])

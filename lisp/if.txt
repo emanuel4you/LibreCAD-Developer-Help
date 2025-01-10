@@ -1,0 +1,33 @@
+LISP Functions
+
+   (if test statement1 [statement2])
+     __________________________________________________________________
+
+   If the condition holds true, execute the first statement; if not, proceed with an alternative action.
+     __________________________________________________________________
+
+   This function allows for the evaluation of two conditions: when the test evaluates to true, execute statement1; otherwise, execute statement2, which is optional. Should the test be true, LISP will return the value of statement1; conversely, if the test is false, LISP will return the value of statement2.
+
+EXAMPLES
+   Code                                                   Returns
+   (setq d 9)
+   (if (>= d 10) "Greater")                               nil
+   (if (and (> d 12) (< d 13)) "In range" "Out of range") "Out of range"
+
+NOTE
+   The if function only allows a single statement for statement1 and
+   statement2. If you want a multi-line statement, surround them by the
+
+   (if (> x 15)
+      (progn (
+         (setq window 20.0 door 32.0)
+         (command "color" 1)
+         ) ; end progn
+      ) ; end then
+   ) ; end if
+
+More about...
+   [link](cond (statement1 result1 ...) ...)
+   [link](repeat number statement1 [statement2 ...])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](while text statement )

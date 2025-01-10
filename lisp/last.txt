@@ -1,0 +1,22 @@
+LISP Functions
+
+   (last list)
+     __________________________________________________________________
+
+   Identify the final item in that list.
+     __________________________________________________________________
+
+   This function retrieves the last element from a list. The element is returned as a singular item unless the last element itself is a list, as illustrated in the examples below.
+
+EXAMPLES
+   Code Returns
+   (last '("first" "second" ("third" "fourth"))) ("third" "fourth")
+
+NOTE
+   Caution is advised when using this function. For instance, if you require a function to obtain the z-coordinate of a point, there may be instances where the point only includes the x- and y-coordinates. In such cases, your function might inadvertently return the y-coordinate. Therefore, it is often preferable to employ a combination of methods.
+
+More about...
+   [link](length list)
+   [link](nth integer list)
+   [link](reverse list)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

@@ -1,0 +1,16 @@
+LISP Functions
+
+   (throw "error msg")
+     __________________________________________________________________
+
+   The expr is evaluated and thrown.
+     __________________________________________________________________
+
+   This function evaluated and thrown, therefore it should yield an instance of some derivee of Throwable.
+
+EXAMPLES
+   Code          Returns
+   (throw "bla") Error: "bla"
+
+More about...
+   [link](*error*)

@@ -1,0 +1,20 @@
+DCL Attributes
+
+   multiple_select = true/false;
+     __________________________________________________________________
+
+   Allow the user to select multiple items from the list box.
+     __________________________________________________________________
+
+   When flag = true, this attribute allows the user to select more than one item from a list box. When the user picks more than one item, each is highlighted.
+
+   Possible values are true or false (default: false).
+
+EXAMPLE
+   multiple_select = true;
+
+Valid Tile
+   [link]list_box
+
+More about...
+   [link]password_char

@@ -1,0 +1,20 @@
+LISP Functions
+
+   (map? x)
+     __________________________________________________________________
+
+   Return true if x is a map.
+     __________________________________________________________________
+
+   This function takes a single argument and returns true if the argument is a hash-map, otherwise returns false.
+
+EXAMPLES
+   Code                    Returns
+   (map? {:a 1 :b 2 :c 3}) true
+   (map? '(1 2 3))         false
+   (map? #{:a :b :c})      false
+
+More about...
+   [link](map expression )
+   [link](number? item)
+   [link](reverse map)

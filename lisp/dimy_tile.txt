@@ -1,0 +1,22 @@
+LISP Functions
+
+   (dimy_tile key)
+     __________________________________________________________________
+
+   Establish the x-dimension of a dialog box tile.
+     __________________________________________________________________
+
+   The dimensions of the tile identified by the name key are [link]. The x and y dimensions are generally utilized by other dialog box functions, such as [link]vector_image.
+
+EXAMPLE
+   Code                        Returns
+   (dimx_tile "myimage") 20
+   (dimy_tile "myimage") 15
+
+NOTES
+     * The dimension returned is one less than the actual size, as the dimension indexing starts at 0. Therefore, in the example provided, the tile's size is 16 x 16.
+     * The key is a case-sensitive string.
+
+More about...
+   [link](fill_image x y width height color)
+   [link](slide_image x y width height slide)

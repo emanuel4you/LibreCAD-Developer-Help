@@ -1,0 +1,14 @@
+PYTHON Functions
+
+   None endList()
+     __________________________________________________________________
+
+   End the creation of a dialog box list.
+     __________________________________________________________________
+
+   This function signals the end of processing a list in the current dialog box, which was begun by the [link]startList function.
+
+   This function returns None
+
+More about...
+   [link]endImage

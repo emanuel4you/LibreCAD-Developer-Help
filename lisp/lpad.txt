@@ -1,0 +1,24 @@
+LISP Functions
+
+   (lpad string integer)
+     __________________________________________________________________
+
+   Add spaces to the left side of the string to achieve the desired length.
+     __________________________________________________________________
+
+   This function manages the overall length and spacing of the string during output. The integer parameter indicates the total number of characters or spaces that the string should encompass.
+
+   If the specified number is less than the string's total character count, the string will be shortened to fit the indicated limit. Conversely, if the number exceeds the character count of the string, extra spaces will be prefixed to the string's left side.
+
+NOTE
+   Utilize rpad to execute similar adjustments at the end (or right side) of the string.
+
+EXAMPLES
+   Code                 Returns
+   (lpad "Planet X" 15) "Planet X"
+   (setq a "Planet X")
+   (lpad a 6)           "Planet"
+
+More about...
+   [link](rpad string integer)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

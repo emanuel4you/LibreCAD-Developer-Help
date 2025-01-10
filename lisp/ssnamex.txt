@@ -1,0 +1,17 @@
+LISP Functions
+
+   (ssnamex selection-set index)
+     __________________________________________________________________
+
+   Retrieves information about how a selection set was created.
+     __________________________________________________________________
+
+   This function exclusively gathers information regarding the creation of selection sets that consist of entities from the model space and paper space of the current drawing. It does not encompass non-graphical objects or entities located in other block definitions.
+
+EXAMPLES
+   Code Comments
+   (setq part1 (ssnamex ss1 0)) Returns entity data. For example: ((1 0 (0
+   (3.0 5.0 0.0)))) .
+
+More about...
+   [link]ssname

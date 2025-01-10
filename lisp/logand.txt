@@ -1,0 +1,21 @@
+LISP Functions
+
+   (logand integer1 integer2 ...)
+     __________________________________________________________________
+
+   Determine what is the logical AND.
+     __________________________________________________________________
+
+   This is a logical operation that employs the Boolean AND. The outcome is produced through the manipulation of bits. A bit that is "on" is represented by a 1, while a bit that is "off" is indicated by a 0. When both the first and second bits in a column are on, the resulting bit is also on. Conversely, if both the first and second bits are off, the resulting bit will be off. The AND function necessitates that all bits within a column must be on.
+
+EXAMPLES
+   Code              Returns
+   (logand 13 2)     0
+
+More about...
+   [link](~ number)
+   [link](and expression ...)
+   [link](boole function integer1 integer2 ...)
+   [link](logior integer1 integer2 )
+   [link](lsh integer1 integer2)
+   [link](or statement ...)

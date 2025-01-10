@@ -1,0 +1,35 @@
+LISP Functions
+
+   (xload appname [flag])
+     __________________________________________________________________
+
+   Load that SDS application.
+     __________________________________________________________________
+
+   appname. After the application has been successfully loaded, you will have access to all the commands it has registered.
+
+   The optional flag argument is utilized solely in the event of an error during the loading process. The xload function will return the value of this flag if a failure occurs; if the flag is absent, an error message will be presented instead.
+
+   If the application you are trying to xload is already in a loaded state, a message will indicate this situation. The application will not be loaded again.
+
+EXAMPLES
+   Code Returns
+   (xload "goodapp") Loads the application "goodapp".
+   (xload "badapp") Error loading application:
+   Could not find badapp.dll.
+   (xload "badapp" "Uh-oh!") Error loading application:
+   Could not find badapp.dll. "Uh-oh!"
+   (xload "badapp" (xload "goodapp")) Loads the application "goodapp".
+   Error loading application:
+   Could not find badapp.dll
+   (xload "loadedapp") Application "C:loadedapp.dll"
+   is already loaded.
+   (xload "loadedapp") Can't open "loadedapp" for execution.
+   error: XLOAD failed
+   *Cancel*
+   "loadedapp"
+
+More about...
+   [link](ads)
+   [link](load filename [flag])
+   [link](xunload appname [flag])

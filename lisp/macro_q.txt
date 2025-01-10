@@ -1,0 +1,18 @@
+LISP Functions
+
+   (macro? n)
+     __________________________________________________________________
+
+   Returns true if n implements a mcro, i.e. is an object created via defun, defmacro!.
+     __________________________________________________________________
+
+   If the value is a macro function, this functions returns true, otherwise false.
+
+EXAMPLES
+
+   Code          Returns
+   (macro? 2+)   true
+   (macro? setq) false
+
+More about...
+   [link](fn? x)

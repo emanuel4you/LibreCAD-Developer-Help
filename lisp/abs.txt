@@ -1,0 +1,23 @@
+LISP Functions
+
+   (abs number)
+     __________________________________________________________________
+
+   Indicate the distance of the number from zero, without considering its direction (whether positive or negative).
+     __________________________________________________________________
+
+   This function yields the absolute value of the number. An argument may be utilized.
+
+EXAMPLES
+   Code       Returns
+   (abs 56)   56
+   (abs -2.3) 2.30000
+
+NOTES
+     * Employ this function to transform a negative number into a positive one, or to confirm that the number is positive..
+     * If it is necessary to ensure that a number is negative, first apply the absolute value function, and subsequently subtract the number from zero.
+
+More about...
+   [link](fix number)
+   [link](float number)
+   [link](minusp number)

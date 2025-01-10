@@ -1,0 +1,18 @@
+LISP Functions
+
+   (string? item)
+     __________________________________________________________________
+
+   Determine whether an item is a string.
+     __________________________________________________________________
+
+   This function returns true if the parameter is a string.; otherwise, false is returned.
+
+EXAMPLES
+   Code                 Returns
+   (string? "Lisp")     true
+   (string? '(5 3.2 6)) false
+
+More about...
+   [link](number?)
+   [link](list?)

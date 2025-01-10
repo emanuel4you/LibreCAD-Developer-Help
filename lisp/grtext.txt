@@ -1,0 +1,30 @@
+LISP Functions
+
+   (grtext [flag text])
+     __________________________________________________________________
+
+   Write text on the status line.
+     __________________________________________________________________
+
+   This function enables the placement of text in either the status line or the coordinate status area, depending on the specified flag:
+
+   Flag        Meaning
+   -1   Status Line
+   -2   Coordinate Status Line
+
+   The text must be a string. If the string exceeds the available space, it will be truncated.
+
+   When the coordinate status is activated (with the Coords command set to 1 or 2), any previously entered text in this field will be replaced with new coordinates as soon as the mouse is moved.
+
+   To clear the text from the coordinate status line when COORDS is disabled, or from the status line, you may invoke the grtext function without any parameters.
+
+EXAMPLES
+   Code Returns
+   (grtext -2 "This is mode -2") This is mode -2
+   Places text in coordinate area.
+   (grtext) nil
+   Clears text from status line
+
+More about...
+   [link](grdraw point1 point2 color [highlight])
+   [link](grvecs vector-lists [trans])

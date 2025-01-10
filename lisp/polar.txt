@@ -1,0 +1,17 @@
+LISP Functions
+
+   (polar point angle distance)
+     __________________________________________________________________
+
+   Identify a point utilizing polar coordinates.
+     __________________________________________________________________
+
+   This function generates a three-dimensional point based on a specified angle and distance from a reference point. The reference point is first rotated by the angle provided in radians, and subsequently, it is displaced by the indicated distance from that point.
+
+NOTE
+   The angle is measured in radians with respect to the x-axis, with the values of radians increasing in a counterclockwise direction.
+
+More about...
+   [link](angle point1 point2)
+   [link](distance point1 point2)
+   [link]pi

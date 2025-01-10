@@ -1,0 +1,16 @@
+LISP Functions
+
+   (starttransaction)
+     __________________________________________________________________
+
+   Begin the processing of a transaction.
+     __________________________________________________________________
+
+   A transaction defers specific types of processing until the execution of all code between the initiation and conclusion of the transaction is complete. Upon completion, all deferred processing is executed. For instance, it is possible to create multiple new entities without displaying them until the transaction concludes. This approach enhances performance by eliminating the need to refresh the screen for each individual entity, allowing for a single update after all new entities have been established.
+
+EXAMPLE
+   Code               Returns
+   (starttransaction) T
+
+More about...
+   [link](endtransaction)

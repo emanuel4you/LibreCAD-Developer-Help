@@ -1,0 +1,20 @@
+PYTHON Functions
+
+   string startImage(string key)
+     __________________________________________________________________
+
+   Start creating a dialog box image.
+     __________________________________________________________________
+
+   This function signals the start of the image key in a dialog box. This function is used to precede the other dialog box drawing functions:
+
+   [link]fillImage, [link]slideImage, [link]pixImage, [link]textImage and [link]vectorImage. End the drawing with the endImage function.
+
+   The handle argument is the name of the dialog box.
+
+   The key argument identifies the tile.
+
+   This function returns The key argument
+
+More about...
+   [link]startList

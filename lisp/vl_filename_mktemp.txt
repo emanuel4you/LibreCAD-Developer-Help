@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-filename-mktemp [pattern directory extension])
+     __________________________________________________________________
+
+   Generate a filename intended for temporary file usage.
+     __________________________________________________________________
+
+   This function provides a string that represents the filename for the temporary file.
+
+EXAMPLE
+   Code                 Returns
+   (vl-filename-mktemp) "C:\\TMP\\$VL~~001"
+
+More about...

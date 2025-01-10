@@ -1,0 +1,42 @@
+LISP Functions
+
+   (dictremove ename symbol)
+     __________________________________________________________________
+
+   Remove an item from a dictionary.
+     __________________________________________________________________
+
+   The dictremove function searches a dictionary (ename) to remove an item
+   symbol.
+
+EXAMPLE
+   ; Create an entity list
+   (setq dictionary (list '(0 . "DICTIONARY") '(100 . "AcDbDictionary")))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex dictionary))
+
+   ; Get the named object dictionary
+   (setq nmdict (namedobjdict))
+
+   ; Add a record to dictionary table and returns the entity name of the object added
+   (setq newdict (dictadd nmdict "MY_DICTIONARY" xname))
+
+   ; Create an entity list
+   (setq datalist (append (list '(0 . "XRECORD") '(100 . "AcDbXrecord"))
+
+   ; Create an entity from entity list
+   (setq xname (entmakex datalist))
+
+   ; Add a record and returns the entity name of the object added to the dictionary.
+   (dictadd newdict "DATA_RECORD" xname)
+
+   ; Removes the record from dictionary and returns the entity name which
+   ; is removed from dictionary table.
+   (dictremove nmdict "MY_DICTIONARY")
+
+More about...
+   [link](dictadd)
+   [link](dictnext)
+   [link](dictrename)
+   [link](dictsearch)

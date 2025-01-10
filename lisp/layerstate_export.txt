@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-export layerstatename filename)
+     __________________________________________________________________
+
+   Exports the state of a layer to a designated file.
+     __________________________________________________________________
+
+   The layerstatename parameter is a string that indicates the name of the layer state intended for export, while the filename parameter is a string that specifies the name of the file where the layer state will be saved. The function returns T if the export is successful; otherwise, it returns nil.
+
+EXAMPLE
+   Code                                                  Returns
+   (layerstate-export myLayerState c:\\mylayerstate.las) T
+
+More about...

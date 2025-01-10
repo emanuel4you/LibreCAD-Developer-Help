@@ -1,0 +1,18 @@
+PYTHON Functions
+
+   integer loadDialog(string filename)
+     __________________________________________________________________
+
+   Load a dialog definition file.
+     __________________________________________________________________
+
+   This function loads a DCL dialog control language file. DCL files must be loaded before LibreCAD can display a custom dialog box.
+
+   The filename argument is the name of the DCL file.
+
+   The key argument is a system name for the dialog box, which is used by the key argument in other PYTHON Functions.
+
+   This function returns the ID (a positive integer) of the loaded DCL file, or -1 if the DCL file cannot be loaded.
+
+More about...
+   unloadDialog

@@ -1,0 +1,25 @@
+PYTHON Functions
+
+   bool modeTile(string key, int mode)
+     __________________________________________________________________
+
+   Set the mode of the dialog box's tile.
+     __________________________________________________________________
+
+   This function sets the mode of the tile identified by key.
+
+   The key argument is the case-sensitive name of the tile.
+
+   The mode argument takes one of the following integers:
+
+   Mode                         Meaning
+   0    Enable tile.
+   1    Disable tile.
+   2    Set the focus to the tile.
+   3    Select the contents of an edit box.
+   4    Change image highlighting between on and off.
+
+   This function returns True if successful otherwise, False.
+
+More about...
+   [link]loadDialog

@@ -1,0 +1,23 @@
+LISP Functions
+
+   (do statement1 statement2 ...)
+     __________________________________________________________________
+
+   Evaluate all the elements of the list and return the final evaluated element.
+     __________________________________________________________________
+
+   The function is constrained, as the if function permits only one if statement followed by a then statement. Each if function can accommodate only a single then statement and an else statement. In contrast, the do function enables the evaluation of multiple statements. The value returned corresponds to the last statement evaluated.
+
+EXAMPLE
+   Code Returns
+   (setq a 9)
+   (do (setq b a)
+      (setq (1+ b)
+      )
+   )
+   10
+
+More about...
+   [link](apply function list)
+   [link](defmacro! )
+   [link](def! symbol)

@@ -1,0 +1,22 @@
+LISP Functions
+
+   (while text statement ...)
+     __________________________________________________________________
+
+   Continue executing the process as long as it remains valid.
+     __________________________________________________________________
+
+   This function represents a standard loop in LISP. The condition determines whether the loop persists or terminates. The loop continues as long as the condition is true, and it ceases when the condition evaluates to nil. The final statement preceding the nil is presented.
+
+EXAMPLE
+   Code             Returns
+   (setq x 25)
+   (while (/= x 20)
+   (setq x (1- x)
+   )                20
+
+More about...
+   [link](cond (statement1 result1 ...) ...)
+   [link](if test statement1 [statement2])
+   [link](repeat number statement1 [statement2 ...])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

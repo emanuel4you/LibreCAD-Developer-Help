@@ -1,0 +1,28 @@
+LISP Functions
+
+   (entnext [entity-name])
+     __________________________________________________________________
+
+   Get the next entity in a drawing.
+     __________________________________________________________________
+
+   This function retrieves the name of the first non-deleted entity within the database when no arguments are provided. If an entity name is specified, entnext will return the subsequent entity that follows the provided entity name. In cases where there is no subsequent entity available in the database, entnext will return nil.
+
+EXAMPLES
+   Code Returns
+   (setq a (entnext))
+   (setq b (entnext a))
+
+   Entity name following entity a
+
+More about...
+   [link](entdel entity-name)
+   [link](entget entity-name [application-list])
+   [link](entlast)
+   [link](entmake [entity-list])
+   [link](entmod entity-list)
+   [link](entsel [prompt])
+   [link](entupd entity-name)
+   [link](nentsel [prompt])
+   [link](nentselp [prompt] [point])
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

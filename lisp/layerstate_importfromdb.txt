@@ -1,0 +1,15 @@
+LISP Functions
+
+   (layerstate-importfromdb layerstatename filename)
+     __________________________________________________________________
+
+   Imports a layer state from a designated drawing file.
+     __________________________________________________________________
+
+   The argument layerstatename is a string that indicates the name of the layer state intended for import. The argument filename is a string that specifies the name of the file from which the layer state will be imported. The function returns T if the import operation is successful; otherwise, it returns nil.
+
+EXAMPLE
+   Code                                                         Returns
+   (layerstate-importfromdb "mylayerstate" "c:\\mydrawing.dxf") T
+
+More about...

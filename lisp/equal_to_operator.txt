@@ -1,0 +1,39 @@
+LISP Functions
+
+   (= item1 item2 ...)
+     __________________________________________________________________
+
+   Return T if they're equal.
+     __________________________________________________________________
+
+   This function determines the equality of two or more items:
+     * If the items are equal, the output will be T (true).
+     * If they are not equal, the function will return nil (false).
+
+   If the function contains more than two items, this function returns T
+   (true) when each item to the right is equal to the item on its left.
+   The items can be numbers or strings.
+
+EXAMPLES
+   Code                     Returns
+   (= 10 10.0 10)           T
+   (= "x" "y")              nil
+   (= "door" "door")        T
+   (= "door" "door" "door") T
+   (= 10)                   T
+
+NOTES
+     * It is important to distinguish between the = function and the equal function. The key difference lies in their operations: the = function is utilized for comparing numbers and strings, whereas the equal function is designed for comparing lists.
+
+     * Both the = and equal functions facilitate comparisons; however, neither of them executes the "equals" operation typically associated with arithmetic, such as the expression 1 + 2 = 3.
+
+More about...
+   [link](/= item1 item2 ...)
+   [link](< item1 item2 ...)
+   [link](<= item1 item2 ...)
+   [link](> item1 item2 ...)
+   [link](>= item1 item2 ...)
+   [link](cond (statement1 result1 ...) ...)
+   [link](eq statement1 statement2)
+   [link](if test statement1 [statement2])
+   [link](while text statement )

@@ -1,0 +1,18 @@
+PYTHON Functions
+
+   bool newPositionedDialog(string name, int id, int x, int y)
+     __________________________________________________________________
+
+   Display a dialog box at a specific location.
+     __________________________________________________________________
+
+   Use this function to display a dialog box at a specific location on the screen. This function is meant to be used the second time you open this dialog box. Because you do not know what the size of the LibreCAD window will be, use the [link]newDialog function the first time you initialize the dialog box.
+
+   The dialog box is identified by dialog within the DCL file named dcl-file. The string dialog is obtained from the [link]loadDialog function.
+
+   The x and y arguments are the coordinates of the lower-right corner of the dialog box. The upper-left coordinates are (0,0). You should get the x,y coordinates from donePositionedDialog. When x and y are both set to -1, LibreCAD opens the dialog box in the center of the window.
+
+   This function returns True if successful otherwise, False.
+
+More about...
+   [link]newDialog

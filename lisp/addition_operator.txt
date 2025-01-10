@@ -1,0 +1,19 @@
+LISP Functions
+
+   (+ number1 number2 ...)
+     __________________________________________________________________
+
+   Adds all given numbers.
+     __________________________________________________________________
+
+   When real numbers and integers are combined, the outcome is a real number.
+
+EXAMPLES
+   Code            Returns
+   (+)             0
+   (+ 2)           2
+
+More about...
+   [link](1- number)
+   [link](1+ number)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

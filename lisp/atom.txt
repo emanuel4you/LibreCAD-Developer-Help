@@ -1,0 +1,21 @@
+LISP Functions
+
+   (atom item)
+     __________________________________________________________________
+
+   Assess whether a given item qualifies as an atom.
+     __________________________________________________________________
+
+   In general terms, an atom is defined as a singular value or variable, specifically anything that is not a list. The atom function evaluates the item to ascertain its status as an atom. If the item is identified as a list, the function returns nil; conversely, if it is not a list, it returns T.
+
+EXAMPLES
+   Code            Returns
+   (atom '(1 2 3)) nil
+   (atom 5)        T
+   (atom '5)       T
+
+More about...
+   [link](atoms-family format [symbol1 symbol2 ...])
+   [link](listp item)
+   [link](numberp item)
+   [link](type item)

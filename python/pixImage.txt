@@ -1,0 +1,18 @@
+PYTHON Functions
+
+   string pixImage(int x1, int y1, int x2, int y2, string path)
+     __________________________________________________________________
+
+   Display a image in the dialog box.
+     __________________________________________________________________
+
+   This function displays an image in a dialog box. The image is positioned at x1, y1 coordinates. These coordinates are the upper-left corner of the image.
+
+   The width argument specifies the relative width of the image in the positive x-direction. The height argument specifies the relative height of the image in the negative y-direction. The origin is the upper-left corner of the image.
+
+   The name argument is the name of the file, which can be a SVG, PNG, JPG, ... format.
+
+   This function returns the path as a string.
+
+More about...
+   [link]slideImage

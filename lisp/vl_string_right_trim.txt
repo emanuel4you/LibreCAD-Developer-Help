@@ -1,0 +1,15 @@
+LISP Functions
+
+   (vl-string-right-trim characterset string)
+     __________________________________________________________________
+
+   Remove specified characters from the end of a string.
+     __________________________________________________________________
+
+   This function provides the string after eliminating the designated characters from its end.
+
+EXAMPLE
+   Code                                    Returns
+   (vl-string-right-trim "Text" "My Text") "MY"
+
+More about...

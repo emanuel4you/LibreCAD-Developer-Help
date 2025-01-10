@@ -1,0 +1,19 @@
+LISP Functions
+
+   (getstring [flag] [prompt])
+     __________________________________________________________________
+
+   Request the user to input some text.
+     __________________________________________________________________
+
+   This function is designed to pause for user input of a string and subsequently return that input.
+
+   To permit spaces within the string, set the flag to a non-nil value. When the flag is non-nil (commonly, T is utilized), the user is required to conclude the string by pressing the Enter key. Conversely, if the flag is nil or not specified, the input string will be terminated upon the first activation of either the spacebar or the Enter key.
+
+   It is important to note that the text entered in the string is interpreted literally, meaning the user is unable to input an alternative LISP expression in response to the getstring function.
+
+NOTE
+   Use [link](getkword) function, if you wish for the user to input one of several predefined words.
+
+More about...
+   [link](getreal [prompt])

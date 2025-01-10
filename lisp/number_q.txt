@@ -1,0 +1,19 @@
+LISP Functions
+
+   (number? item)
+     __________________________________________________________________
+
+   Determine whether an item is a number.
+     __________________________________________________________________
+
+   Assess whether the given item qualifies as a number. If the item is identified as a number, a true is returned; otherwise, false is returned.
+
+EXAMPLES
+   Code                 Returns
+   (number? 0.2653)     true
+   (number? '(5 3.2 6)) false
+   (number? "Name")     false
+
+More about...
+   [link](not item)
+   [link](type item)

@@ -1,0 +1,16 @@
+LISP Functions
+
+   (term_dialog)
+     __________________________________________________________________
+
+   Terminate all dialog boxes.
+     __________________________________________________________________
+
+   This function closes all dialog boxes. It is particularly beneficial for simultaneously shutting down multiple nested dialog boxes.
+
+EXAMPLE
+   Code          Returns
+   (term_dialog) nil
+
+More about...
+   [link](unload_dialog dcl_id)

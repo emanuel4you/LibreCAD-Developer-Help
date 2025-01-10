@@ -1,0 +1,30 @@
+LISP Functions
+
+   (atoms-family format [symbol1 symbol2 ...])
+     __________________________________________________________________
+
+   Identify the function names currently in use.
+     __________________________________________________________________
+
+   This function enumerates all the pre-defined and user-defined functions available in the current session. The format argument dictates the manner in which the information is presented.
+
+   Format Meaning
+   0 Returns defined functions as a list.
+   1 Returns defined functions as a list of strings.
+
+   The optional argument [symbol1symbol2 ...] consists of a list of strings that denote symbols. This is utilized to verify whether the function names are established in the current session. If symbol1, symbol2, ... are defined, LISP will return the symbols as strings, based on the selected format. If any are not defined, a nil will be returned in their place.
+
+EXAMPLES
+   Code                                   Returns
+   (setq hi "Greeting 1")
+   (setq bye "Greeting 2")
+   (atoms-family 0 '("hi" "bye"))         (HI BYE)
+   (atoms-family 0 '("hi" "hello" "bye")) (HI nil BYE)
+   (atoms-family 1 '("hi" "bye"))         ("HI" "BYE")
+
+More about...
+   [link](atom item)
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...])
+   expression)
+   [link](lambda arguments expression ...)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)

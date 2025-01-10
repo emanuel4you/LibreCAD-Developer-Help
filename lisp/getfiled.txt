@@ -1,0 +1,32 @@
+LISP Functions
+
+   (getfiled title filename ext flags)
+     __________________________________________________________________
+
+   Display the Select File dialog box.
+     __________________________________________________________________
+
+   This function presents the file dialog box of the operating system, enabling the user to choose a file.
+
+   The title argument determines the title of the file dialog box, which is displayed on the title bar. To create a title bar with no text, enter " ", but the argument cannot be left empty.
+
+   The filename argument sets the default filename that is highlighted in the File name section of the dialog box. To indicate no default filename, enter " ", but again, the argument must not be left blank.
+
+   The ext argument defines the file type, such as "dxf", "txt", or "lsp". If the argument is " ", no specific file type is indicated. To include all file types, use "*" as the argument.
+
+   The flags argument is a bitcode that outlines options for the getfiled function.
+
+   Bit code Meaning
+   1 Alerts the user regarding the potential overwriting of an existing file.
+
+   You may combine the bits to select multiple options. For instance, using this bit will notify the user about overwriting an existing file while allowing them to change the file extension.
+
+EXAMPLES
+   (getfiled "Drawing Files" " " "DWG" 2)
+   (getfiled "LISP Files" "sample.lsp" "LSP" 6)
+
+More about...
+   [link](alert string)
+   [link](findfile filename)
+   [link](load filename [flag])
+   [link](open filename mode)

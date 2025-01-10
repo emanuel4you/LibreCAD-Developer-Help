@@ -1,0 +1,21 @@
+LISP Functions
+
+   (cos angle)
+     __________________________________________________________________
+
+   Calculate the cosine.
+     __________________________________________________________________
+
+   This function provides the cosine value of a specified angle. The angle must be in.
+
+EXAMPLES
+
+   Code           Returns
+   (cos pi)       -1.000000
+   (cos (/ pi 2)) 0.000000
+
+More about...
+   [link](atan number1 [number2])
+   [link](sin angle)
+   [link](tan angle)
+   [link]pi

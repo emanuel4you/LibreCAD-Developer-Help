@@ -1,0 +1,17 @@
+LISP Functions
+
+   (timeout msecs)
+     __________________________________________________________________
+
+   Sleep for n miliseconds.
+     __________________________________________________________________
+
+   This function causes the calling thread to sleep either until the number of real-time seconds specified in miliseconds have elapsed or until a signal arrives which is not ignored.
+
+EXAMPLES
+
+   Code          Returns
+   (timeout 100) sleep...
+
+More about...
+   [link](help)

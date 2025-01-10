@@ -1,0 +1,18 @@
+LISP Functions
+
+   (with-meta obj m)
+     __________________________________________________________________
+
+   Returns an object of the same type and value as obj.
+     __________________________________________________________________
+
+   This function takes two arguments. The first argument is a LISP value and the second argument is another LISP value/type to set as metadata. A copy of the LISP value is returned that has its meta attribute set to the second argument. Note that when copying a LISP function, it is important that the environment and macro attribute are retained.
+
+EXAMPLE
+   Code                                    Returns
+   (with-meta [1 2 3] {:my "meta"})        [1 2 3]
+   (meta (with-meta [1 2 3] {:my "meta"})) {:my "meta"}
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help [filename [topic [flag]]])

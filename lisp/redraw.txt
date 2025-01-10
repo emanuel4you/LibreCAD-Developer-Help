@@ -1,0 +1,34 @@
+LISP Functions
+
+   (redraw [ename [mode]])
+     __________________________________________________________________
+
+   Redraw the viewport or just a single entity.
+     __________________________________________________________________
+
+   This operation refreshes the complete graphic display or targets a single entity. Any temporary graphics that are currently displayed will be affected.
+
+   If an ename (short for entity name) argument is provided, the appearance of that entity will change based on the specified mode argument:
+
+   Mode Description
+   1 Execute a standard redraw.
+   2 Remove the entity from the display (reverse redraw).
+   3 Execute a highlight redraw (as determined by the system variable HIGHLIGHT).
+
+   When these mode values are input as negative numbers, the function will only impact the primary component of a complex element (such as a block or polyline), leaving the sub-elements unaffected. This function consistently returns nil.
+
+EXAMPLES
+   Code Result
+
+   (redraw)
+   Redraws entire screen.
+
+   (redraw en1)
+   Redraws selected entity.
+
+   (redraw en1 2)
+   Blanks out the selected entity.
+
+More about...
+   [link](graphscr)
+   [link](grclear)

@@ -1,0 +1,18 @@
+LISP Functions
+
+   (caddr list)
+     __________________________________________________________________
+
+   Returns the third element of a list
+     __________________________________________________________________
+
+   This function returns the third element of a list.
+
+EXAMPLES
+
+   Code                         Returns
+   (setq pt '(7.10 2.0 3.0))   (5.25 2.0 3.0)
+   (caddr pt)                  3.0
+
+More about...
+   [link](car)

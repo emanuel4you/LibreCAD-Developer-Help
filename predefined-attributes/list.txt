@@ -1,0 +1,24 @@
+DCL Attributes
+
+   list = "string";
+     __________________________________________________________________
+
+   Specify the initial values displayed by a list.
+     __________________________________________________________________
+
+   This attribute specifies the default text for a [link]list_box or a [link]popup_list (drop-down list box).
+
+   string: a string. Use the \n (new-line) character to separate lines.
+
+EXAMPLE
+   list = "Dog\nCat\nMouse";
+
+NOTE
+   You have the option to utilize the \t (tab) character to organize text into distinct columns.
+
+Valid Tiles
+   [link]list_box
+   [link]popup_list
+
+More about...
+   [link]lower_only

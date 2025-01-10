@@ -1,0 +1,28 @@
+DCL Attributes
+
+   width = number;
+     __________________________________________________________________
+
+   Specify the width of a tile.
+     __________________________________________________________________
+
+   This attribute defines the minimum width of a tile. The program will automatically adjust the width unless it is specified by the [link]fixed_width attribute.
+
+   Typically, the width attribute should be applied to image and [link]image_button tiles. For other types of tiles, it is advisable to refrain from using this attribute unless it is necessary to enhance the visual appeal of the dialog box.
+
+   number: any [link]real number or [link]integer measured in units of character width. The "character width unit" is the lessor of either:
+
+     * the width of the screen divided by 80
+     * or the average width of all uppercase and lowercase letters (A-Z, a-z)
+
+EXAMPLE
+   width = 10;
+
+NOTE
+   The [link]aspect_ratio attribute should be utilized in conjunction with either the [link]height or [link]width attribute. It is advisable not to employ the aspect_ratio attribute when both height and width are specified.
+
+Valid Tiles
+   all tiles
+
+More about...
+   [link]height

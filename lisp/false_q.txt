@@ -1,0 +1,18 @@
+LISP Functions
+
+   (false? x)
+     __________________________________________________________________
+
+   Returns true if x is the value false, false otherwise.
+     __________________________________________________________________
+
+   This function takes a single argument and returns true if the argument is a false value.
+
+EXAMPLES
+   Code          Returns
+   (false? false)  true
+   (false? 1)     false
+
+More about...
+   [link](false? x)
+   [link](number? coll)

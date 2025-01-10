@@ -1,0 +1,19 @@
+LISP Functions
+
+   (strlen [string1] [string2] ...)
+     __________________________________________________________________
+
+   Ascertain the total number of characters present in a given string.
+     __________________________________________________________________
+
+   This function calculates the total number of characters present in a string. If no string is provided or if the string is empty, the result will be zero.
+
+EXAMPLES
+   Code                         Returns
+   (strlen "How many?")         9
+   (strlen "one" "two" "three") 11
+   (strlen "")                  0
+   (strlen)                     0
+
+More about...
+   [link](substr string start [length])

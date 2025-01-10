@@ -1,0 +1,24 @@
+LISP Functions
+
+   (ssname selection-set index)
+     __________________________________________________________________
+
+   Identify the nth entity in a selection set.
+     __________________________________________________________________
+
+   This function provides the name of the entity that corresponds to the specified index in the selection set. The index indicates the sequence in which the entities were added to the selection set, beginning with 0: index #0 represents the first entity, index #1 denotes the second entity, and so on.
+
+EXAMPLES
+   Code                     Comments
+   (setq a (ssget))         Creates new selection set.
+   (setq part1 (ssname a 0) Returns the name of the 1st entity.
+   (setq part2 (ssname a 1) Returns the name of the 2nd entity.
+
+NOTE
+   The entity names returned aren't actual names like line or arc;
+   they are numeric representations in hexadecimal.
+
+More about...
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](ssdel entity-name selection-set)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])

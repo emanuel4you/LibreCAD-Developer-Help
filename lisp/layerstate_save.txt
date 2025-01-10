@@ -1,0 +1,23 @@
+LISP Functions
+
+   (layerstate-save layerstatename mask viewport)
+     __________________________________________________________________
+
+   Saves a layer state in the current drawing.
+     __________________________________________________________________
+
+   The layerstatename parameter is a string that indicates the name of the layer state intended for preservation. The mask parameter is an integer sum that specifies which attributes of the layer state should be reinstated:
+
+   1  Restore the previously saved On or Off status
+   2  Restore the previously saved Frozen or Thawed status
+   16 Restore the previously saved VPVSDFLT value
+   32 Restore the previously saved Color
+
+   The viewport parameter refers to an ename (ads_name) of the viewport from which the VPLAYER setting is to be recorded. If this parameter is nil, the layer state will be saved without the VPLAYER settings.
+The function returns T if the save operation is successful; otherwise, it returns nil.
+
+EXAMPLE
+   Code                           Returns
+   (layerstate-save myLayerState) T
+
+More about...

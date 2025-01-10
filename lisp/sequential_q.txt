@@ -1,0 +1,24 @@
+LISP Functions
+
+   (sequential? coll)
+     __________________________________________________________________
+
+   Returns true if coll is a Sequential.
+     __________________________________________________________________
+
+   This function takes a single argument and returns true if it is a list or a vector, otherwise returns false.
+
+EXAMPLES
+
+   Code                       Returns
+   (sequential? '(1 2 3))     true
+   (sequential? [1 2 3])      true
+   (sequential? '())          true
+   (sequential? nil)          false
+   (sequential? "abc")        false
+
+
+More about...
+   [link](vector expression)
+   [link](number? item)
+   [link](reverse vector)
