@@ -1,6 +1,6 @@
 LISP Functions
 
-   (member coll x)
+   (member? coll x)
      __________________________________________________________________
 
    Returns true if x is member off coll true, false otherwise.
@@ -11,8 +11,8 @@ LISP Functions
 EXAMPLES
 
    Code                           Returns
-   (member '("one" "two" "three") "one") true
-   (member '("one" "two" "three") "six") false
+   (member? '("one" "two" "three") "one") true
+   (member? '("one" "two" "three") "six") false
 
 More about...
    [link](list expression )
