@@ -1,0 +1,20 @@
+LISP Functions
+
+   (% number1 number2)
+     __________________________________________________________________
+
+   Returns the remainder or signed remainder of a division.
+     __________________________________________________________________
+
+   This function calculates the remainder or signed remainder of a division, after one number is divided by another.
+
+EXAMPLES
+   Code         Returns
+   (% 5 2)      1
+   (% 13 5)     3
+   (% 5.01 2.0) 1.0099999999999998
+
+More about...
+   [link](~ number1 number2 ...)
+   [link](fix number)
+
