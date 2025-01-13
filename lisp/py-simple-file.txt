@@ -9,7 +9,7 @@ LISP Functions
    This function runs a Python script and returns 0 if successful.
 
 EXAMPLE
-   Code                           Result
+   Code                           Returns
    (py-simple-file "myModule.py") 0
 
 More about...

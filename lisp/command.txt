@@ -18,5 +18,5 @@ EXAMPLES
 
 More about...
    [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
-   [link](help [filename [topic [flag]]])
+   [link](help "func")
    [link](menucmd string)

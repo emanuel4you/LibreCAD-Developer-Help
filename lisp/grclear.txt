@@ -9,7 +9,7 @@ LISP Functions
    This function temporarily obscures the graphic window, and the current function consistently returns nil.
 
 EXAMPLE
-   Code            Result
+   Code            Returns
    (grclear)       Clears the graphics window
    (redraw)        Returns the graphics.
 

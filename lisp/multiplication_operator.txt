@@ -12,8 +12,6 @@ LISP Functions
 
 EXAMPLES
    Code            Returns
-   (*)             0
-   (* 2)           2
    (* 2 -3)        -6
 
 More about...

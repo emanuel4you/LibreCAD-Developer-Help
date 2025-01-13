@@ -1,0 +1,20 @@
+LISP Functions
+
+   (vl-position symbol list)
+     __________________________________________________________________
+
+   Returns the index of the specified item within a list.
+     __________________________________________________________________
+
+   The function returns a numeric value representing the index position of the symbol within the list; returns nil if the symbol is not found in the list.
+
+NOTE
+   The first element of the list is indexed as 0, the second as 1, and so forth.
+
+EXAMPLE
+   Code                                Returns
+   (setq chars (list "a" "b" "x" "y")) ("a" "b" "x" "y")
+   (vl-position "x" chars)             2
+
+More about...
+   [link](vl-consp (cons 0 "LINE"))

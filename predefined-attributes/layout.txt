@@ -17,7 +17,7 @@ NOTE
    Horizontal sliders increase in value from left to right; vertical sliders increase value from bottom to top.
 
 Valid Tile
-   [link]dail
+   [link]dial
    [link]scroll
    [link]slider
 

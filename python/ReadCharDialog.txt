@@ -1,6 +1,6 @@
 PYTHON Functions
 
-   single string char ReadCharDialog()
+   char ReadCharDialog()
      __________________________________________________________________
 
    Function wait for key press.

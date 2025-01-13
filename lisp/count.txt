@@ -8,5 +8,10 @@ LISP Functions
 
    The first parameter as a list or vector and return the number of elements that it contains. The resulting number is an integer.
 
+EXAMPLES
+   Code             Returns
+   (count '(1 2 3)) 3
+   (count [1 2 3])  3
+
 More about...
    [link](length list)

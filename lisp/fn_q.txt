@@ -1,12 +1,12 @@
 LISP Functions
 
-   (fn? n)
+   (fn? x)
      __________________________________________________________________
 
    Returns true if x implements Fn, i.e. is an object created via fn.
      __________________________________________________________________
 
-   If the value is a function/lambda this functions returns true otherwise false.
+   If the value is a function/lambda this functions returns true, otherwise false.
 
 EXAMPLES
 

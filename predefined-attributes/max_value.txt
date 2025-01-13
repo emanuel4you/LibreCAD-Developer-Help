@@ -22,7 +22,7 @@ NOTE
    The attributes [link]big_increment and [link]small_increment determine the amount by which the slider's value increases when the user clicks on it.
 
 Valid Tile
-   [link]dail
+   [link]dial
    [link]scroll
    [link]slider
 

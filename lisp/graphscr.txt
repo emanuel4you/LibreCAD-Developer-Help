@@ -9,7 +9,7 @@ LISP Functions
    This function navigates back to the graphics window from the Prompt History window. If you are already on the graphics screen, this function will have no impact. It is advisable to place this function at the start of your program to ensure that the LISP program initiates on the graphics screen.
 
 EXAMPLE
-   Code       Result
+   Code       Returns
    (graphscr) Switches to the graphic window.
 
 More about...

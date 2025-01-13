@@ -9,7 +9,7 @@ LISP Functions
    This function runs a Python Command and returns the integer.
 
 EXAMPLE
-   Code                      Result
+   Code                      Returns
    (py-eval-integer "1 + 2") 3
 
 More about...

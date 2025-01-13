@@ -16,7 +16,7 @@ EXAMPLE
    (princ (strcat "\nTwice the value is " (rtos var)))))
    (princ)
 
-   Result
+   Returns
      Twice the value is 2.0000
      Twice the value is 3.0000
      Twice the value is 5.0000

@@ -1,0 +1,17 @@
+LISP Functions
+
+   (copyright)
+     __________________________________________________________________
+
+   Returns the copyright.
+     __________________________________________________________________
+
+   This function returns the copyright of LibreCAD.
+
+EXAMPLE
+   Code  Returns
+   (copyright) ## LibreCAD and the GPLv2 ##...
+
+More about...
+   [link](ver)
+   [link](license)

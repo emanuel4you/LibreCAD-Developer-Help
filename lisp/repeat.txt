@@ -3,20 +3,15 @@ LISP Functions
    (repeat number statement1 [statement2 ...])
      __________________________________________________________________
 
-   Repeat it.
+   Repeat it x times.
      __________________________________________________________________
 
    This function reiterates the statements a specified number of times, as indicated by the number.
 
 EXAMPLE
-   Code             Returns
-   (setq x 2)
-   (setq y 12)
-
-   (repeat 3        1500
-   (setq x (* x 5)) x is now set to 250.
-   (setq y (* y 5)) y is now set to 1500.
-   )
+   Code                                         Returns
+   (setq value 0)                               0
+   (repeat 5 (1+ value)(setq value (1+ value))) 5
 
 More about...
    [link](cond (statement1 result1 ...) ...)

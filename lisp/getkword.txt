@@ -15,7 +15,6 @@ LISP Functions
    In the absence of preset keywords through initget, nil will be returned.
 
 EXAMPLE
-   Code         Returns
    (initget 2 "Yes No")
    (getkword "Are you sure? ")
    Displays dialog box.

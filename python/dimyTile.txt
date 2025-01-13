@@ -8,7 +8,7 @@ PYTHON Functions
 
    The key Value specifies a tile.
 
-   The coordinates provided represent the maximum permissible values within the tile. Given that the coordinates are zero-based, this function yields a value that is one less than the total X dimension (X-1). The functions dimxTile and [link]dimyTile are available for use with [link]vectorImage, [link]fillTmage, and [link]slideImage, which necessitate the specification of absolute tile coordinates.
+   The coordinates provided represent the maximum permissible values within the tile. Given that the coordinates are zero-based, this function yields a value that is one less than the total X dimension (X-1). The functions dimxTile and [link]dimxTile are available for use with [link]vectorImage, [link]fillTmage, and [link]slideImage, which necessitate the specification of absolute tile coordinates.
 
 More about...
    [link]actionTile

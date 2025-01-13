@@ -13,7 +13,7 @@ EXAMPLES
 
     1. Two-point method: omit the point argument. The getpoint function will prompt the user for two points. The prompt for the initial point is defined by the prompt; LibreCAD will display "Second point:" for the selection of the second point. A guiding line extends from the first point to the target, assisting visually in selecting the second point.
 
-   Code              Returns
+EXAMPLE
    (getdist)
    [pick first point]
    [pick second point] no prompt
@@ -26,7 +26,7 @@ EXAMPLES
 
    2. One-point method: include the point argument. The getpoint function will prompt the user for a single point. The prompt for the subsequent point is defined by the prompt. A guiding line extends from the first point to the target, assisting visually in selecting the second point.
 
-                          Code                   Returns
+EXAMPLE
    [pick point] no prompt
    5.3
    (getdist '(3.0 2.0) "Length of pipe: "))

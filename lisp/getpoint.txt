@@ -11,7 +11,6 @@ LISP Functions
    Additionally, you may incorporate a prompt to solicit the user's input for the point.
 
 EXAMPLES
-   Code                 Returns
    (getpoint)
    [pick point] no response
    (getpoint "Select a point: ")

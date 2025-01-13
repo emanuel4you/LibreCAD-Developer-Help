@@ -18,16 +18,10 @@ LISP Functions
    When these mode values are input as negative numbers, the function will only impact the primary component of a complex element (such as a block or polyline), leaving the sub-elements unaffected. This function consistently returns nil.
 
 EXAMPLES
-   Code Result
-
-   (redraw)
-   Redraws entire screen.
-
-   (redraw en1)
-   Redraws selected entity.
-
-   (redraw en1 2)
-   Blanks out the selected entity.
+   Code Returns
+   (redraw) Redraws entire screen.
+   (redraw en1) Redraws selected entity.
+   (redraw en1 2) Blanks out the selected entity.
 
 More about...
    [link](graphscr)

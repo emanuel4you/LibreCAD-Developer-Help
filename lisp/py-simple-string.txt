@@ -9,7 +9,7 @@ LISP Functions
    This function runs a Python Command and returns 0 if successful.
 
 EXAMPLE
-   Code                                             Result
+   Code                                             Returns
    (py-simple-string "print(\"Hello, LibreCAD!\")") 0
 
 More about...

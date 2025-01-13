@@ -8,7 +8,6 @@ LISP Functions
 
    This function presents the Color dialog box. It returns the selected color number from the dialog or nil if the user opts to click the Cancel button.
 
-
    The function accepts two optional parameters:
    Parameter Description Example Range color-number Color Number 1 0 - 256 flag Flag nil nil or true (equivalent to not specifying the flag)
 
@@ -36,5 +35,5 @@ NOTE
 More about...
    [link](command cmd [arguments] ...)
    [link](getvar sysvar)
-   [link](help [filename [topic [flag]]])
+   [link](help "func")
    [link](setvar sysvar value)

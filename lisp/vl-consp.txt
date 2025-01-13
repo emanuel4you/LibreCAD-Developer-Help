@@ -1,0 +1,16 @@
+LISP Functions
+
+   (vl-consp list-variable)
+     __________________________________________________________________
+
+   Establishes whether a list is empty or not.
+     __________________________________________________________________
+
+   The function returns true if the list-variable is a valid list and is not nil; otherwise, it returns nil.
+
+EXAMPLE
+   Code                       Returns
+   (vl-consp (cons 0 "LINE")) true
+
+More about...
+   [link](vl-position symbol list)

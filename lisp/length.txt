@@ -8,6 +8,12 @@ LISP Functions
 
    This function provides the count of items within the list. The resulting number is an integer.
 
+EXAMPLES
+   Code              Returns
+   (length '(1 2 3)) 3
+   (length [1 2 3])  3
+
+
 More about...
    [link](car list)
    [link](cdr list)

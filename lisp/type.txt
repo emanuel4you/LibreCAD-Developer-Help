@@ -3,8 +3,7 @@ LISP Functions
    (type item)
      __________________________________________________________________
 
-   Determine the type (for example, file, integer, string, and so forth)
-   of an item.
+   Determine the type (for example, file, integer, string, and so forth) of an item.
      __________________________________________________________________
 
    Identify the category of an item, such as file, integer, string, etc. The subsequent table enumerates the different types along with their definitions.

@@ -13,6 +13,6 @@ EXAMPLES
    (startapp "junk") 2
 
 More about...
-   [link](help [filename [topic [flag]]])
+   [link](help "func")
    [link](load filename [flag])
    [link](xload appname [flag])

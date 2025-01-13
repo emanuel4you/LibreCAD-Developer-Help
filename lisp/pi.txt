@@ -3,18 +3,14 @@ LISP Functions
 pi
      __________________________________________________________________
 
-   3.14...
+   Returns 3.141593
      __________________________________________________________________
 
    Pi is not classified as a function; instead, it is a constant value frequently utilized in programming LibreCAD with LISP.
 
 EXAMPLES
-   Code Returns
-   WARNING There is a risk of losing the value of pi. For instance, the following code results in pi being assigned the value of 2.0:
-
    Code          Returns
-   (setq pi 2.0) 2.0
-   !pi           2.0
+   !pi           3.141593
 
 More about...
    [link](atan number1 [number2])

@@ -9,7 +9,7 @@ LISP Functions
    This function runs a Python Command and returns the string.
 
 EXAMPLE
-   Code                                       Result
+   Code                                       Returns
    (py-eval-string "'Hello,' + ' LibreCAD!'") "Hello, LibreCAD!"
 
 More about...

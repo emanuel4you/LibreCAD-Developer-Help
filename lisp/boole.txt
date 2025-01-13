@@ -20,7 +20,6 @@ LISP Functions
    6        XOR       Only one of the two input bits is 1.
 
 EXAMPLES
-
    Code Returns
    Logical AND:
    (boole 1 10 9)

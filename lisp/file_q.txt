@@ -1,0 +1,18 @@
+LISP Functions
+
+   (file? x)
+     __________________________________________________________________
+
+   Returns true if x is a file.
+     __________________________________________________________________
+
+   If the value is a file this functions returns true, otherwise false.
+
+EXAMPLES
+
+   Code                      Returns
+   (file? (open "file.txt")) true
+   (file? 42)                false
+
+More about...
+   [link](double? x)

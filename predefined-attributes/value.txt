@@ -24,7 +24,7 @@ DCL Attributes
    [link]radio_column       Key of the selected radio button.
    [link]radio_row          Key of the selected radio button.
    [link]slider             Default value of the slider.
-   [link]dail             Default value of the slider.
+   [link]dial             Default value of the slider.
    [link]scroll             Default value of the slider.
    [link]slider             Default value of the slider.
    [link]text               Text displayed by the tile.
@@ -39,7 +39,7 @@ Valid Tiles
    [link]edit_box
    [link]multi_edit_box
    [link]radio_button
-   [link]dail
+   [link]dial
    [link]scroll
    [link]slider
    [link]list_box

@@ -13,7 +13,6 @@ LISP Functions
 
 
 EXAMPLES
-   Code                   Returns
    (getcorner '(1.0 1.0))
    [pick point] no response
    (getcorner '(2.0 1.5) "Select corner: ")

@@ -16,4 +16,4 @@ EXAMPLE
    (setfunhelp "c:stair" "stair.hlp" "raisers" "stair") "c:stair"
 
 More about...
-   [link](help [filename [topic [flag]]])
+   [link](help "func")

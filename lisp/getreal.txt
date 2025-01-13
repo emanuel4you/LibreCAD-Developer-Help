@@ -9,7 +9,6 @@ LISP Functions
    You may include a prompt argument to guide the user in entering the desired number.
 
 EXAMPLES
-   Code            Returns
    (getreal)
    [type -5] no response
    -5.0

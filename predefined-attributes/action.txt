@@ -18,14 +18,14 @@ NOTE
      * The action attribute is also capable of invoking a Python function.
      * A tile can only have one action assigned to it, and if action_tile is assigned by the program, it takes precedence over any other action.
 
-Valid Tiles:
+Valid Tiles
    [link]button
    [link]popup_list
    [link]edit_box
    [link]multi_edit_box
    [link]radio_button
    [link]image_button
-   [link]dail
+   [link]dial
    [link]scroll
    [link]slider
    [link]list_box

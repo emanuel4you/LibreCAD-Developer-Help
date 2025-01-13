@@ -9,7 +9,6 @@ LISP Functions
    You may incorporate a prompt argument to request the integer.
 
 EXAMPLES
-   Code Returns
    (getint)
    (getint "Enter a number: ")
 

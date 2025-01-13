@@ -9,10 +9,10 @@ LISP Functions
    This function retrieves the value of a designated operating system environment variable, such as that stored by the DOS PATH variable. If the variable is present, its value is returned as a string; if it is absent, nil is returned.
 
 EXAMPLES
-
    Code            Returns
-   (getenv "PATH") C:\\;C:\\WIN95;C:\\LibreCad
-   (getenv "junk") nil
+   (getenv "PATH") C:\\;C:\\WIN;C:\\LibreCad
+   (getenv "PATH") "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+   (getenv "bla") nil
 
 More about...
    [link](getcfg parameter)

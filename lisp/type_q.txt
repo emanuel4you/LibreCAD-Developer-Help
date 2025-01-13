@@ -1,0 +1,49 @@
+LISP Functions
+
+   (type? item)
+     __________________________________________________________________
+
+   Determine the type? (for example, file, integer, string, and so forth) of an item.
+     __________________________________________________________________
+
+   Identify the category of an item, such as file, integer, string, etc. The subsequent table enumerates the different types along with their definitions.
+
+   Types   Meaning
+   ENAME   Entity name.
+   FILE    File descriptor.
+   INT     Integer number.
+   LIST    List and user-defined function.
+   PAGETB  Function paging table.
+   PICKSET Selection set.
+   REAL    Real number.
+   STR     String.
+   SUBR    Subroutines: LISP functions.
+   SYM     Symbol.
+
+EXAMPLES
+   Code                             Returns
+   (type? 2)                         INT
+   (type? 2.0)                       REAL
+   (type? "Street")                  STR
+   (type? setq)                      SUBR
+
+   (setq x (open "C:\\my.fil" "w"))
+   (type? x)                         FILE
+   (type? 'x)                        SYM
+
+   (setq entinfo (entsel))
+   (type? entinfo) ENAME Could Return:
+
+   (setq ourset (ssget))            <Selection set: 2>
+   (type? ourset)                    PICKSET
+
+More about...
+   [link](atom item)
+   [link](boundp item)
+   [link](listp item)
+   [link](not item)
+   [link](null item)
+   [link](numberp item)
+   [link](setq symbol1 statement1 [symbol2 statement2] ...)
+   [link](ssget [mode] [point1 [point2]] [point-list] [filter-list])
+   [link](zerop number)

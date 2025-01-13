@@ -1,0 +1,17 @@
+LISP Functions
+
+   (credits)
+     __________________________________________________________________
+
+   Returns the credits.
+     __________________________________________________________________
+
+   This function returns the credits of LibreCAD.
+
+EXAMPLE
+   Code  Returns
+   (credits) Thanks to...
+
+More about...
+   [link](ver)
+   [link](license)

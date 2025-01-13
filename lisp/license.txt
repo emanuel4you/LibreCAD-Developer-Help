@@ -1,0 +1,17 @@
+LISP Functions
+
+   (license)
+     __________________________________________________________________
+
+   Returns the license of LibreCAD.
+     __________________________________________________________________
+
+   This function returns the license of LibreCAD.
+
+EXAMPLE
+   Code  Returns
+   (license) GNU GENERAL PUBLIC LICENSE...
+
+More about...
+   [link](ver)
+   [link](copyright)

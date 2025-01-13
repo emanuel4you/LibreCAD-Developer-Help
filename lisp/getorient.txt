@@ -13,7 +13,6 @@ LISP Functions
    It is not permissible to use another LISP expression as a response to a getorient inquiry.
 
 EXAMPLES
-   Code                 Returns
    (getorient)
    [pick first point]
    [pick second point] no response

@@ -10,13 +10,11 @@ LISP Functions
 
    Code Result
    (ssadd) A new selection set is created with no entitys.
-   (ssadd entity-name) A new selection set is created containing
-   entity-name as the only entity.
-   (ssadd entity-name selection-set) Adds the entity, entity-name, to an
-   existing selection set, selection-set.
+   (ssadd entity-name) A new selection set is created containing entity-name as the only entity.
+   (ssadd entity-name selection-set) Adds the entity, entity-name, to an existing selection set, selection-set.
 
+NOTE
    The newly created or modified selection set name is returned in a format akin to the following:
-
    LibreCAD allows for multiple selection sets to be open simultaneously.
 
 EXAMPLES

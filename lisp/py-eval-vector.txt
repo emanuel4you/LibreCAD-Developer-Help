@@ -9,7 +9,7 @@ LISP Functions
    This function runs a Python Command and returns the vector.
 
 EXAMPLE
-   Code                                       Result
+   Code                                       Returns
    (py-eval-vector "myModule.getPoint()")     (100.00000 100.00000 0)
 
 More about...

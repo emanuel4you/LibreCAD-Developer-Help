@@ -8,14 +8,12 @@ LISP Functions
 
    To display a custom dialog box in LibreCAD, it is necessary to load the corresponding dialog box definition file. The filename parameter refers to the name of the DCL file.
 
-   This function will return the ID of the loaded DCL file as a positive integer, or -1 if the DCL file fails to load.
+   This function will return the id of the loaded DCL file as a positive integer, or -1 if the DCL file fails to load.
 
 EXAMPLES
    Code Returns
-   (load_dialog "basicdcl")
-   1
-   (load_dialog "junkdcl")
-   -1
+   (load_dialog "my_dcl") 3
+   (load_dialog "no_file_dcl") -1
 
 NOTE
    The sequence for invoking a dialog box is as follows:

@@ -9,7 +9,7 @@ LISP Functions
    This function runs a Python Command and returns the float.
 
 EXAMPLE
-   Code                      Result
+   Code                      Returns
    (py-eval-float "1 + 2.0") 3.000000
 
 More about...

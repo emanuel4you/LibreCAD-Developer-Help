@@ -15,7 +15,6 @@ LISP Functions
    The user is not permitted to enter an alternative LISP expression in response to the getangle function.
 
 EXAMPLES
-   Code                   Returns
    (getangle)
    [pick point] Second point:
    (getangle "Rotation angle: ")

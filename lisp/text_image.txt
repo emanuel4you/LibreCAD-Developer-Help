@@ -1,0 +1,22 @@
+LISP Functions
+
+   (text_image x y width height text color)
+     __________________________________________________________________
+
+   Display a text.
+     __________________________________________________________________
+
+   This function renders a text int an imane or image_button tile.
+
+   The image text is placed at specified x,y coordinates, which correspond to the upper-left corner of the image. The width parameter defines the text's width extending in the positive x-direction, while the height parameter indicates the image's height extending in the negative y-direction.
+
+   The text argument is the text, which renders on the image or image_button.
+   The color argument is one of the standard 255 LibreCAD colors number or a logical color numbers.
+
+EXAMPLE
+   Code                                         Returns
+   (text_image 10 10 15 20 "Hallo, LibreCAD" 1) "Hallo, LibreCAD"
+
+More about...
+   [link](dimx_tile key)
+   [link](dimy_tile key)

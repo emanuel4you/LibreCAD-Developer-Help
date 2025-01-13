@@ -20,7 +20,7 @@ Valid Tiles
    [link]multi_edit_box
    [link]radio_button
    [link]image_button
-   [link]dail
+   [link]dial
    [link]scroll
    [link]slider
    [link]list_box

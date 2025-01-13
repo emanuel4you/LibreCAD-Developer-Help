@@ -1,0 +1,19 @@
+LISP Functions
+
+   (reset! atom f)
+     __________________________________________________________________
+
+   Atomically resets the value of atom
+     __________________________________________________________________
+
+   Sets the value of atom to newval without regard for the current value. Returns newval.
+
+EXAMPLE
+   Code               Returns
+   (def! x (atom 10)) (atom 10)
+   (reset! x 20)      20
+   !x (atom 20)
+
+More about...
+   [link](defun [c:] name ([arg1 arg2 ...] / [local-var1 local-var2 ...]) expression)
+   [link](help "func")

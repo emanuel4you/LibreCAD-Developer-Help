@@ -6,17 +6,17 @@ LISP Functions
    The initial item surpasses the remaining items.
      __________________________________________________________________
 
-   The greater-than function yields a T (true) or a nil (false):
+   The greater-than function yields a true or a false:
 
-     * If the first item exceeds the second item (and continues in this manner), the function will return a T.
-     * If the second item is less than or equal to the first, the function will return nil.
+     * If the first item exceeds the second item (and continues in this manner), the function will return a true.
+     * If the second item is less than or equal to the first, the function will return false.
 
    In cases where this function encompasses more than two items, it will return T when every item to the right is greater than the item immediately to its left. The items may consist of either numbers or strings.
 
 EXAMPLES
-   Code            Returns
-   (> 6)           T
-   (> "y" "x")     T
+   Code    Returns
+   (> 5 4) true
+   (> 5 6) false
 
 NOTE
    operator) function.

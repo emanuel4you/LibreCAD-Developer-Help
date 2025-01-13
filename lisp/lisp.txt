@@ -1,0 +1,88 @@
+Programming Overview of the LISP (LISt Processing) Language
+   LISP (LISt Processing) is a standalone programming language that offers integration capabilities with the LibreCAD program for customization purposes. LibreLisp is based on a clojure lightweight core that brings additional types and functions (vector, map, ...). It has similarities to AutoLISP and significantly extends the commands and functions available in LibreCAD.
+
+LISP Functions
+   Each command in LibreLisp is designed to execute a specific function. For instance, LISP functions can:
+
+      * Load various LISP applications, DCL programs, and LibreCAD files.
+      * Solicit input from the user or inform them of particular circumstances.
+      * Import additional LibrePython or LibreCAD Script files.
+      * Seek user input or alert the user regarding specific conditions.
+      * Execute standard commands in LibreCAD.
+      * Run system programs.
+      * Process alphanumeric sequences.
+      * Perform mathematical calculations.
+      * Store data for future use.
+      * Read from and write to files.
+      * Select entities within a drawing.
+      * Alter entities within a drawing.
+      * Display information on the screen or save it to a file.
+
+   By developing programs that integrate various LISP functions, users can create tailored solutions that enhance the CAD tools in LibreCAD, connect their drawings with other applications, and streamline their workflows. Utilizing LISP alongside LibreCAD allows for the enhancement of CAD workstations through the creation of powerful add-on applications tailored to specific needs relevant to one's specialty, firm, profession, or industry.
+
+NOTE
+   For further details regarding the compatibility of LibreCAD's LISP implementation with those found in other CAD systems, please refer to the section on [link]LISP Compatibility.
+
+LISP Symbols
+   Integer Numbers
+   An integer is defined as a number that does not include a decimal point. Examples of integers include 0, 1, -512, and 9597. In LISP, the range of an integer spans from -9223372036854775808 to +9223372036854775807;. If a function causes an integer to exceed this range, it is automatically converted to the opposite sign; for instance, -9223372036854775808 becomes
+   9223372036854775807. This can be conceptualized as a wrapping effect, where adding -1 to -9223372036854775808 results in +9223372036854775807, as illustrated in the accompanying diagram.
+
+   Real Numbers
+   A real number, often referred to as a "floating point" number, is defined as a number that includes a decimal point. While LISP represents a real number with six significant digits (for instance, 2.00000), these numbers are actually stored in a double-precision floating-point format. This implies that they possess a precision of 15 significant digits, exemplified by the number 2.00000000000000, 64-bit real number and his value range: from - 1.7 × 10 on 308 to +1.7 × 10 on 308 and it has 15 digit precision. if it is used to store integers the biggest integer what can store without rounding is 2 on 53. 64-bit real number is stored the following way: 1bit sign, 8bit exponent a 23bit mantissa. In LISP, the constant pi is predefined as a constant real number with a value of 3.141593. Additionally, LISP offers a variety of functions for the manipulation and conversion of real numbers.
+
+NOTE
+   It is important to note that a decimal point must be preceded by a digit. For instance, 0.5 is acceptable, whereas .5 will trigger a LibreCAD error message stating, "Command: (setq x .5) Error: '.5' not found"
+
+   Strings
+   A string is defined as a sequence of alphanumeric characters enclosed in quotation marks, such as "Hallo, LibreCAD" and "Please type your name:". A string that consists solely of "" is referred to as empty.
+
+   To incorporate control codes, also known as escape codes, the backslash ( \ ) character should be used as a prefix. For example, \n denotes the control code for initiating a new line. To include a quotation mark within a string, one should use \", as demonstrated in "The screw is 1\" long." LISP provides numerous functions (all beginning with str, along with many others) for string manipulation..
+
+   Entity Names
+   An entity name is a distinct hexadecimal identifier assigned to each entity within the drawing, such as . In LISP, the actual entity is not directly manipulated. Instead, one first identifies its entity name and subsequently works with that name. The term entity is utilized in LISP for historical reasons, although it is synonymous with the term object.
+
+   Lists
+   In LISP, the fundamental structure is the list. A list consists of various numbers or text elements that are separated by spaces and enclosed within parentheses, exemplified by (1 2 3), (def! x 1.0), and ("Answer is: " 42).
+
+   A pair of numbers typically represents 2D coordinates in the form of (x, y), such as (1.0 2.0). Similarly, a triplet of numbers is often utilized to denote 3D coordinates (x, y, z), for instance, (10.0 11.0 12.0). A unique type of list known as a dotted pair is employed to represent entity data, illustrated by (100 . 1). The structure of dotted pair data bears resemblance to, but is not identical to, DXF codes. For example, (50 . 1) indicates that the entity is assigned the color red, corresponding to group code 62 and color #1. LISP offers numerous functions, all prefixed with "ent," for analyzing entity data.
+
+EXAMPLE
+   Code Returns
+   (setq pnt '(0.0 100.0) (0.000000 100.000000)
+   (first pnt) 0.000000
+   (nth 1 pnt) 100.000000
+
+   Vectors (clojure)
+   In modern LISP, an other fundamental structure is the vector. A vector consists of various numbers or text elements that are separated by spaces and enclosed within parentheses, exemplified by [1 2 3], and ["Answer is: " 42].
+
+   A pair of numbers typically represents 2D coordinates in the form of [x, y], such as [1.0 2.0]. Similarly, a triplet of numbers is often utilized to denote 3D coordinates [x, y, z], for instance, [10.0 11.0 12.0].
+
+EXAMPLE
+   Code Returns
+   (setq pnt [0.0 100.0]) [0.000000 100.000000]
+   (first pnt) 0.000000
+   (nth 1 pnt) 100.000000
+
+   Hash Maps (clojure)
+   In modern LISP, an other fundamental structure is the map. Maps are represented as alternating keys and values that are separated by spaces and enclosed within brace { }, exemplified by {:x 1 :y 2 :z 3}, and { :answer "Answer is: " :value 42 }.
+
+   A pair of numbers typically represents 2D coordinates in the form of {:x 0.000000 :y 100.000000}. Similarly, a triplet of numbers is often utilized to denote 3D coordinates {:x 0.000000 :y 100.000000 :z 0.000000}.
+
+EXAMPLE
+   Code Returns
+   (setq ptn (hash-map :x 0.0 :y 100.0)) {:x 0.000000 :y 100.000000}
+   (get ptn :x) 0.000000
+   (get ptn :y) 100.000000
+
+   Selection Sets
+   A selection set refers to a collection of one or more entities. LISP includes a variety of functions, all beginning with the prefix ss, for the creation and manipulation of selection sets.
+
+   File Descriptors
+   A file descriptor is a hexadecimal identifier assigned to a file upon its opening in LISP, such as . Similar to entity data, the file's name is not referenced directly; instead, operations are conducted using the file descriptor. LISP is capable of opening files for reading, writing, or appending, but it is limited to UTF-8 files (binary files are not supported).
+
+More about...
+   [link]LISP Compatibility
+   [link]LISP Functions
+   [link]Overview of the Dcl (Dialog Control Language)
+   [link]Code Examples from the LibreCAD Developer Reference
