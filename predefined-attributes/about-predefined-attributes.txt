@@ -35,5 +35,6 @@ EXAMPLES
    alignment = centered;
 
 More about...
-   [52]Programming Overview of DCL (Dialog Control Language)
+   [link]Predefined Attributes
+   [link]Programming Overview of the DCL (Dialog Control Language)
    [link]Code Examples from the LibreCAD Developer Reference

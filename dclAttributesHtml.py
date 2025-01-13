@@ -18,6 +18,20 @@ root_dir = "html/predefined-attributes/"
 
 proto = "qrc:/"
 
+developer_urls = (
+("qrc:/html/lisp/lisp-functions.html", "LISP Functions"),
+("qrc:/html/lisp/lisp.html", "Programming Overview of the LISP (LISt Processing) Language"),
+("qrc:/html/lisp/lisp-compatibility.html", "LISP Compatibility"),
+("qrc:/html/lisp/lisp-functions.html", "LISP Functions"),
+("qrc:/html/python/python.html", "Programming Overview of the Python Language"),
+("qrc:/html/python/python-functions.html", "Python Functions"),
+("qrc:/html/dcl-tiles/dcl.html", "Programming Overview of the DCL (Dialog Control Language)"),
+("qrc:/html/dcl-tiles/dcl-tiles.html", "DCL Tiles"),
+(proto + root_dir + "predefined-attributes.html", "Predefined Attributes"),
+(proto + root_dir + "about-predefined-attributes.html", "About Predefined Attributes"),
+("https://github.com/emanuel4you/LibreCAD-Developer-Examples", "Code Examples from the LibreCAD Developer Reference")
+)
+
 def replaceInlineLink(line):
     #linkLine = line.strip()
     linkLine = line
@@ -68,6 +82,10 @@ def replaceLink(line):
     para = "<p>"
     if whites > 3:
         para = "<p style=\"padding-left: " + str(whites*5) + "px;\">"
+
+    for url, name in developer_urls:
+        if name in line:
+            return "\t<b>" + para + "<a href=\"" + url + "\" title=\"" + name + "\">" + name + "</a></p></b>\n"
 
     if partsCount == 1:
         result = "<b>" + para + "<a href=\"" + path + ".html\" title=\"" + title + "\">" + link + "</a></p></b>\n"

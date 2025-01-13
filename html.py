@@ -269,7 +269,7 @@ def makeIndexHtml():
 def makeDeveloperHtml():
     htmlFile = open(root_dir + "developer.html",'w')
     print("[makeIndexHtml] file:", root_dir + "developer.html")
-    htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<style>\n\t\t:root { font-family: sans-serif; }\n\t</style>\n\t<titel>LibreCad Help</titel>\n</head>\n<body>\n\t\n\t<hr/>\n<h2>LibreCad Help</h2>\n\t<hr/>\n")
+    htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<style>\n\t\t:root { font-family: sans-serif; }\n\t</style>\n\t<titel>LibreCad Developer Help</titel>\n</head>\n<body>\n\t\n\t<hr/>\n<h2>LibreCad Developer Help</h2>\n\t<hr/>\n")
 
     index = 0
     for url, name in developer_urls:
