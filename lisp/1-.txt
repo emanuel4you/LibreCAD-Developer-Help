@@ -6,7 +6,7 @@ LISP Functions
    Decrease the value by one.
      __________________________________________________________________
 
-   This function requires a single argument, which must be a number or an [link]integer.
+   This function requires a single argument, which must be a number or an integer.
 
 EXAMPLES
    Code            Returns

@@ -10,7 +10,7 @@ DCL Attributes
 
    Typically, the width attribute should be applied to image and [link]image_button tiles. For other types of tiles, it is advisable to refrain from using this attribute unless it is necessary to enhance the visual appeal of the dialog box.
 
-   number: any [link]real number or [link]integer measured in units of character width. The "character width unit" is the lessor of either:
+   number: any real number or integer measured in units of character width. The "character width unit" is the lessor of either:
 
      * the width of the screen divided by 80
      * or the average width of all uppercase and lowercase letters (A-Z, a-z)

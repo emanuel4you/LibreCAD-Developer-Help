@@ -8,7 +8,7 @@ DCL Attributes
 
    This attribute defines the width (measured in characters) of the text input area within an [link]edit_box, which is aligned to the right.
 
-   For number, use a [link]real number or an [link]integer.
+   For number, use a real number or an integer.
 
 NOTE
    It is important to note that the edit_width attribute usually differs from the [link]edit_limit attribute, which determines the maximum number of characters a user is permitted to enter in the edit box. By setting the edit_limit value higher than that of edit_width, users can input more characters than can be visually accommodated by the edit box. Consequently, not all characters in the input string may be visible simultaneously. The horizontal arrows facilitate scrolling to view the beginning or end of the input.

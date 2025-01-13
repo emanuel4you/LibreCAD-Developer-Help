@@ -1,0 +1,100 @@
+LISP Compatibility
+      ________________________________________________________________________________
+
+    LibreLisp is based on a modern Clojure (West 2014) lightweight core that brings additional types and functions (vector, map, ...). For more informations see: [link]Make a Lisp (mal). It has similarities to AutoLISP and significantly extends the commands and functions available in LibreCAD.
+      ________________________________________________________________________________
+
+Functions Unique to LibreLisp
+    [link](%)
+    [link](atom?)
+    [link](boolean?)
+    [link](bound?)
+    [link](concat)
+    [link](conj)
+    [link](contains?)
+    [link](copyright)
+    [link](count)
+    [link](credits)
+    [link](debug-eval)
+    [link](def!)
+    [link](defmacro!)
+    [link](deref)
+    [link](do)
+    [link](double?)
+    [link](empty?)
+    [link](false?)
+    [link](file?)
+    [link](fn?)
+    [link](fn*)
+    [link](get)
+    [link](hash-map)
+    [link](integer?)
+    [link](keys)
+    [link](keyword)
+    [link](keyword?)
+    [link](let*)
+    [link](license)
+    [link](list?)
+    [link](load-file)
+    [link](log10)
+    [link](macro?)
+    [link](map)
+    [link](map?)
+    [link](member?)
+    [link](meta)
+    [link](minus?)
+    [link](nil?)
+    [link](number?)
+    [link](println)
+    [link](prn)
+    [link](pr-str)
+    [link](py-eval-float)
+    [link](py-eval-integer)
+    [link](py-eval-string)
+    [link](py-eval-vector)
+    [link](py-simple-file)
+    [link](py-simple-string)
+    [link](quasiquote)
+    [link](quote)
+    [link](rand)
+    [link](rand-int)
+    [link](read-string)
+    [link](reset!)
+    [link](seq)
+    [link](sequential?)
+    [link](set)
+    [link](slurp)
+    [link](str)
+    [link](string?)
+    [link](swap!)
+    [link](symbol)
+    [link](symbol?)
+    [link](throw)
+    [link](true?)
+    [link](try*)
+    [link](type?)
+    [link](vec)
+    [link](vector)
+    [link](vector?)
+    [link](with-meta)
+    [link](zero?)
+
+NOTE
+    The following LISP function in LibreCAD have different features. LibreLisp is based on a Clojure core, the function <b>'()</b> can be used differently than on normal AutoLISP, here the function is only for packaging. Complex, directly executable lists must therefore be created with the normal <b>(</b><b>list</b> 1 2 3<b>)</b> command. Functionality
+
+#LISP-Compatible Functions with Enhanced Features
+#The following LISP functions in LibreCAD have enhanced features.
+
+#Functions Partially Compatible with LISP in Other CAD Systems
+#The following function is partially compatible with the LISP found in other CAD systems:
+
+#Functions
+
+Functions Not Supported by LibreCAD
+The following functions found in other CAD systems: arx, arxload, arxunload, autoarxload, entgetx, initdia, ssnamex, ...
+
+More about...
+   [link]LISP Functions
+   [link]Programming Overview of the LISP (LISt Processing) Language
+   [link]Overview of the DCL (Dialog Control Language)
+   [link]Code Examples from the LibreCAD Developer Reference

@@ -6,7 +6,7 @@ LISP Functions
    Adjust the mode of the dialog box's title.
      __________________________________________________________________
 
-   The argument accepts one of the following [link]integer values:
+   The argument accepts one of the following integer values:
 
    Mode                    Meaning
    0    Enable tile.

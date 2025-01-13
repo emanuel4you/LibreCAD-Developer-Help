@@ -11,22 +11,20 @@ LISP Functions
    Code Meaning
    1 User clicked the OK button.
    0 User clicked the Cancel button or an error occurred.
-   -1 The term_dialog function was invoked.
+   -1 The [link]term_dialog function was invoked.
 
 EXAMPLE
-   Code Returns
    (start_dialog)
-     * 1
 
 NOTES
    The dialog box is initially set up by the new_dialog function. The sequence for invoking a dialog box is as follows:
 
    [link]load_dialog
-   new_dialog
+   [link]new_dialog
 
    This includes the initialization of the dialog box, which involves linking actions to tiles, creating images, and preparing lists for list boxes.
 
-   start_dialog
+   [link]start_dialog
 
 More about...
    [link](term_dialog)

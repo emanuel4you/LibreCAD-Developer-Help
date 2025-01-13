@@ -17,7 +17,7 @@ EXAMPLES
 
 NOTE
    The sequence for invoking a dialog box is as follows:
-    1. load_dialog
+    1. [link]load_dialog
     2. [link]new_dialog
     3. [link]action_tile, [link]start_image, [link]start_list, etc. (This includes all necessary dialog box initialization steps, such as linking actions to tiles, creating images, and preparing lists for list boxes).
 

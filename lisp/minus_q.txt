@@ -6,7 +6,7 @@ LISP Functions
    Assess whether a value is a negative number.
      __________________________________________________________________
 
-   If the value is a [link]real number or an [link]integer and is negative, the minus? function will return true. If not, it will return false.
+   If the value is a real number or an integer and is negative, the minus? function will return true. If not, it will return false.
 
 EXAMPLES
    Code          Returns

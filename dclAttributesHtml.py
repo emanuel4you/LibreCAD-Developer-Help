@@ -7,12 +7,12 @@ import os
 
 dclTiles = ("boxed_column", "boxed_radio_column", "boxed_radio_row", "boxed_row", "button", "column", "concatenation", "dialog", "dial", "edit_box", "errtile", "image_button", "image", "list_box", "name", "ok_cancel_help_errtile", "ok_cancel_help_info", "ok_cancel_help", "ok_cancel", "ok_only", "paragraph", "popup_list", "radio_button", "radio_column", "radio_row", "register", "row", "scroll", "slider", "spacer_0", "spacer_1", "spacer", "tab", "text_part", "text", "toggle", "action_tile", "DCL", "LISP" ) # fix bold action_tile, DCL, LISP
 
-attributes = ("action", "alignment", "allow_accept", "aspect_ratio", "big_increment", "children_alignment", "children_fixed_height", "children_fixed_width", "color", "edit_limit", "edit_width", "fixed_height", "fixed_width_font", "fixed_width", "height", "initial_focus", "is_bold", "is_cancel", "is_default", "is_enabled", "is_tab_stop", "key", "label", "layout", "list", "max_value", "min_value", "mnemonic", "multiple_select", "password_char", "small_increment", "tabs", "tab_truncate", "value", "width")
+attributes = ("action", "alignment", "allow_accept", "aspect_ratio", "big_increment", "children_alignment", "children_fixed_height", "children_fixed_width", "color", "edit_limit", "edit_width", "fixed_height", "fixed_width_font", "fixed_width", "height", "initial_focus", "is_bold", "is_cancel", "is_default", "is_enabled", "is_tab_stop", "key", "label", "layout", "list", "max_value", "min_value", "mnemonic", "multiple_select", "password_char", "small_increment", "tabs", "tab_truncate", "value", "width", "about-predefined-attributes")
 
 alias = ("position", "left", "right", "top", "bottom", "centered", "horizontal", "vertical", "dialog_line", "dialog_foreground", "dialog_background", "false", "graphics_background", "black", "red", "yellow", "green", "cyan", "blue", "magenta", "true", "white", "graphics_foreground")
 
-h2_List = ("DCL Attributes")
-h4_List = ("NOTE", "NOTES", "Valid Attributes", "EXAMPLES", "EXAMPLE", "Related DCL Tiles", "More about...", "Related DCL Tiles", "Valid Attribute", "Valid Attributes", "Valid Tiles")
+h2_List = ("DCL Attributes", "About Predefined Attributes")
+h4_List = ("NOTE", "NOTES", "Valid Attributes", "EXAMPLES", "EXAMPLE", "Related DCL Tiles", "More about...", "Related DCL Tiles", "Valid Attribute", "Valid Attributes", "Valid Tiles", "Numeric Values", "Strings", "Reserved Values")
 
 root_dir = "html/predefined-attributes/"
 
@@ -70,10 +70,10 @@ def replaceLink(line):
         para = "<p style=\"padding-left: " + str(whites*5) + "px;\">"
 
     if partsCount == 1:
-        result = para + "<a href=\"" + path + ".html\" title=\"" + title + "\">" + link + "</a></p>\n"
+        result = "<b>" + para + "<a href=\"" + path + ".html\" title=\"" + title + "\">" + link + "</a></p></b>\n"
 
     else:
-        result = para + "<a href=\"" + path + ".html\" title=\"" + title + "\">" + link + "</a>" + rest + "</p>\n"
+        result = "<b>" + para + "<a href=\"" + path + ".html\" title=\"" + title + "\">" + link + "</a>" + rest + "</p></b>\n"
 
     return result
 
@@ -142,7 +142,7 @@ def makeHtml(filename):
     #print("open:", filename)
     print("[makeHtml] file:", htmlPath)
 
-    htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<style>\n\t\t:root { font-family: sans-serif; }\n\t\tp { white-space: pre-wrap; padding-left: 15px; }\n\t</style>\n\t<titel>" + filename[:-4] + "</titel>\n</head>\n<body>\n")
+    htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<style>\n\t\t:root { font-family: sans-serif; }\n\t\tp { white-space: pre-wrap; padding-left: 15px; }\n\t</style>\n\t<titel>" + filename[:-4] + "</titel>\n</head>\n<body>\n")
 
     with open("predefined-attributes/" + filename, 'r') as file:
         for line in file:
@@ -228,13 +228,13 @@ def makeHtml(filename):
 def makeIndexHtml():
     htmlFile = open(root_dir + "predefined-attributes.html",'w')
     print("[makeIndexHtml] file: " + root_dir + "predefined-attributes.html")
-    htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<style>\n\t\t:root { font-family: sans-serif; width: 800px; }\n\t</style>\n\t<titel>LibreCAD Developer Help</titel>\n</head>\n<body>\n\t<h2>DCL Attributes</h2>\n\t<hr/>\n")
+    htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<style>\n\t\t:root { font-family: sans-serif; width: 800px; }\n\t</style>\n\t<titel>LibreCAD Developer Help</titel>\n</head>\n<body>\n\t<h2>DCL Attributes</h2>\n\t<hr/>\n")
 
     index = 0
     for link in attributes:
         index += 1
         path = proto + root_dir + link
-        htmlFile.write("\t<a href=\"" + path + ".html\" title=\"DCL Attribute " + link + "\">(" + link + ")</a><br/>\n")
+        htmlFile.write("\t<b><a href=\"" + path + ".html\" title=\"DCL Attribute " + link + "\">(" + link + ")</a></b><br/>\n")
 
     htmlFile.write("\t<br/>\n</body>\n</html>")
     htmlFile.close()

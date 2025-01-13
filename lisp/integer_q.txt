@@ -6,7 +6,7 @@ LISP Functions
    Returns true if x is an integer.
      __________________________________________________________________
 
-   If the value is a [link]integer this functions returns true, otherwise false.
+   If the value is a integer this functions returns true, otherwise false.
 
 EXAMPLES
 

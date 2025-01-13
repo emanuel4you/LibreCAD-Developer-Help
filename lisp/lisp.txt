@@ -1,15 +1,17 @@
 Programming Overview of the LISP (LISt Processing) Language
+      ________________________________________________________________________________
    LISP (LISt Processing) is a standalone programming language that offers integration capabilities with the LibreCAD program for customization purposes. LibreLisp is based on a clojure lightweight core that brings additional types and functions (vector, map, ...). It has similarities to AutoLISP and significantly extends the commands and functions available in LibreCAD.
-
+      ________________________________________________________________________________
 LISP Functions
    Each command in LibreLisp is designed to execute a specific function. For instance, LISP functions can:
 
-      * Load various LISP applications, DCL programs, and LibreCAD files.
+      * Load various LISP applications, DCL applications, and LibreCAD files.
+      * Cross-language development. (LibreLisp can call LibrePython functions/applications just as LibrePython can execute LibreLisp).
       * Solicit input from the user or inform them of particular circumstances.
       * Import additional LibrePython or LibreCAD Script files.
       * Seek user input or alert the user regarding specific conditions.
       * Execute standard commands in LibreCAD.
-      * Run system programs.
+      * Run system applications.
       * Process alphanumeric sequences.
       * Perform mathematical calculations.
       * Store data for future use.
@@ -18,7 +20,9 @@ LISP Functions
       * Alter entities within a drawing.
       * Display information on the screen or save it to a file.
 
-   By developing programs that integrate various LISP functions, users can create tailored solutions that enhance the CAD tools in LibreCAD, connect their drawings with other applications, and streamline their workflows. Utilizing LISP alongside LibreCAD allows for the enhancement of CAD workstations through the creation of powerful add-on applications tailored to specific needs relevant to one's specialty, firm, profession, or industry.
+   By developing applications that integrate various LISP functions, users can create tailored solutions that enhance the CAD tools in LibreCAD, connect their drawings with other applications, and streamline their workflows. Utilizing LISP alongside LibreCAD allows for the enhancement of CAD workstations through the creation of powerful add-on applications tailored to specific needs relevant to one's specialty, firm, profession, or industry.
+
+   To make developing applications as easy as possible, LibreCAD has an integrated development environment, the LibreLisp Ide, with highlighting of Lisp, Python and Dcl sources, as well as search, debug, run, script load options.
 
 NOTE
    For further details regarding the compatibility of LibreCAD's LISP implementation with those found in other CAD systems, please refer to the section on [link]LISP Compatibility.
@@ -84,5 +88,5 @@ EXAMPLE
 More about...
    [link]LISP Compatibility
    [link]LISP Functions
-   [link]Overview of the Dcl (Dialog Control Language)
+   [link]Overview of the DCL (Dialog Control Language)
    [link]Code Examples from the LibreCAD Developer Reference

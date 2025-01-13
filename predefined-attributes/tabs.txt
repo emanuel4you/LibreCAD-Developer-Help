@@ -8,7 +8,7 @@ DCL Attributes
 
    This attribute defines the spacing of tabs, which is beneficial for arranging text into vertical columns.
 
-   string: a string of [link]real numbers or [link]integers, each separated by a space.
+   string: a string of real numbers or integers, each separated by a space.
 
 EXAMPLE
    tabs = "5 10 15 20 25 30 35 40";

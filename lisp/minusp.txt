@@ -6,7 +6,7 @@ LISP Functions
    Assess whether a value is a negative number.
      __________________________________________________________________
 
-   If the value is a [link]real number or an [link]integer and is negative, the minusp function will return T. If not, it will return nil.
+   If the value is a real number or an integer and is negative, the minusp function will return T. If not, it will return nil.
 
 EXAMPLES
    Code          Returns

@@ -1,0 +1,39 @@
+About Predefined Attributes
+      _____________________________________________________
+   Within the program's DCL, there exists a variety of predefined attributes designated for dcl-tiles. These attributes are characterized by three distinct types of values: numeric, strings, and constants. The valid attributes associated with each tile may vary.
+     _____________________________________________________
+Numeric Values
+   Numeric values are integers and/or real numbers, depending on the attribute. A real number between -1 and 1 must have a leading zero, such as 0.1 and not .1.
+
+EXAMPLES
+   max_value = 16;
+   aspect_ratio = 0.0;
+
+Strings
+   A string consists of alphanumeric characters within a pair of quotation marks ("text") and is case sensitive.
+
+EXAMPLES
+   key = "R2";
+
+   action = "(function)";
+
+   You can use the following control characters within strings:
+   Control Character Meaning
+   \"                Quotation mark. (embedded)
+   \\                Backslash.
+   \n                New-line (carriage return).
+   \t                Tab.
+
+Reserved Values
+   Text is employed without quotation marks in some instances. This text consists of constant values, including flags (true and false), names of colors, and positional references, such as left and top.
+
+EXAMPLES
+   allow_accept = true;
+
+   color = blue;
+
+   alignment = centered;
+
+More about...
+   [52]Programming Overview of DCL (Dialog Control Language)
+   [link]Code Examples from the LibreCAD Developer Reference

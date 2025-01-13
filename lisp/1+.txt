@@ -6,7 +6,7 @@ LISP Functions
    Increase the value by one.
      __________________________________________________________________
 
-   [link]integer. This function takes exactly one argument.
+   integer. This function takes exactly one argument.
 
 EXAMPLES
    Code            Returns

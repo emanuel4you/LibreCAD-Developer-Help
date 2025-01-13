@@ -6,7 +6,7 @@ LISP Functions
    Calculate the exponential.
      __________________________________________________________________
 
-   This function computes the base raised to a specified exponent. When both the base and the exponent are real numbers, the outcome will also be a [link]real number.
+   This function computes the base raised to a specified exponent. When both the base and the exponent are real numbers, the outcome will also be a real number.
 
 EXAMPLES
    Code         Returns

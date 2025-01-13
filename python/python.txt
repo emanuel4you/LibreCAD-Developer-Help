@@ -1,0 +1,68 @@
+Programming Overview of the PYTHON Language
+      ________________________________________________________________________________
+   Python is a high-level, versatile programming language designed with an emphasis on code readability, utilizing significant indentation for clarity.
+   It features dynamic type checking and automatic garbage collection. Python accommodates various programming paradigms, including structured (especially procedural), object-oriented, and functional programming. It is often referred to as a "batteries included" language due to its extensive standard library. LibreCAD comes with built-in Python interpreter and built-in LibreCAD module classes (LibrePython) that are imported into the Python application.
+      ________________________________________________________________________________
+Python Functions
+   Each command in LibrePython is designed to execute a specific function. For instance, Python functions can:
+
+      * Load various Python applications, DCL applications, and LibreCAD files.
+      * Cross-language development. (LibrePython can call LibreLisp functions/applications just as LibreLisp can execute LibrePython).
+      * Solicit input from the user or inform them of particular circumstances.
+      * Import additional Python modules or load LibreCAD Script files.
+      * Seek user input or alert the user regarding specific conditions.
+      * Execute standard commands in LibreCAD.
+      * Run system applications.
+      * Process alphanumeric sequences.
+      * Perform mathematical calculations.
+      * Store data for future use.
+      * Read from and write to files.
+      * Select entities within a drawing.
+      * Alter entities within a drawing.
+      * Display information on the screen or save it to a file.
+      * Compile Applications.
+
+   By developing applications that integrate various Python functions, users can create tailored solutions that enhance the CAD tools in LibreCAD, connect their drawings with other applications, and streamline their workflows. Utilizing Python alongside LibreCAD allows for the enhancement of CAD workstations through the creation of powerful add-on applications tailored to specific needs relevant to one's specialty, firm, profession, or industry.
+
+   To make developing applications as easy as possible, LibreCAD has an integrated development environment, the LibrePython Ide, with highlighting of Python, Lisp and Dcl sources, as well as search, debug, run, script load options.
+
+NOTE
+   For basic knowledge, operators, types, constants in Python programming language, see the following website: [link]www.python.org
+
+import Modules
+   Almost all Python modules can be imported. Exceptions are external gui modules that are based on qt or gtk. Tkinter leaves.
+
+LibrePython
+   All LibreCAD classes are defined in the librecad.py file and can be imported like any Python module.
+
+EXAMPLE
+   from <b>librecad</b> import <b>RS_PythonGui</b> as gui
+   mygui = gui()
+   mygui.<b><i>MessageBox(</i></b>"Hallo, LibreCAD!"<b><i>)</i></b>
+<br/>
+EXAMPLE
+   from <b>librecad</b> import <b>RS_PythonGui</b> as gui
+   from <b>librecad</b> import <b>RS_PythonDcl</b> as dcl
+   mygui = gui()
+   mydcl = dcl()
+   mygui.<b><i>prompt(</i></b>"Type \"okCancel()\" to start..."<b><i>)</i></b>
+   userClick = False
+   <br/>
+   <b>def</b> okCancel():
+      dcl_id = mydcl.<b><i>loadDialog(</i></b>"test/ok_cancel.dcl"<b><i>)</i></b>
+      <b>if</b> mydcl.<b><i>newDialog(</i></b>"ok_cancel_dlg", dcl_id<b><i>)</i></b> == False:
+         <b>print</b>("[okCancel] Error: can not load gui!")
+         <b>return</b>
+      mydcl.<b><i>actionTile(</i></b>"accept", "(py-simple-string \"mydcl.doneDialog()\nuserClick = True\")"<b><i>)</i></b>
+      mydcl.<b><i>actionTile(</i></b>"cancel", "(py-simple-string \"mydcl.doneDialog()\nuserClick = False\")"<b><i>)</i></b>
+      mydcl.<b><i>startDialog(</i></b><b><i>)</i></b>
+      mydcl.<b><i>unloadDialog(</i></b>dcl_id<b><i>)</i></b>
+      <b>if</b> userClick:
+            <b>print</b>("[okCancel] Ok pressed")
+      <b>else</b>:
+            <b>print</b>("[okCancel] Cancel pressed")
+<br/>
+More about...
+   [link]PYTHON Functions
+   [link]Overview of the DCL (Dialog Control Language)
+   [link]Code Examples from the LibreCAD Developer Reference

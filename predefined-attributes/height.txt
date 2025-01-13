@@ -8,7 +8,7 @@ DCL Attributes
 
    This attribute specifies the minimum height of a tile, unless a fixed height is established by a fixed_xxx attribute, such as fixed_height. Typically, this attribute is not necessary unless there is a desire to enhance the visual appeal of the dialog box.
 
-   number: a [link]real number or an [link]integer that indicates the height in terms of character height units, which represents the maximum height of a line of screen characters, including the spacing between lines.
+   number: a real number or an integer that indicates the height in terms of character height units, which represents the maximum height of a line of screen characters, including the spacing between lines.
 
 EXAMPLE
    height = 10.0;

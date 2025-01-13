@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import lispHtml, pythonHtml, dclTilesHtml, dclAttributesHtml
+import os, lispHtml, pythonHtml, dclTilesHtml, dclAttributesHtml
 
 index_urls = (("https://dokuwiki.librecad.org/", "LibreCad Wiki"),
 ("https://librecad.readthedocs.io/", "LibreCad User's Manual"),
@@ -19,8 +19,8 @@ developer_urls = (("qrc:/html/lisp/lisp.html", "Programming Overview of the LISP
 ("qrc:/html/lisp/lisp-functions.html", "LISP Functions"),
 ("qrc:/html/python/python.html", "Programming Overview of the Python Language"),
 ("qrc:/html/python/python-functions.html", "Python Functions"),
-("qrc:/html/dcl-tiles/dcl.html", "Overview of the Dcl (Dialog Control Language)"),
-("qrc:/html/dcl-tiles/dcl-tiles.html", "Dcl Tiles"),
+("qrc:/html/dcl-tiles/dcl.html", "Overview of the DCL (Dialog Control Language)"),
+("qrc:/html/dcl-tiles/dcl-tiles.html", "DCL Tiles"),
 ("qrc:/html/predefined-attributes/predefined-attributes.html", "Predefined Attributes"),
 ("qrc:/html/predefined-attributes/about-predefined-attributes.html", "About Predefined Attributes"),
 ("https://github.com/emanuel4you/LibreCAD-Developer-Examples", "Code Examples from the LibreCAD Developer Reference")
@@ -68,7 +68,7 @@ def replaceInlineLink(line):
     line = line.strip()
     #replaceList = []
     if "[link]" in line:
-        print("[replaceInlineLink] found link!")
+        #print("[replaceInlineLink] found link!")
         line = line.replace("[link]LISP Compatibility" , "<a href=\"qrc:/html/lisp/lisp-compatibility.html\" title=\"LISP Compatibility\">LISP Compatibility</a>")
 
     return line
@@ -95,7 +95,7 @@ def replaceLink(line):
 
     for url, name in developer_urls:
         if name == link:
-            return "\t" + para + "<a href=\"" + url + "\" title=\"" + name + "\">" + name + "</a></p>\n"
+            return "\t<b>" + para + "<a href=\"" + url + "\" title=\"" + name + "\">" + name + "</a></p></b>\n"
 
     #else:
         #return link
@@ -253,6 +253,7 @@ def makelispHtml(filename):
 
 def makeIndexHtml():
     htmlFile = open(root_dir + "index.html",'w')
+    print("[makeIndexHtml] file:", root_dir + "index.html")
     htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<style>\n\t\t:root { font-family: sans-serif; }\n\t</style>\n\t<titel>LibreCad Help</titel>\n</head>\n<body>\n\t\n\t<hr/>\n<h2>LibreCad Help</h2>\n\t<hr/>\n")
 
     index = 0
@@ -266,7 +267,8 @@ def makeIndexHtml():
     htmlFile.close()
 
 def makeDeveloperHtml():
-    htmlFile = open(root_dir + "index.html",'w')
+    htmlFile = open(root_dir + "developer.html",'w')
+    print("[makeIndexHtml] file:", root_dir + "developer.html")
     htmlFile.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"/>\n\t<style>\n\t\t:root { font-family: sans-serif; }\n\t</style>\n\t<titel>LibreCad Help</titel>\n</head>\n<body>\n\t\n\t<hr/>\n<h2>LibreCad Help</h2>\n\t<hr/>\n")
 
     index = 0
@@ -274,12 +276,17 @@ def makeDeveloperHtml():
         if url == "___":
             htmlFile.write("\t<hr/>\n")
         else:
-            htmlFile.write("\t<a href=\"" + url + "\" title=\"" + name + "\">" + name + "</a><br/>\n")
+            htmlFile.write("\t<b><a href=\"" + url + "\" title=\"" + name + "\">" + name + "</a></b><br/>\n")
 
     htmlFile.write("</body>\n</html>")
     htmlFile.close()
 
 def main():
+    current_directory = os.getcwd()
+    final_directory = os.path.join(current_directory, root_dir + "lisp/")
+    if not os.path.exists(final_directory):
+        os.makedirs(final_directory)
+
     makelispHtml("lisp.txt")
     makeIndexHtml()
     makeDeveloperHtml()

@@ -6,7 +6,7 @@ LISP Functions
    Returns true if x is a Double.
      __________________________________________________________________
 
-   If the value is a [link]real number this functions returns true otherwise false.
+   If the value is a real number this functions returns true otherwise false.
 
 EXAMPLES
 

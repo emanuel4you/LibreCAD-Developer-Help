@@ -1,0 +1,88 @@
+DCL
+     __________________________________________________________________
+   Overview of the DCL (Dialog Control Language)
+     __________________________________________________________________
+
+   DCL stands for Dialog Control Language, a distinct programming language that can be utilized with LibreCAD to design custom dialog boxes. When creating dialog boxes using DCL, you will engage with components known as tiles, cluster tiles (or clusters), and attributes. The subsequent sections will elaborate on each type of component and the fundamental syntax employed to define them.
+
+Tiles
+   A tile represents a dialog box component, which may include a button, list_box, image, or text element. Tiles are generally expressed using the following syntax:
+
+   : toggle { }
+
+   It is important to note the colon prefix followed by a space, indicating that you are temporarily redefining the attributes of a tile. A tile name presented without the colon prefix signifies that it has been defined previously (either earlier in the DCL file or in a different DCL file). The braces encompass the tile's attributes, which may include characteristics such as color, associated actions, or labels.
+
+   Tiles are also classified based on their function:
+
+     * Active tiles (for example, [link]: button { ... }, [link]: toggle { ... }) (check box), and [link]: list_box { ... }) define dialog box controls that receive user input and/or carry out commands and actions.
+     * Text tiles (for example, [link]: text { ...}) manipulate strings in a dialog box.
+     * Error handler tiles (for example, [link]errtile; and [link]ok_cancel_help;) take care of displaying error messages to the user and standard confirmation buttons such as OK, Cancel, and Help.
+     * Decorator tiles (for example, [link]: image { ... } and [link]: spacer { ... } handle graphical elements and spacing within a dialog box.
+
+NOTE
+   There is the [link]: register {} and the [link]: tab {} tail for creating tabbed dialog boxes.
+
+   Cluster Tiles
+
+   A cluster is a group of tiles, such as a group of related radio buttons (also called option buttons) or a group of check boxes (also called toggles). Clusters are usually (but not always) surrounded by a rectangular outline. The individual tile elements within a cluster are called the cluster's children.
+
+   Clusters are a form of tile, and typically take the following syntax:
+
+   [link]: boxed_column { }
+
+   Again, note the colon prefix, followed by a space. The braces contain the cluster's attributes and tiles. Radio buttons have their own clusters since, by definition, there must be at least two radio buttons in a cluster.
+
+   Attributes
+
+   In DCL, the term attribute refers to a characteristic of a tile, such as its color, the action it performs, its label, and so forth. The program's DCL includes a number of [link]Predefined Attributes (for example, [link]color, [link]multiple_select).
+
+   A tile can have many attributes or none at all. When a tile has no attributes, it assumes the default values of the attributes.
+
+   A typical attribute takes the following syntax:
+
+   [link]label = "Pick a point: ";
+
+NOTE
+   The semicolon terminator. Not all attributes apply to all tiles. In fact, some attributes change their meaning, depending on the tile with which they are used.
+
+  Tiles and Attributes Unique to LibreCAD's Implementation of DCL
+
+   The program's DCL has one unique tile and several attributes that are not found in other implementations of DCL. The following table describes the tile unique to LibreCAD's implementation of DCL:
+
+   Tile Meaning
+   [link]: button { } Creates a button.
+
+#   The following table summarizes the attributes that are unique to LibreCAD's implementation of DCL:
+
+#   Attribute Meaning
+#   [link]lower_only = flag;   Read all input text as lower case.
+#   [link]pointsize = int;     Point size of text displayed by the dialog box.
+#   [link]read_only = flag;    Text in edit box is non-editable.
+#   [link]typeface = "string"; TrueType typeface displayed by the dialog box.
+#   [link]upper_only = flag;   Read all input text as upper case.
+
+  The DCL File Format
+
+   A DCL file is in UTF-8 format, so you can use any text editor to write and edit DCL files.
+
+   Syntax for Comments in DCL Code
+
+   Line comments are prefixed with //, as follows:
+
+   // comment line.
+
+   To embed comments in the DCL code, use /* and */, as follows:
+
+   mydlg : dialog { /* name dialog box*/
+
+#   Referencing Tile Definitions in DCL Code
+
+#   The DCL file can reference tile definitions in anther DCL file through the use of the include directive:
+
+#   @include filename
+
+More about...
+   [link]About Predefined Attributes
+   [link]Predefined Attributes
+   [link]DCL Tiles
+   [link]PYTHON Funktions
