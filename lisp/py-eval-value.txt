@@ -1,0 +1,17 @@
+LISP Functions
+
+   (py-eval-value cmd)
+     __________________________________________________________________
+
+   Run a Python Command.
+     __________________________________________________________________
+
+   This function runs a Python Command and returns the value.
+
+EXAMPLE
+   Code Returns
+   (py-eval-value "list('Lisp')") ["L" "i" "s" "p"]
+   (py-eval-value "[(1,'LibreCAD'), {'x': 0.0, 'y': 100.0, 'name': 'My vector'}, 2, 3, 'Lisp']") [(1 "LibreCAD") {:name "My vector" :x 0.000000 :y 100.000000} 2 3 "Lisp"]
+
+More about...
+   [link](py-simple-file "myModule.py")
